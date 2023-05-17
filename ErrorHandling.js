@@ -6,6 +6,8 @@
 //       if (b === 0) {
 //         throw new Error('Cannot divide by zero');
 //       }
+
+
 //       return a / b;
 //     } catch (error) {
 //       console.log(error.name + ': ' + error.message);
@@ -28,10 +30,9 @@
   
 // }
 
-
-
 // console.log(divide1(23, 7));
 // console.log(divide1(23, 0));
+
 
 try{
   getData();

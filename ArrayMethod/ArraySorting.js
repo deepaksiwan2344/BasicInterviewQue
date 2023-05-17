@@ -22,6 +22,7 @@
 // In a javascript for a number sorting sort not work proper for sorting  a number we use compare function like
 // above example
 
+
 // let a = [1, 3, 4, 45, 65];
 // let b = a;
 // c = b;
@@ -77,6 +78,7 @@ function MinValue(array) {
   }
   return [firstValue, secondvalue];
 }
+
 console.log("minvalue",MinValue(array));
 
 // let number = 232434;

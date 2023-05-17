@@ -11,7 +11,6 @@
 // }
 
 // console.log(sum(1, 2, 3, 4)); // Output: 10
-
 // function sum(a, b, c) {
 //     return a + b + c;
 // }
@@ -90,6 +89,7 @@ let obj ={
   age: "25"
 }
 
+
 let {age} = obj; //Destructuring 
 console.log("age", age)
 
@@ -104,6 +104,9 @@ let obj2 = {
  let {name} = obj2;
  console.log(name)
 console.log("obj2", obj2)
+
+
+
 
 
 

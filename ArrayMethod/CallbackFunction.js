@@ -14,14 +14,14 @@
 
 // greeting("John", sayGoodbye);
 
-function greeting(callback){
-  console.log("hello")
-  callback()
-}
-function sayGoodbye(){
-  console.log("good")
-}
-greeting(sayGoodbye)
+// function greeting(callback){
+//   console.log("hello")
+//   callback()
+// }
+// function sayGoodbye(){
+//   console.log("good")
+// }
+// greeting(sayGoodbye)
 
 
 function add(callback){

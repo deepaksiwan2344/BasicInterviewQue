@@ -14,6 +14,7 @@
 // }
 
 
+
 // sum(5)(6)(8);
 //In Other View
 // const totalsum = (num1)=> (num2)=> (num3)=>console.log(num1 + num2+ num3)

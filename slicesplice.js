@@ -3,6 +3,8 @@
 
 
 const fruits = ['apple', 'banana', 'orange', 'mango', 'grapes'];
+let fruitss = fruits;
+console.log("fruitss", fruitss)
 // extract a section of the array from index 1 to index 3 (excluding index 3)
 const selectedFruits = fruits.slice(3, 5);
 console.log(selectedFruits)
@@ -21,7 +23,10 @@ console.log("removedNumbers", removedNumbers); // output: [30, 40]
 //slice() is used to create a new array with a portion of an existing array,
 //splice() is used to add or remove elements from an array, and modifies the original array.
 
+
 const fruit = ['apple', 'banana', 'mango'];
+let fruit1 = fruit
+console.log("fruit1", fruit1)
 
 // insert 'orange' at index 2
 fruit.splice(2, 1, 'orange', 'Mango');

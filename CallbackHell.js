@@ -1,4 +1,6 @@
 //CallbackHell
+// Callback Hell is a situation in JavaScript where multiple nested callbacks are
+// used to perform asynchronous operations
 setTimeout(function () {
   console.log("hello1");
   setTimeout(function () {
@@ -20,6 +22,7 @@ setTimeout(function () {
     }, 1000);
   }, 1000);
 }, 1000);
+
 
 //How to remove callbackhell in javascript
 // Callback hell can be avoided in JavaScript by using various techniques such as Promises,

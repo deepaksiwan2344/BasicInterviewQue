@@ -17,6 +17,7 @@ import { useCallback, useMemo } from "react"
 // easier to write and maintain.
 
 
+
 //difference between useCallback and useMemo
 //useCallback is used to memoize callback functions, while useMemo is used to memoize computed values or results. 
 

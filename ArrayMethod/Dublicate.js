@@ -7,6 +7,8 @@
 //     return arr.indexOf(ele) !== index
 // }
 
+
+
 // )
 //console.log(dublicate)
 //find a dublicate element in a given array with loop
@@ -40,7 +42,6 @@ function findDublicate(arr){
     return Dublicate
 }
 console.log(findDublicate(arr))
-console.log("Hello deepak")
 
 
 

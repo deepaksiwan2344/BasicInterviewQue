@@ -19,15 +19,17 @@
 // console.log(deepCopy); // Output: {a: 1, b: {c: 3}}
 
 
-// let obj = {
-//     name: "deepak",
-//     lastname: "Kumar"
-// }
+let obj = {
+    name: "deepak",
+    lastname: "Kumar"
+}
 
-// var obj1 =JSON.parse(JSON.stringify(obj));
-// obj1.name = "depesh"
-// console.log("obj1", obj1)
-// console.log("obj", obj)
+
+
+var obj1 =JSON.parse(JSON.stringify(obj));
+obj1.name = "depesh"
+console.log("obj1", obj1)
+console.log("obj", obj)
 
 
 
@@ -78,11 +80,3 @@
 // console.log("obj", obj)
 
 
-const obj = {
-    name: "John",
-    age: 30,
-    hobbies: ["reading", "gaming"]
-  };
-  
-  const jsonString = JSON.stringify(obj);
-  console.log("jsonString",jsonString)

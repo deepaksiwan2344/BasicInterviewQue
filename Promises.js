@@ -23,8 +23,6 @@
 //     });
 
 
-
-
 // function getData() {
 //     return new Promise((resolve, reject) => {
 //         setTimeout(() => {
@@ -53,9 +51,6 @@ const Promises =()=>{
 }
 console.log(Promises())
 
-
-
-
 // getData()
 //     .then((data1) => {
 //         console.log("data", data1)
@@ -78,7 +73,6 @@ console.log(Promises())
 //     resolve("deepak2")
 
 // })
-
 // Promise.all([promise1, promise2, promise3])
 //     .then((result) => {
 //         console.log("result", result)
@@ -98,6 +92,7 @@ var pl1 = new Promise((resolve, reject) => {
   let sqldata1= "deepak"
   resolve(sqldata1);
 });
+
 
 Promise.all([
   pl.catch((err) => {

@@ -3,7 +3,6 @@
 
 const { Socket } = require("dgram")
 
-
 // In Socket.io, socket.on and socket.emit are two methods used to send and receive messages between the 
 // client and server.
 

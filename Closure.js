@@ -15,6 +15,7 @@
 //     return inner;
 // }
 
+
 // var innerFn = outer();
 // innerFn(); // Output: 10
 

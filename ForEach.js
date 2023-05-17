@@ -12,6 +12,7 @@
 //}
 
 
+
 // for(let i = 0; i< number?.length;i++){
 //     console.log("[i]",number[i])
 // }
@@ -21,10 +22,9 @@
 //     console.log(arr)
 // })
 
-
-
 // array3.forEach((num)=>{
 //      console.log(num)
+
 
 // })
 

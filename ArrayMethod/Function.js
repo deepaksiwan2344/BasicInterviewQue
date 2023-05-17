@@ -8,7 +8,6 @@
 
 //Arrow function in javascript
 
-
 //Before Arrow function
 // Hello = function () {
 //     return "Hello deepak"
@@ -55,7 +54,7 @@ console.log(result1(23, 56))
     this.brand = name
  }
 
-
+ 
 const carData = new car('maruti')
 console.log(carData) //car is not a constructor
 
