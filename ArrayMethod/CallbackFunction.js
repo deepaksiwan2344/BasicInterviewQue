@@ -27,7 +27,6 @@
 function add(callback){
   console.log("hello deepak");
   callback()
-
 }
 function add1(){
   console.log("hi")

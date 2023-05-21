@@ -1,6 +1,7 @@
 //Hoc Higher order is a component that pass as a component and retrun 
 //some addition as a compoent
 
+
 import React,{useState} from "react";
 function HOC ()  {
   return (

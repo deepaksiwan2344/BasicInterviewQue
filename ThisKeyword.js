@@ -15,5 +15,4 @@ const myObject1 = {
     console.log(this.myProperties);
   },
 };
-
 myObject1.myMethod1();

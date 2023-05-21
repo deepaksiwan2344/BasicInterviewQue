@@ -29,6 +29,7 @@
 // let arr4 = [2,4,5,67]
 // console.log("arr4", ...arr4)
 
+
 //The spread operator in JavaScript, denoted by three consecutive dots ..., is used to expand an iterable
 //  (e.g. an array or a string)
 //  into individual elements.

@@ -6,9 +6,9 @@
 // String = 35
 
 // console.log("string", String) //show error
-
   //let
 //   It is block scope variable
+
 // x = 30
 // console.log(x)
 // var x

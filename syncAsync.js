@@ -20,8 +20,6 @@ function add(a, b) {
   return a + b;
 }
 
-
-
 // Note that asynchronous code does not always involve a delay.
 // Asynchronous operations can include things like AJAX requests, file I/O, and database queries, 
 // which can take an unpredictable amount of time to complete.

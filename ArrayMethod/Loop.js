@@ -18,7 +18,6 @@
 // }
 
 //for Loop in javascript
-
 // for(let i = 1; i<=10; i++){
 //     if(i%2 == 0){
 //         console.log(i*5)
@@ -96,8 +95,6 @@
 // }
 
 // console.log("text", text)
-
-
 let arr = [12, 4, 56,67];
 function Largest(arr) {
   let largest = arr[0];

@@ -18,9 +18,6 @@
 //setInterval is a built-in function in JavaScript that allows you to repeatedly execute a 
 //function at a specified interval.
 
-
-
-
 function array(){
     let c = [2,4,5]
     console.log(c)

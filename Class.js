@@ -2,6 +2,10 @@
 // and methods that can be used to create new objects of that type.
 //how to create class in javascript
 
+
+
+
+
 class Car {
   getModle() {
     return "car Modle is 2023";
@@ -12,8 +16,6 @@ let carObj = new Car();
 console.log("carObj", carObj);
 let modle = carObj.getModle();
 console.log(modle);
-
-
 
 class Scoter {
   constructor(brand, price) {

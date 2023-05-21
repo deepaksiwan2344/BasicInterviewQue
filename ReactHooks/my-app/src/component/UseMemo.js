@@ -10,7 +10,6 @@ const  UseMemo =()=>{
         return count *5
     }, [count] )
 
-   
     return(
         <>
         <h2> Hooks in react</h2>

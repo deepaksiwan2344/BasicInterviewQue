@@ -24,8 +24,6 @@ let obj = {
     lastname: "Kumar"
 }
 
-
-
 var obj1 =JSON.parse(JSON.stringify(obj));
 obj1.name = "depesh"
 console.log("obj1", obj1)
