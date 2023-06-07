@@ -15,6 +15,7 @@ let Myobj = {
 
 let p = "deepak"
 
+
 console.log (p)
 
 // Q: What are the primitive data types in JavaScript?

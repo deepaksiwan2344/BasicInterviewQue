@@ -64,11 +64,10 @@ app.post("/", async (req, res) => {
   //             arr[j+1] = temp;            }
   //     }
 
-  // }
+  // }  
 
   // res.send(arr);
   /*
-   
 just create an api with node js
  set all the number according to asc order(without any sort method)and return it as response
     */
@@ -78,3 +77,4 @@ just create an api with node js
 });
 
 app.listen(3000, () => console.log("server is running"));
+

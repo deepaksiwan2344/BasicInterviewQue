@@ -8,23 +8,24 @@
 //     return { [key + "Total"]: sum };
 //   }
 
+
 //   const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }];
 //   console.log(sumByKey(data, "salary")); 
 
-// const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }]; 
+const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }]; 
 
-// function  totalsalary(arr, key){
-//     let sum = 0
-//     for(let i = 0; i< arr?.length; i++){
-//         console.log("arr[i]", arr[i][key])
-//         sum += arr[i][key]
+function  totalsalary(arr, key){
+    let sum = 0
+    for(let i = 0; i< arr?.length; i++){
+        console.log("arr[i]", arr[i][key])
+        sum += arr[i][key]
 
-//     }
-//     console.log("sum", sum)
-//     return sum
-// }
+    }
+    console.log("sum", sum)
+    return sum
+}
 
-// console.log(totalsalary(data, "salary"))
+console.log(totalsalary(data, "salary"))
 
 //convert array into object
 
@@ -53,12 +54,13 @@
 
 //what is json.stringfy and jsonparse
 
-// const user = {
-//     name: "deepak", 
-//     age: 23
-// }
-// const jsonobj = JSON.stringify(user)
-// console.log("user", JSON.parse(jsonobj))
+const user = {
+    name: "deepak", 
+    age: 23
+}
+const jsonobj = JSON.stringify(user)
+console.log("jsonobj", jsonobj)
+console.log("user", JSON.parse(jsonobj))
 
 // console.log([..."deepak"])
 

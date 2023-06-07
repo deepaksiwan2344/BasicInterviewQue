@@ -1,3 +1,7 @@
+
+//String is a sequence of charactor that is used to represent text.
+//it can include letters, numbers, special charactor. 
+
 // const str = "deepak"
 // console.log(str.length)
 // console.log(str.charAt(0))

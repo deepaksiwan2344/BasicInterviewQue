@@ -1,5 +1,6 @@
-//ForEach loop
+//In ForEach Loop we can not use break and continue statement directaly within a forEach
 
+//ForEach loop
 
 // const number = [2,4,67,78,4];
 // number.forEach(function(num){

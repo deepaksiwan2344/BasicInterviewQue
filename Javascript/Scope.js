@@ -8,7 +8,9 @@
 //     console.log(x);
 //   }
 //   myFunction();
-//console.log(x);  x is not defined
+//console.log(x);  x is not defined;
+
+
 
 
 // {

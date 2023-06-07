@@ -20,14 +20,14 @@
 
 
 
-// function sumOfDigits(num) {
-//     let sum = 0;
-//     for (let i = 0; i < num.toString().length; i++) {
-//       sum += parseInt(num.toString().charAt(i));
-//     }
-//     return sum;
-//   }
-// console.log(sumOfDigits(344))
+function sumOfDigits(num) {
+    let sum = 0;
+    for (let i = 0; i < num.toString().length; i++) {
+      sum += parseInt(num.toString().charAt(i));
+    }
+    return sum;
+  }
+console.log(sumOfDigits(344))
 
 
 // let number = 34284384;
@@ -64,16 +64,25 @@
 //   }
 //   console.log(topTwoNumbers([3, 6, 1, 8, 4, 9]));
 
-let number = 12334
-let a = number.toString().split("").map(Number)
-console.log("reverse",a.reverse().join(""))
+// let number = 12334
+// let a = number.toString().split("").map(Number)
+// console.log("a", a)
 
-     
-console.log(a)
+// let sum = a.reduce((acc, cur)=>{
+//     return acc +cur
+// })
+
+// console.log("sum", sum)
 
 
-let sum = a.reduce((acc, cur)=>{
-    return acc +cur
-})
 
-console.log(sum)
+function sumOfDigits(num) {
+    let sum = 0;
+    for(let i = 0; i< num.toString().length; i++){
+        sum += parseInt(num.toString().charAt(i))
+    }
+    return sum
+  }
+console.log("sdfsd",sumOfDigits(1234567))
+
+

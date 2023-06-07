@@ -1,4 +1,8 @@
 //typeError
+// var num = 5;
+// num.toUpperCase(); 
+//syntax error
+//Reference error
 
 //  let func = 12;
 // func()

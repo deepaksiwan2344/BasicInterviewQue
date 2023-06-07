@@ -23,10 +23,10 @@
 //     }
 //  
 //    return dublicate
+
 // }
 // const number = [1,1,23,6,23,7,7,89,90]
 // console.log(findDublicate(number))
-
 
 
 var arr = [1,3,3,4,5,2,34,34]

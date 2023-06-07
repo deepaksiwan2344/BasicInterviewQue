@@ -14,6 +14,7 @@
 //   }
 // }
 
+
 // console.log("Max count:", maxCount); // Output: Max count: 3
 // console.log("Min count:", minCount); // Output: Min count: 1
 
@@ -51,15 +52,15 @@
 
 // Maxcharacter("deepak")
 
-// const maxcharactor =(str)=>{
-//     let obj = {}
-//     for(let i of str){
-//         (!obj[i])?obj[i] = 1:obj[i]++
-//     }
-//     console.log(obj)
-// }
+const maxcharactor =(str)=>{
+    let obj = {}
+    for(let i of str){
+        (!obj[i])?obj[i] = 1:obj[i]++
+    }
+    console.log(obj)
+}
 
-// maxcharactor("mama")
+maxcharactor("deepak")
 
 
 
