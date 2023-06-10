@@ -9,5 +9,10 @@
 //  What is an Event Loop in Node.js?
 // Event loops handle asynchronous callbacks in Node.js
 
+//how handle Blocking and NonBlocking in node js
+//a.Callbacks
+//b.Promises
+//c.Async/Await
+
 
 

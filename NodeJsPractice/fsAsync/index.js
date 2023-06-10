@@ -8,7 +8,9 @@ const fs = require("fs")
 
 // fs.appendFile('read.txt', 'hello good morning')
 
+
+
 fs.readFile('read.txt', 'UTF-8',(err, data)=>{
     console.log("data", data)
-
+  
 })

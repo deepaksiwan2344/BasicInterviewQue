@@ -16,11 +16,11 @@ const server = http.createServer();
 
 server.on("request", (req, res)=>{
     //second method
-    // const rstream = fs.createReadStream ("input.txt");
-    // rstream.on('data', (chunkdata)=>{
-    //    res.write(chunkdata)
+    const rstream = fs.createReadStream ("input.txt");
+    rstream.on('data', (chunkdata)=>{
+       res.write(chunkdata)
   
-    // });
+    });
     // rstream.on("end",()=>{
     //     res.end();
     // })
@@ -31,8 +31,8 @@ server.on("request", (req, res)=>{
     // })
 
     //third method
-    const rstream = fs.createReadStream('input.txt');
-    rstream.pipe(res)
+    // const rstream = fs.createReadStream('input.txt');
+    // rstream.pipe(res)
 
 });
 

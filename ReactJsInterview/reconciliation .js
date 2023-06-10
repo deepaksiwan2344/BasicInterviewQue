@@ -1,8 +1,10 @@
 // what is reconciliation  in Reactjs
 
-// This is a simplified example, but it demonstrates the basic process of reconciliation 
-// in React. By efficiently updating the UI in response to changes in the application state, 
-// React makes it possible to build responsive, dynamic user interfaces that can adapt to the
-//  needs of modern web development.
-// Finally, React will apply the necessary changes to the DOM to reflect the 
-// new state of the application.
+//In React.js, reconciliation is the process by which React compares the current 
+//state of a component's rendered output with its previous state and determines 
+//if any changes need to be made to the actual DOM.
+
+
+//Overall, reconciliation is a core mechanism in React that allows for 
+//efficient rendering and updating of components, enabling fast and responsive 
+//user interfaces.

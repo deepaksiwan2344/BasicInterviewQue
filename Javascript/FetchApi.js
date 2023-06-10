@@ -58,19 +58,40 @@
 
 
 
-const userdata = async()=>{
-    try{
-        let res = await fetch("https://jsonplaceholder.typicode.com/todos/")
-        if(!res){
-            console.log("something went wrong")
-        }
-        const data = await res.json()
-        console.log("data", data)
+// const userdata = async()=>{
+//     try{
+//         let res = await fetch("https://jsonplaceholder.typicode.com/todos/")
+//         if(!res){
+//             console.log("something went wrong")
+//         }
+//         const data = await res.json()
+//         console.log("data", data)
 
-    }catch(error){
-        console.log("error", error)
+//     }catch(error){
+//         console.log("error", error)
 
+//     }
+
+// }
+// userdata();
+
+
+function FetchData() {
+  return new Promise(async (resolve, reject) => {
+    try {
+      let response = await fetch("https://dummy.restapiexample.com/api/v1/employees");
+      const data = await response.json();
+      resolve(data);
+    } catch (error) {
+      reject("Error fetching data");
     }
-
+  });
 }
-userdata();
+
+FetchData()
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
