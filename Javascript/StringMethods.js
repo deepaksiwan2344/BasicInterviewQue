@@ -27,6 +27,7 @@
 //   });
   
 // console.log(capitalizedArray)
+
 let str = ["mukesh", "dewansh", "suresh"]
 
 function capital (str){

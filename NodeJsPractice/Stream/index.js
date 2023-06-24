@@ -5,6 +5,9 @@ const http = require("http");
 
 const server = http.createServer();
 
+
+
+
 // server.on("request", (req, res)=>{
 //     var fs = require("fs");
 //     fs.readFile("input.txt", "utf-8", (err, data)=>{

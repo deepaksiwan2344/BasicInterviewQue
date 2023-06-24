@@ -26,7 +26,9 @@
 //Arrow function in javascript
 // const create = () => {
 
+
 // }
+
 
 //difference between arrow function and normal function
 function result(a, b) {
@@ -53,8 +55,6 @@ console.log(result1(23, 56))
  const car = (name)=>{
     this.brand = name
  }
-
- 
 const carData = new car('maruti')
 console.log(carData) //car is not a constructor
 

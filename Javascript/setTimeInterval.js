@@ -31,6 +31,7 @@ function num (){
 }
 setInterval(num, 3000)
 
+
 setTimeout(()=>{
     console.log("Hello deepak")
 },1000)

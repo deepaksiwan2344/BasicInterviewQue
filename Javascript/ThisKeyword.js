@@ -16,3 +16,4 @@ const myObject1 = {
   },
 };
 myObject1.myMethod1();
+

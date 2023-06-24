@@ -7,6 +7,7 @@ console.log(x); // Output: undefined
 var x = 5;
 
 
+
 console.log("y", y) //Cannot access 'y'before initialization
 let y
 

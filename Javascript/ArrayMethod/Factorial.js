@@ -8,6 +8,7 @@
 //   }
 //   console.log(factorial(5))
 
+
 function factorial(num) {
     let result = 1;
     for (let i = 2; i <= num; i++) {
@@ -15,4 +16,4 @@ function factorial(num) {
     }
     return result;
   }
-console.log(factorial(6))
+console.log(factorial(8))

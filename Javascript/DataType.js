@@ -14,9 +14,8 @@ let Myobj = {
 }
 
 let p = "deepak"
-
-
 console.log (p)
+
 
 // Q: What are the primitive data types in JavaScript?
 // A: The primitive data types in JavaScript are number, string, boolean, undefined, and null.

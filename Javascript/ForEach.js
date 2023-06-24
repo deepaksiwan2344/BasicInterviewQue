@@ -1,5 +1,5 @@
 //In ForEach Loop we can not use break and continue statement directaly within a forEach
-//forEach Loop does not return a vlaue like for loop
+//forEach Loop does not return a value like for loop
 
 //ForEach loop
 

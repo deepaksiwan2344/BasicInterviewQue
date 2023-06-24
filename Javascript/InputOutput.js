@@ -7,8 +7,8 @@
 //     let age = 21;
 //   }
 
-//   sayHi();
 
+//   sayHi();
 // function getAge() {
 //     'use strict';
 //     age = 21;

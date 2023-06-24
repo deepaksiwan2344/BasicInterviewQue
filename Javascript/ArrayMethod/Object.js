@@ -62,6 +62,8 @@ const jsonobj = JSON.stringify(user)
 console.log("jsonobj", jsonobj)
 console.log("user", JSON.parse(jsonobj))
 
+
+
 // console.log([..."deepak"])
 
 // what destructuring in object

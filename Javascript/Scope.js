@@ -25,8 +25,6 @@
 // }
 // Scope()
 
-
-
 // const scope = () => {
 //   let y = 19
 //   if (y % 2 === 0) {

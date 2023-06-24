@@ -4,13 +4,13 @@
 
 
 
-
-
 class Car {
   getModle() {
     return "car Modle is 2023";
   }
 }
+
+
 
 let carObj = new Car();
 console.log("carObj", carObj);

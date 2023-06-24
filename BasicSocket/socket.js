@@ -12,7 +12,6 @@ const { Socket } = require("dgram")
 example
 Socket.on('chat message', function(msg){
     console.log('recieved message:',msg)
-
 })
 
 //socket.emit is used to send a message from the client to the server.
@@ -24,3 +23,5 @@ Socket.emit('chat message',' Hello Server')
 // In summary, socket.on is used to listen for incoming messages on a socket, while socket.emit is used to 
 // send messages from the client to the server. Both methods are essential for bidirectional communication 
 // between the client and server in Socket.io.
+
+

@@ -5,6 +5,8 @@
 //Unmounting This method is called when a component is removed from the DOM.  
 
 
+
+
 //React life cycle in fucntional component
 import React, { useEffect, useState } from 'react';
 const ExampleComponent = () => {
@@ -17,7 +19,6 @@ const ExampleComponent = () => {
       .then(data => setData(data))
       .catch(error => console.error(error));
     // componentWillUnmount
-
     return () => {
       console.log('Component unmounted');
       // Clean up any resources, subscriptions, etc.
@@ -29,11 +30,6 @@ const ExampleComponent = () => {
     // Perform any side effects or updates when component is updated
     updateData();
   }, [data]); // Array with dependencies for componentDidUpdate
-
-  
-  
-  
-
   // Other business logic of the functional component
 //   return (
 //     // JSX to render component

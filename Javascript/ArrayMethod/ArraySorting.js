@@ -8,6 +8,7 @@
 
 // console.log(sort)
 
+
 //Sorting in ascending
 // let sortd = numbers.sort(function(a, b){
 //     return b-a

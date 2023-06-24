@@ -13,12 +13,12 @@
 // console.log(x)
 // var x
 
+
 // let x = 23;
 // x = 4545;
 // x = 87534853930;
 
 // console.log(x) // output 87534853930
-
 // y = 83
 // console.log("y", y)
 // var y;
@@ -41,11 +41,7 @@
 //   console.log("p",p)
 // }
 
+
 // myFunction();
-
-
-
-
-
 
 

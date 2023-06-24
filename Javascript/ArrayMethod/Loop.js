@@ -17,6 +17,8 @@
 //     }
 // }
 
+
+
 //for Loop in javascript
 // for(let i = 1; i<=10; i++){
 //     if(i%2 == 0){
@@ -26,6 +28,8 @@
 //         console.log(i *4)
 //     }
 // }
+
+
 
 //factorial
 //how to write factoerial of 5

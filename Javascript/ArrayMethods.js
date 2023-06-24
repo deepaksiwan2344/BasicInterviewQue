@@ -14,7 +14,6 @@ console.log(arr.slice(1, 3))
 console.log("shift",arr.shift());
 
 
-
 //unshift(element): This method adds a new element to the beginning of an array
 console.log("unshieft",arr.unshift('pradeep'))
 //splice(startIndex, deleteCount, newElements)
@@ -24,6 +23,7 @@ console.log("unshieft",arr.unshift('pradeep'))
 let array = [12,34,56,78,89];
   array.shift()
 console.log(array)
+
 
 
 

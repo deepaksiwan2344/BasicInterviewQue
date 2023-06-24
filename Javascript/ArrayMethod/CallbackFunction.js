@@ -24,8 +24,6 @@
 // greeting(sayGoodbye)
 
 
-
-
 function add(callback){
   console.log("hello deepak");
   callback()

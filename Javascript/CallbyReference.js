@@ -8,10 +8,9 @@
 //   lastname: "kumar",
 // };
 
+
 // console.log(obj == obj1);
 // console.log(typeof obj);
-
-
 
 // let x = [12, 34, 56, 56];
 // let y = [12, 34, 56, 56];

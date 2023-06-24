@@ -3,6 +3,7 @@
 // and setters are used to control access to an object's properties and add extra logic to
 // property access or assignment.
 
+
 let useInfo ={
     firstname: "deepak",
     lastname: "kumar",

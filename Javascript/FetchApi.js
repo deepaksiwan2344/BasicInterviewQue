@@ -28,20 +28,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const DataFetch = async () => {
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/todos/')
@@ -60,7 +46,7 @@
 
 // const userdata = async()=>{
 //     try{
-//         let res = await fetch("https://jsonplaceholder.typicode.com/todos/")
+//         let res = await fetch("  ")
 //         if(!res){
 //             console.log("something went wrong")
 //         }
@@ -76,22 +62,44 @@
 // userdata();
 
 
-function FetchData() {
-  return new Promise(async (resolve, reject) => {
-    try {
-      let response = await fetch("https://dummy.restapiexample.com/api/v1/employees");
-      const data = await response.json();
-      resolve(data);
-    } catch (error) {
-      reject("Error fetching data");
-    }
-  });
-}
+// function FetchData() {
+//   return new Promise(async (resolve, reject) => {
+//     try {
+//       let response = await fetch("https://dummy.restapiexample.com/api/v1/employees");
+//       const data = await response.json();
+//       resolve(data);
+//     } catch (error) {
+//       reject("Error fetching data");
+//     }
+//   });
+// }
 
-FetchData()
-  .then((data) => {
-    console.log(data);
+// FetchData()
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+
+const fetchData = async () => {
+  try {
+    let res = await fetch("https://dummy.restapiexample.com/api/v1/employees");
+    let response =await res.json();
+    console.log(response)
+    return response;
+  } catch (error) {
+    console.log("error", error);
+    throw error;
+    
+  }
+};
+
+fetchData()
+  .then((result) => {
+    console.log(result);
   })
-  .catch((err) => {
-    console.log(err);
+  .catch((error) => {
+    console.log(error);
   });

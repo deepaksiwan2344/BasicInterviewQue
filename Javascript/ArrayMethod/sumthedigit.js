@@ -55,7 +55,6 @@ console.log(sumOfDigits(344))
 //   console.log(capitalizeFirstLetter("Hello deepak kumar how are you"));
 
 
-
 // function topTwoNumbers(arr) {
 //     arr.sort(function(a, b) {
 //       return b - a;

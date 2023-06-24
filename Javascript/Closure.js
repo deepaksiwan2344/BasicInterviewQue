@@ -6,7 +6,6 @@
 // Here's an example of a closure in action:
 
 
-
 // function outer() {
 //     var x = 10;
 //     function inner() {
@@ -18,7 +17,6 @@
 
 // var innerFn = outer();
 // innerFn(); // Output: 10
-
 
 // function outerfunction (){
 //     var string = "deepak kumar"

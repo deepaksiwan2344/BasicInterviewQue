@@ -10,7 +10,6 @@ const person = {
     }
   };
   
-  
   const anotherPerson = {
     name: "Jane",
     age: 25
