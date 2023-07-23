@@ -5,8 +5,6 @@
 //Unmounting This method is called when a component is removed from the DOM.  
 
 
-
-
 //React life cycle in fucntional component
 import React, { useEffect, useState } from 'react';
 const ExampleComponent = () => {

@@ -12,7 +12,6 @@ import { useCallback, useMemo } from "react"
 // useRef - it is use for DOM Manipulate
 
 
-
 // Using hooks, functional components can now have state, side-effects, and other advanced features previously only 
 // available in class components. This has simplified React code and made it 
 // easier to write and maintain.

@@ -2,8 +2,8 @@
 //generator function provide better control over iteration and can save memory.
 
 
-// function* eventNames(){
 
+// function* eventNames(){
 //     let num = 0;
 //     while(true){
 //         num += 2;
@@ -39,7 +39,7 @@
 //     return numbers;
 //   }
 
-//   console.log(getEvenNumbers(10)); // [2, 4, 6, 8, 10]
+//   console.log(getEvenNumbers(10)); // [2, 4, 6, 8, 10] 
 
 // Generator function that returns a sequence of values
 //   function* getEvenNumbersGenerator(limit) {
@@ -85,6 +85,7 @@ function* countUpTo(max) {
     count++;
   }
 }
+
 const iterator = countUpTo(5);
 for (const num of iterator) {
   console.log(num);
@@ -93,6 +94,7 @@ for (const num of iterator) {
 function* addition(){
   console.log("hello generator function")
 }
+
 
 
 console.log(addition().next().value)

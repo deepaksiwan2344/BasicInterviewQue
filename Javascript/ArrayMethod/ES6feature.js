@@ -13,10 +13,10 @@
 //Promises
 //for in, for of Loop is also es6 features
 //In array(find,filter, includes, findIndex,every,some)
+
 // note some and every return boliean
 
 //example of every array Method
-
 let array = [2,4,6,8,10,12,27];
 // let evenNumber = array.every((number)=>{
 //     if(number % 2 == 0){
@@ -24,13 +24,16 @@ let array = [2,4,6,8,10,12,27];
 //     }
 // })
 // console.log(evenNumber)
+
+
 let somenumber = array.some((number)=>{
     if(number % 2 == 0){
         return number
     }
-
 })
 console.log(somenumber)
+
+
 // let FindIndex = array.findIndex((element, index)=>{
 //      return element > 8
 // })
@@ -52,6 +55,7 @@ console.log(somenumber)
 // for(let index in arr){
 //     console.log(index)
 // }
+
 
 // for(let value of arr){
 //     console.log(value)

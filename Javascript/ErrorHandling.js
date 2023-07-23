@@ -30,6 +30,7 @@
   
 // }
 
+
 // console.log(divide1(23, 7));
 // console.log(divide1(23, 0));
 

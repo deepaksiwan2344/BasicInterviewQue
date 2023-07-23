@@ -2,6 +2,39 @@ const express = require("express");
 const app = express();
 const Student = require("./student");
 const mongoose = require("mongoose");
+const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+
+ 
+
+//  async function createPaymentMethod() {
+//   try {
+//     const cashBalance = await stripe.customer.retrieveCashBalance(
+//       'cus_MDb7rpMbXAW8n4'
+//     );
+
+//     console.log("casebalance", cashBalance)
+//   } catch (error) {
+//     console.error("Error:", error);
+//   }
+// }
+
+//createPaymentMethod();
+
+const Invoice = async()=>{
+  try{
+    const  invoice = await stripe.invoices.create({
+      customer: 'cus_MDb7rpMbXAW8n4',
+    })
+    console.log("Invoice", invoice)
+  }catch(err){
+    console.log("err", err)
+  }
+  
+}
+Invoice()
+
+
+
 
 mongoose
   .connect("mongodb://127.0.0.1:27017", {
@@ -13,6 +46,9 @@ mongoose
   })
   .catch((err) => console.log(err));
 app.use(express.json());
+
+
+
 
 app.post("/", async (req, res) => {
   try {

@@ -11,6 +11,9 @@
 
 // )
 //console.log(dublicate)
+
+
+
 //find a dublicate element in a given array with loop
 // function findDublicate(arr){
 //     const dublicate = [];

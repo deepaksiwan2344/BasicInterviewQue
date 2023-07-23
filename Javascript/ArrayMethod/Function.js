@@ -58,6 +58,10 @@ console.log(result1(23, 56))
 const carData = new car('maruti')
 console.log(carData) //car is not a constructor
 
+//Arrow function 
+// It provides a more compact and expressive way to create functions compared to
+//  traditional function expressions.
+
 
 
 

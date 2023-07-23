@@ -5,4 +5,4 @@ let MapMethod =  new Set(array)
  //MapMethod.add(23)
  //MapMethod.delete(12)
  MapMethod.add({name: "deepak"})
- console.log(MapMethod)
+ console.log(MapMethod);

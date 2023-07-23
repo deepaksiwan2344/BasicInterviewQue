@@ -9,9 +9,11 @@
   //let
 //   It is block scope variable
 
+
 // x = 30
 // console.log(x)
 // var x
+
 
 
 // let x = 23;
@@ -35,6 +37,7 @@
 //     console.log(x, y, z); // logs 10, 20, 30
 //   }
 
+
 //   console.log(x); // logs 10;
 //   // console.log(y); // ReferenceError: y is not defined
 //   // console.log(z); // ReferenceError: z is not defined
@@ -43,5 +46,11 @@
 
 
 // myFunction();
+
+var x = 10;
+{
+  var x = 30;
+}
+console.log(x)//output 30;
 
 

@@ -92,8 +92,8 @@ const fetchData = async () => {
   } catch (error) {
     console.log("error", error);
     throw error;
-    
   }
+  
 };
 
 fetchData()

@@ -15,7 +15,6 @@
 // sum(5)(6)(8);
 //In Other View
 // const totalsum = (num1)=> (num2)=> (num3)=>console.log(num1 + num2+ num3)
-
 // totalsum(12)(34)(45)
 
 
@@ -26,6 +25,7 @@ function multiply(a){
         }
     }
 }
+
 
 const multipleby3 =  multiply(4)
 const multipleby7 = multipleby3(7)
@@ -39,10 +39,10 @@ function addition (a){
     }
 }
 
-
 const addition1 = addition(3);
 const addition2 = addition1(9);
 console.log("addition", addition2(4))
+
 
 function multiple(p){
    return  function multiple1(q){
@@ -55,6 +55,8 @@ function multiple(p){
 const resultMultiple = multiple(7);
 const resultMultiple2 = resultMultiple(2);
 console.log(resultMultiple2(5))
+
+
 
 function add1(a){
     return function add2(b){

@@ -17,8 +17,6 @@
 //     }
 // }
 
-
-
 //for Loop in javascript
 // for(let i = 1; i<=10; i++){
 //     if(i%2 == 0){
@@ -111,6 +109,7 @@ function Largest(arr) {
       largest = arr[i];
     } else if (arr[i] > thirdlargest && arr[i] !== largest && arr[i] !==secondLargest ) {
         thirdlargest = arr[i];
+
     }
   }
   return thirdlargest;

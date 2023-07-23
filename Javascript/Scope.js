@@ -37,6 +37,7 @@
 // scope()
 
 
+
 // var string = "deepak";
 // function myFunction(){
 //   console.log(this.string);

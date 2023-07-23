@@ -12,7 +12,6 @@ console.log(squres)
 
 
 
-
 const number = [2,4,5,6,9]
 let squire = number.map((num1)=>{
        return num1 * num1   

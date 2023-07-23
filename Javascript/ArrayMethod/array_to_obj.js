@@ -11,7 +11,6 @@
 // }
 // console.log(changeobj(array ))
 
-
 function changeobj1(){
     let obj = {}
     for(let value of array){

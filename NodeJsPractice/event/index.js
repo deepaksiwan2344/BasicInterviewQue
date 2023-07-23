@@ -3,7 +3,6 @@
 // It allows developers to create and listen to custom events in their applications.
 
 
-
 const EventEmitter = require("events");
 const event = new EventEmitter();
 

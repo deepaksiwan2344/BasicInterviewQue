@@ -9,12 +9,14 @@
 //1. Pipeline
 //2. stage
 
+
 // $match: Filters the documents based on specified criteria.
 // $group: Groups documents by a specified key and performs aggregate calculations on 
 // the grouped data.
 // $sort: Sorts the documents based on specified fields.
 // $project: Reshapes the documents by including or excluding specific fields.
 // $limit: Limits the number of documents in the output.
+
 
 //Agregation function like
 //$sum, $avg, $min, $max, and $count

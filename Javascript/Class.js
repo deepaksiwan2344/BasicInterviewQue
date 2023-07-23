@@ -4,13 +4,12 @@
 
 
 
+
 class Car {
   getModle() {
     return "car Modle is 2023";
   }
 }
-
-
 
 let carObj = new Car();
 console.log("carObj", carObj);
@@ -25,6 +24,7 @@ class Scoter {
     return "old modle";
   }
 }
+
 
 let ScoterObj = new Scoter("new", 20000);
 console.log(ScoterObj.getModle());

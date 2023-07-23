@@ -2,6 +2,7 @@
 //Syntax: array.slice(start, end)
 
 
+
 const fruits = ['apple', 'banana', 'orange', 'mango', 'grapes'];
 let fruitss = fruits;
 console.log("fruitss", fruitss)

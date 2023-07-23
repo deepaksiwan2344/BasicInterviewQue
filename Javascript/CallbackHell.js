@@ -29,6 +29,8 @@ setTimeout(function () {
 // async/await, and libraries. Here is an example of how to use Promises to remove callback
 // hell in JavaScript:
 
+
+
 function getDataFromServer() {
   return new Promise(function (resolve, reject) {
     ajaxRequest(url1)
@@ -46,3 +48,4 @@ function getDataFromServer() {
       });
   });
 }
+

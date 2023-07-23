@@ -1,10 +1,12 @@
 //how to find max and min value in given array
 
+
+
+
 // const arrNumber = [1,3,5,6,7,8,90]
-
-
 //console.log(Math.max(...arrNumber))
 //console.log(Math.min(...arrNumber))
+
 
 //how to find second largest value in given array
 const secondlargestNum = [1, 3, 5, 6, 7, 8, 90, 100]
@@ -16,7 +18,7 @@ const sort = secondlargestNum.sort(function (a, b) {
 //console.log(sort.length)
 
 
-//how to find second smallest values in a given array
+//how to find second smallest values in a given array;
 const arr1 = [12, 34, 56, 78, 92, 23];
 function findsecondsmallest(arr1) {
     let smallest = Infinity
@@ -33,9 +35,7 @@ function findsecondsmallest(arr1) {
         }
     }
     return secondSmallest
-
 }
-
 const secondSmallest1 = findsecondsmallest(arr1)
 // console.log(secondSmallest1)
 
@@ -151,7 +151,6 @@ const totalvalue = sum(arr2)
 
 
 //wrire a fibonanci serires using swape 
-
 // let a = 0;
 // let b = 1;
 

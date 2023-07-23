@@ -6,7 +6,8 @@
 //     return a-b
 // })
 
-// console.log(sort)
+// console.log(sort);
+
 
 
 //Sorting in ascending
@@ -49,6 +50,8 @@
 // const average = totalsum / arr8.length;
 // console.log("average", average);
 
+
+
 // let array = [12, 34, 4, 40, 50, 2];
 // console.log("min", Math.min(...array));
 
@@ -64,24 +67,28 @@
 
 // console.log(min);
 
-let array = [12, 56, 45, 78, 89, 90,34];
-function MinValue(array) {
-  let firstValue = array[0];
-  let secondvalue = array[1];
+// let array = [12, 56, 45, 78, 89, 90,34];
+// function findSecondSmallest(arr) {
+//   let smallest = Infinity;
+//   let secondSmallest = Infinity;
+  
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < smallest) {
+//       secondSmallest = smallest;
+//       smallest = arr[i];
+//     } else if (arr[i] < secondSmallest && arr[i] !== smallest) {
+//       secondSmallest = arr[i];
+//     }
+//   }
+  
+//   // If no second smallest number is found, return null
+//   if (secondSmallest === Infinity) {
+//     return null;
+//   }
+//   return secondSmallest;
+// }
 
-  for (let i = 0; i < array.length; i++) {
-    if (firstValue > array[i]) {
-      secondvalue = firstValue;
-      firstValue  = array[i]
-    }else if (array[1] > secondvalue && array[i]  !== firstValue){
-        secondvalue = array[i];
-    }
-  }
-  return [firstValue, secondvalue];
-}
-
-console.log("minvalue",MinValue(array));
-
+// console.log(findSecondSmallest(arr))
 // let number = 232434;
 // let a = number.toString().split("").map(Number);
 // let sum = a.reduce((acc, cur) => {
@@ -158,10 +165,31 @@ console.log("minvalue",MinValue(array));
 
 // })
 
-let find = array.find(item=> item>60
+// let find = array.find(item=> item>60
  
-)
+// )
 
-let filter = array.filter((item)=> item >10)
-console.log("find", find) //find does not return an array
-console.log("filter", filter)//filter return an array
+// let filter = array.filter((item)=> item >10)
+// console.log("find", find) //find does not return an array
+// console.log("filter", filter)//filter return an array
+
+
+let arr = [12,4,5,56,7]
+
+function sort(arr){
+    for(let i = 0; i<arr.length; i++){
+        for(let j = 0; j < arr.length; j++){
+            if(arr[j]> arr[j + 1]){
+                let temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+    console.log(arr)
+    
+}
+sort(arr)
+
+
+

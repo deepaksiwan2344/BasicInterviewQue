@@ -5,7 +5,12 @@
 //if any changes need to be made to the actual DOM.
 
 
-
 //Overall, reconciliation is a core mechanism in React that allows for 
 //efficient rendering and updating of components, enabling fast and responsive 
 //user interfaces.
+
+
+
+
+
+

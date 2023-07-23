@@ -1,6 +1,7 @@
 // The "this" keyword in JavaScript refers to the object that is currently executing the code.
 //The this keyword in JavaScript refers to the current execution context or scope.
 
+
 const myObject = {
   myProperty: 42,
   myMethod() {

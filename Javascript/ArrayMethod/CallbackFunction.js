@@ -2,18 +2,22 @@
 // another function and is intended to be called or executed later, usually after some 
 // asynchronous operation or event has completed.
 
+
+
+
 // function greeting(name, callback) {
 //   console.log("Hello, " + name + "!");
 //   callback();
 // }
 
 
+
 // function sayGoodbye() {
 //   console.log("Goodbye!");
 // }
 
-// greeting("John", sayGoodbye);
 
+// greeting("John", sayGoodbye);
 // function greeting(callback){
 //   console.log("hello")
 //   callback()
@@ -28,6 +32,7 @@ function add(callback){
   console.log("hello deepak");
   callback()
 }
+
 function add1(){
   console.log("hi")
 }

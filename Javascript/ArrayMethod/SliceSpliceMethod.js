@@ -12,9 +12,7 @@
 //  const number = [2,4,7,9,12]
  
 //  let silce = number.slice(1,4) //Otput [4,7]
- 
 //   console.log(silce)
-
 
 //Splice Method
 const numbers = [1, 2, 3, 4, 5];

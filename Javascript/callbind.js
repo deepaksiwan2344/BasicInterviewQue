@@ -27,10 +27,12 @@ const person = {
     }
   };
   
+  
   const anotherPersonbind = {
     name: "Jane",
     age: 25
   };
   
+
   const bindGreet = personbind.greet.bind(anotherPersonbind);
   bindGreet();

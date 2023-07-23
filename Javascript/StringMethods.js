@@ -29,7 +29,6 @@
 // console.log(capitalizedArray)
 
 let str = ["mukesh", "dewansh", "suresh"]
-
 function capital (str){
     let capitalString = []
     for(let i =0; i < str.length; i++){

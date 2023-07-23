@@ -1,4 +1,4 @@
-//Without name a functoin is call anonymous function
+//Without name a function is call anonymous function
 
 
 //Example 
@@ -10,6 +10,8 @@
   (function(){
     console.log("hello deepak")
   })()
+
+  
   
   (function(){
     console.log("hi deepak")

@@ -17,7 +17,8 @@ Socket.on('chat message', function(msg){
 //socket.emit is used to send a message from the client to the server.
 //For example, the following code sends a chat message event to the server with a message payload:
 
-Socket.emit('chat message',' Hello Server')
+Socket.emit('chat message',' Hello Server');
+
 
 
 // In summary, socket.on is used to listen for incoming messages on a socket, while socket.emit is used to 
