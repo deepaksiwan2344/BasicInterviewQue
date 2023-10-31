@@ -3,7 +3,9 @@
 //  for “flat” objects and deep copies are used for “nested” objects. By “flat” objects we mean objects that 
 //  contain only primitive values. Nested objects mean objects that contain non-primitive values.
 
+
 //shallowCopy
+
 //In JavaScript, "shallow" typically refers to the copying of objects or arrays.
 // const originalObject = {a: 1, b: 2};
 // const shallowCopy = {...originalObject};

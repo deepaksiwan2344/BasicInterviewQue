@@ -4,6 +4,8 @@
 
 
 //React js is a library of javascript
+
+ 
 let a = window;
 console.log(a)
 console.log("javascript")

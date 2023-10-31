@@ -14,6 +14,7 @@ mongoose
   .catch((err) => console.log(err));
 app.use(express.json());
 
+
 app.post("/", async (req, res) => {
   try {
     const { name, age, fees, address } = req.body;
@@ -28,6 +29,7 @@ app.post("/", async (req, res) => {
         fees: fees,
         address: address,
       });
+      
       const savedata = await aadstudent.save();
       if (savedata) {
         return res.status(201).json({

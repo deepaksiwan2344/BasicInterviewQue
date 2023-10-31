@@ -13,7 +13,6 @@
 //console.log(dublicate)
 
 
-
 //find a dublicate element in a given array with loop
 // function findDublicate(arr){
 //     const dublicate = [];
@@ -33,18 +32,21 @@
 
 
 var arr = [1,3,3,4,5,2,34,34]
+
 function findDublicate(arr){
     let Dublicate = []
     for(let i = 0; i < arr.length; i++){
-        for (let j = i + 1; j < arr.length; i++){
-            if (arr[i] = arr[j] && !Dublicate.includes(arr[i])){
+        for (let j = i + 1; j < arr.length; j++){
+            if (arr[i] == arr[j] && !Dublicate.includes(arr[i])){
                 Dublicate.push(arr[i]);
             }
         }
     }
+
     return Dublicate
 }
 console.log(findDublicate(arr))
+
 
 
 

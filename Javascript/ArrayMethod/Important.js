@@ -14,6 +14,8 @@ const sort = secondlargestNum.sort(function (a, b) {
     return b - a
 
 })
+
+
 //console.log(sort[1]) //second largest values in a given array
 //console.log(sort.length)
 
@@ -40,6 +42,7 @@ const secondSmallest1 = findsecondsmallest(arr1)
 // console.log(secondSmallest1)
 
 //find sum of given array
+
 
 const arr2 = [2, 34, 56, 48]
 function findArraysum(arr2) {
@@ -101,6 +104,8 @@ const totalvalue = sum(arr2)
 //     }
 //     return true
 // }
+
+
 
 // const number = [1, 34, 2, 3, 7, 8, 11]
 // for (let i = 0; i < number?.length; i++) {

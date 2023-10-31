@@ -14,7 +14,7 @@ function HOC ()  {
   );
 };
 function HOCred  (props){
-  //console.log("props")
+  console.log("props", props)
   return (
     <h2 style={{ background: "red", width: "100%" }}>
       <props.cmp />
@@ -22,14 +22,15 @@ function HOCred  (props){
   );
 };
 
+
 function HOCgreen  (props) {
-  //console.log("props")
   return (
     <h2 style={{ background: "green", width: "100%" }}>
       <props.cmp />
     </h2>
   );
 };
+
 
 function Counter() {
   const [count, setCount] = useState(0);

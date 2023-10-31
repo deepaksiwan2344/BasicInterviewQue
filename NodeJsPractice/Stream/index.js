@@ -7,7 +7,6 @@ const server = http.createServer();
 
 
 
-
 // server.on("request", (req, res)=>{
 //     var fs = require("fs");
 //     fs.readFile("input.txt", "utf-8", (err, data)=>{
@@ -38,7 +37,6 @@ server.on("request", (req, res)=>{
     // rstream.pipe(res)
 
 });
-
 
 server.listen(5000, "127.0.0.1", ()=>{
    console.log("server is runnig on port 5000")

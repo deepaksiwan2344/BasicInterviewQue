@@ -5,11 +5,13 @@ const Todo = () => {
   const [listData, setListData] = useState([]);
 
   function AddList() {
-    setListData((listData) => {
-      const UpdataList = [...listData, activity];
-      console.log(UpdataList);
-      return UpdataList;
-    });
+    if (activity.trim() !== "") {
+      setListData((listData) => {
+        const updatedList = [...listData, activity];
+        return updatedList;
+      });
+      setactivity("")
+    }
   }
   function updatedListData(i) {
     const updateddata = listData.filter((elem, id) => {
@@ -19,9 +21,11 @@ const Todo = () => {
     setListData(updateddata);
   }
 
+  
   function Remove(){
     setListData([])
   }
+  
 
   return (
     <>
@@ -37,7 +41,7 @@ const Todo = () => {
           ></input>
           <button onClick={AddList}>Add</button>
         </div>
-        {listData !== [] &&
+        {listData?.length  > 0 &&
           listData.map((data, i) => {
             return (
               <div key={i}>

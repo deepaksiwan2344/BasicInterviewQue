@@ -1,10 +1,11 @@
-//While Loop
+//While Loop **************************************************
 
 // let count = 1;
 // while (count <= 10) {
 //     console.log(count * 17)
 //     count++
 // }
+
 
 // let i = 2;
 // while (i <= 10) {
@@ -16,6 +17,18 @@
 //         i++
 //     }
 // }
+
+//do while loop **************************************************
+
+// let i =0;
+// do{
+//   console.log(i);
+//   i++
+// }while(i < 20);
+
+
+
+//For Loop **********************************************************
 
 //for Loop in javascript
 // for(let i = 1; i<=10; i++){
@@ -29,7 +42,7 @@
 
 
 
-//factorial
+//factorial *******************************************************
 //how to write factoerial of 5
 
 // function factorialize(num) {
@@ -41,6 +54,7 @@
 //         return (num * factorialize(num - 1));
 //     }
 //   }
+
 
 //  console.log(factorialize(5))
 // const factorial = (num)=>{
@@ -55,6 +69,7 @@
 // }
 
 //console.log(factorial(6))
+
 
 // let n = 20
 // let factorial = 1;
@@ -97,21 +112,54 @@
 // }
 
 // console.log("text", text)
+
+// Find ThirdLargest Number ***************************************************
 let arr = [12, 4, 56,67];
-function Largest(arr) {
+function findThirdLargest(arr) {
   let largest = arr[0];
-  let secondLargest = Infinity;
-  let thirdlargest = Infinity;
+  let secondLargest = -Infinity;
+  let thirdLargest = -Infinity;
+  
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] > largest) {
-      thirdlargest = secondLargest
+      thirdLargest = secondLargest;
       secondLargest = largest;
       largest = arr[i];
-    } else if (arr[i] > thirdlargest && arr[i] !== largest && arr[i] !==secondLargest ) {
-        thirdlargest = arr[i];
-
+    } else if (arr[i] > secondLargest && arr[i] !== largest) {
+      thirdLargest = secondLargest;
+      secondLargest = arr[i];
+    } else if (arr[i] > thirdLargest && arr[i] !== largest && arr[i] !== secondLargest) {
+      thirdLargest = arr[i];
     }
   }
-  return thirdlargest;
+  
+  return thirdLargest;
 }
-console.log(Largest(arr));
+
+console.log(findThirdLargest(arr));
+
+
+//for of Loop with index and value **************************************************
+let arr3 = [12,34,5,6,7];
+function result(arr3){
+    for([index,value] of arr3.entries())
+    console.log("arrresult", index,value)
+    
+}
+result(arr3)
+
+//For Of Loop ************************************************************************
+
+let array = [23,5,6,78,8];
+for(value of array){
+  console.log(value) //output 23,5,6,78,8
+}
+
+//for in loop ************************************************************************
+
+let arr4 = [34,6,78,90];
+for(index in arr4){
+  console.log(index)
+}
+
+

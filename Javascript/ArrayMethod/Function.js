@@ -14,8 +14,9 @@
 // }
 
 // console.log(Hello())
+//After Arrow function;
 
-//After Arrow function
+
 
 // Hello1 = () => {
 //     return "Hello Deepak Kumar"
@@ -31,6 +32,7 @@
 
 
 //difference between arrow function and normal function
+
 function result(a, b) {
     console.log(arguments)
     return a + b
@@ -52,11 +54,13 @@ console.log(result1(23, 56))
 //     this.brand = name
 // }
 
+
  const car = (name)=>{
     this.brand = name
  }
 const carData = new car('maruti')
 console.log(carData) //car is not a constructor
+
 
 //Arrow function 
 // It provides a more compact and expressive way to create functions compared to

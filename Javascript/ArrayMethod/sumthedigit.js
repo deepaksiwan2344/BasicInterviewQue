@@ -30,6 +30,8 @@ function sumOfDigits(num) {
 console.log(sumOfDigits(344))
 
 
+
+
 // let number = 34284384;
 // const sumdigit = (number)=>{
 //     console.log("number",number.toString())

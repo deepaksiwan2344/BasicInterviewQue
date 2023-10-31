@@ -4,13 +4,16 @@
 //way to share data 
 // between components without passing props explicitly through the component tree. 
 
-
 //Context API consists of two main parts:
 //1.Context Provider
 //2.Context Consumer
 
+
+  //Context Provider: The Provider is used to wrap the parent componet that will provide the context data 
+  // and consumer is used in child components that need access to the context data. 
 // The Consumer component is typically used when a component needs to access data from 
 // a context
+
 
 // Provider component is used to pass data down the component tree to child components 
 // that need access to it. The Provider component is created using the createContext 

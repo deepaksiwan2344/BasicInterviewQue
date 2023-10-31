@@ -16,6 +16,8 @@ let useInfo ={
 
     // }
 }
+
+
 // useInfo.lang = 'eng';
 // console.log(useInfo)
 console.log(useInfo.fullname)

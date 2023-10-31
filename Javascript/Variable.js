@@ -25,8 +25,11 @@
 // console.log("y", y)
 // var y;
 
+
 //var is a functional scope where as let and const is block scope these are the three keyword to define 
 //variable in javascript
+
+
 
 // function myFunction() {
 //   var x = 10; // function-scoped variable;
@@ -46,6 +49,7 @@
 
 
 // myFunction();
+
 
 var x = 10;
 {

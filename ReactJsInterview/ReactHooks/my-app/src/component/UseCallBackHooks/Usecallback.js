@@ -15,7 +15,6 @@ const Usecallback = () => {
       <h3> {Add}</h3>
       <button onClick={()=>setAdd(Add + 1)}>Addition</button>
       <h3>{count}</h3>
-
       <button onClick={()=>setcount(count + 2)}>count</button>
       
       </div>

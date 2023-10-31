@@ -4,17 +4,19 @@
 
 
 
-
 class Car {
   getModle() {
     return "car Modle is 2023";
   }
 }
 
+
 let carObj = new Car();
 console.log("carObj", carObj);
 let modle = carObj.getModle();
 console.log(modle);
+
+
 
 class Scoter {
   constructor(brand, price) {
@@ -25,9 +27,9 @@ class Scoter {
   }
 }
 
-
 let ScoterObj = new Scoter("new", 20000);
 console.log(ScoterObj.getModle());
+
 
 class product {
   constructor(rice, price) {

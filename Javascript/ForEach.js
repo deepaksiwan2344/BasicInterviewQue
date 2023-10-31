@@ -14,7 +14,6 @@
 //}
 
 
-
 // for(let i = 0; i< number?.length;i++){
 //     console.log("[i]",number[i])
 // }
@@ -27,8 +26,8 @@
 // array3.forEach((num)=>{
 //      console.log(num)
 
-
 // })
+
 
 
 // function findSmallestNumber(arr) {
@@ -55,6 +54,8 @@
 // for (let value of arr) {
 //   console.log(value); // Output: 1, 2, 3
 // }
+
+
 
 
 // const arr = [1, 2, 3];

@@ -6,6 +6,7 @@
 // Here's an example of a closure in action:
 
 
+
 // function outer() {
 //     var x = 10;
 //     function inner() {
@@ -13,6 +14,9 @@
 //     }
 //     return inner;
 // }
+
+
+
 
 
 // var innerFn = outer();
@@ -39,6 +43,7 @@
 
 // const result2 = outer1();
 //  console.log(result2())
+
 
 
 function outerfunctoin (){

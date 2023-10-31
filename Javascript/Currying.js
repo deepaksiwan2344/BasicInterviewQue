@@ -12,10 +12,14 @@
 //        }
 //     }
 // }
+
 // sum(5)(6)(8);
 //In Other View
 // const totalsum = (num1)=> (num2)=> (num3)=>console.log(num1 + num2+ num3)
 // totalsum(12)(34)(45)
+
+
+  
 
 
 function multiply(a){
@@ -25,7 +29,6 @@ function multiply(a){
         }
     }
 }
-
 
 const multipleby3 =  multiply(4)
 const multipleby7 = multipleby3(7)

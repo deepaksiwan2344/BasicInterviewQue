@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-import {useState, useEffect} from 'react'
-
- 
-
-
+import "./App.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function App() {
   const [data, setData] = useState([]);
   const [capital, setCapital] = useState("");
 
+
+  const fetchData = async () => {
+    try {
+      let apiendpoint = "https://restcountries.com/v3.1/all";
+      const response = await axios(apiendpoint);
+      let Data = response?.data;
+      if (Data) {
+        setData(Data);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all')
-      .then(response => response.json())
-      .then((data) => {
-        setData(data);
-      })
-      .catch(error => {
-        console.log('Error:', error);
-      });
-  }, []);
+    fetchData();
+  }, [data]);
 
   const handleChange = (event) => {
     setCapital(event.target.value);
@@ -27,30 +31,25 @@ function App() {
 
   const filterData = () => {
     return data.filter((country) => {
-      return country.capital && country.capital.toString().toLowerCase().includes(capital.toLowerCase());
+      return (
+        country.capital &&
+        country.capital.toString().toLowerCase().includes(capital.toLowerCase())
+      );
     });
   };
-
+  
+  
   const filteredCountries = filterData();
-
-
   return (
     <div className="App">
       <header className="App-header">
-      <input
-        type="text"
-        placeholder="search..."
-        onChange={handleChange}
-      />
-      {filteredCountries.map((item, index) => {
-        return (
-          <ul key={index}>
-            {item.capital}
-          </ul>
-        );
-      })}
+        <input type="text" placeholder="search..." onChange={handleChange} />
+        {filteredCountries.map((item, index) => {
+          return <ul style={{fontSize:"9px"}} key={index}>{item.capital}</ul>;
+        })}
       </header>
     </div>
+
   );
 }
 

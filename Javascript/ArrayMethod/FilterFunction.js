@@ -17,6 +17,7 @@
 // console.log(Filter)
 //Filter Using Loop
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18];
+
 // const evenNumbers = [];
 
 // for(let i = 0; i<numbers.length; i++){
@@ -30,8 +31,9 @@
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15,16,17,18];
 // const evenNumbers = [];
 
+
 // let i = 0
-// while(i <numbers.length){
+// while(i < numbers.length){
 //     console.log(numbers[i])
 //     if(numbers[i] % 2 === 0){
 //         evenNumbers.push(numbers[i])
@@ -40,9 +42,14 @@
 //     i++
 // }
 
+
+
+
 // console.log(evenNumbers)
 //Syntax
-//if number is an array then number.filter(argument).map()
+//if number is an array then number.filter(argument).map();
+
+
 const numbers = [1, 2, 3, 4, 5, 6];
 const filteredAndMappedNumbers = numbers
   .filter(num => num % 2 === 0)

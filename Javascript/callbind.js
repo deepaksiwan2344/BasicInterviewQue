@@ -26,13 +26,12 @@ const person = {
       console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
     }
   };
-  
+
   
   const anotherPersonbind = {
     name: "Jane",
     age: 25
   };
   
-
   const bindGreet = personbind.greet.bind(anotherPersonbind);
   bindGreet();

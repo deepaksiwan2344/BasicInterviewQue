@@ -15,6 +15,7 @@
 //   printRightTriangle(10); 
 
 
+
 function printRightTriangle(n) {
   for (let i = 1; i <= n; i++) {
     let row = '';
@@ -27,8 +28,9 @@ function printRightTriangle(n) {
     console.log(row);
   }
 }
-printRightTriangle(10);
 
+
+printRightTriangle(10);
 
 
 //Print squre

@@ -3,6 +3,7 @@
 
 
 
+
 // function* eventNames(){
 //     let num = 0;
 //     while(true){
@@ -14,6 +15,7 @@
 // const iterator = eventNames();
 // console.log('addition', iterator.next().value);
 
+
 // function* fibonacci() {
 //   let a = 0;
 //   let b = 1;
@@ -22,6 +24,7 @@
 //     [a, b] = [b, a + b];
 //   }
 // }
+
 
 // for (let value of fibonacci()) {
 //   if (value > 100) {

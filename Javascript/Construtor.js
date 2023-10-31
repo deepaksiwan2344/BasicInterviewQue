@@ -14,14 +14,16 @@
 
 
 
+
+
 // const deepak = new Person(deepak, 23)
 // deepak.sayHello();
+
 
 function personinfo(name, age, village) {
   this.name = name;
   this.age = age;
   this.vilage = village;
-  
 }
 
 

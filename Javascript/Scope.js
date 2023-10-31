@@ -3,14 +3,13 @@
 //Global scope refers to a functions and variable that are accessible in anyware
 //what is function scope in javascript
 
+
 // function myFunction() {
 //     var x = 10;
 //     console.log(x);
 //   }
 //   myFunction();
 //console.log(x);  x is not defined;
-
-
 
 
 // {
@@ -60,6 +59,8 @@
 //   }
 // }
 // obj.myaname();
+
+
  var a = 10;
 function Scope(){
   if(true){

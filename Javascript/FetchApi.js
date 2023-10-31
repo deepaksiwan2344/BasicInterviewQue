@@ -12,7 +12,7 @@
 
 // Error handling: axios provides more user-friendly error handling as it throws an error 
 // when the request fails or encounters a network error, whereas fetch doesn't always throw
-//  an error on network errors.
+// an error on network errors.
 
 
 // Size: fetch is a built-in browser API, whereas axios is a third-party library that 
@@ -46,7 +46,7 @@
 
 // const userdata = async()=>{
 //     try{
-//         let res = await fetch("  ")
+//         let res = await fetch(" ")
 //         if(!res){
 //             console.log("something went wrong")
 //         }
@@ -73,6 +73,7 @@
 //     }
 //   });
 // }
+
 
 // FetchData()
 //   .then((data) => {

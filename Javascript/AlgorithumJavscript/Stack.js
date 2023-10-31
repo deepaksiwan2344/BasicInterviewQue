@@ -9,6 +9,8 @@
 //push and pop
 //In a given empty array how to element push or pop
 
+
+
 let data = [];
 let currentSize = data.length;
 let max = 5;
@@ -47,3 +49,9 @@ function pop(){
 pop(23);
 pop(23);
 console.log("pop", data)
+
+
+//Application of stack
+// In JavaScript, you can use a stack data structure for various purposes, such as managing 
+// function calls, tracking history, and solving certain algorithmic problems
+

@@ -11,11 +11,8 @@
 
 // console.log(str.replace('d', 'p'))
 
-
 // let string = "deepak";
 // console.log(string.substring(2,5))
-
-
 // let str1 = "siwan"
 // console.log(str1.toUpperCase())
 
@@ -27,6 +24,7 @@
 //   });
   
 // console.log(capitalizedArray)
+
 
 let str = ["mukesh", "dewansh", "suresh"]
 function capital (str){
@@ -40,4 +38,22 @@ function capital (str){
     return capitalString
 }
 console.log(capital(str))
+
+
+// let str = "deepak kumar prajapati";
+//  let n = str.length;
+// function result (str, n){
+//     let strString = ""
+//     for(let i= 0; i < n; i++){
+//         console.log(str[i])
+//         if(str[i] === " "){
+//             strString += "%20"
+//         }else{
+//             strString += str[i]
+//         }
+//     }
+//     return strString
+    
+// }
+// console.log(result(str, 22))
 

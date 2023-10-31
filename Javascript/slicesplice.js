@@ -13,6 +13,7 @@ console.log(selectedFruits)
 
 
 //Splice
+
 //Syntax: array.splice(start, deleteCount, item1, item2, ...)
 
 const numbers = [10, 20, 30, 40, 50];
@@ -21,6 +22,7 @@ const removedNumbers = numbers.splice(2, 2, 60, 70, 38,38,20);
 console.log("numbers", numbers); // output: [10, 20, 60, 70, 50]
 console.log("removedNumbers", removedNumbers); // output: [30, 40]
 
+
 //slice() is used to create a new array with a portion of an existing array,
 //splice() is used to add or remove elements from an array, and modifies the original array.
 
@@ -28,6 +30,7 @@ console.log("removedNumbers", removedNumbers); // output: [30, 40]
 const fruit = ['apple', 'banana', 'mango'];
 let fruit1 = fruit
 console.log("fruit1", fruit1)
+
 
 // insert 'orange' at index 2
 fruit.splice(2, 1, 'orange', 'Mango');

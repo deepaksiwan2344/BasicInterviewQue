@@ -52,6 +52,8 @@
 
 // Maxcharacter("deepak")
 
+
+
 const maxcharactor =(str)=>{
     let obj = {}
     for(let i of str){
@@ -66,6 +68,7 @@ maxcharactor("deepak")
 let string = "abcceddha";
 let ascending = string.split('').sort().join('')
 console.log(ascending)
+
 
 // function find(string){
 //     let obj = {}

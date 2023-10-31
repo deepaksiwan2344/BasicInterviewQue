@@ -11,10 +11,8 @@ function sort(arr){
         obj[num] = 1;
     }
     let zeros = obj['0']
-    console.log("zeros", zeros)
     let ones =  obj['1']
     let two = obj['2']
-    console.log("two", two)
     for(let i=0;i<zeros;i++){
         arr[i] = 0;
     }

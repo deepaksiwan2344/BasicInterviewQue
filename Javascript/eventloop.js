@@ -6,11 +6,14 @@
 // microquea
 
 
-
 //function
 //function is a reusable block of code that performs a specific task 
 //thread
+
+
 //threads are units of execution that allow multiple tasks to run concurrently
+
+
 
 
 

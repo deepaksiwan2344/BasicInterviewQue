@@ -16,9 +16,11 @@
 //                 reject('Error fetching data');
 //             }
 
+
 //         }, 2000);
 //     });
 // }
+
 
 // fetchData()
 //     .then((data) => {
@@ -28,6 +30,7 @@
 //     .catch((error) => {
 //         console.error(error);
 //     });
+
 
 // function getData() {
 //     return new Promise((resolve, reject) => {
@@ -42,6 +45,7 @@
 //     });
 // };
 
+
 const Promises = () => {
   return new Promise((resolve, reject) => {
     let x = "10";
@@ -53,6 +57,9 @@ const Promises = () => {
   });
 };
 console.log(Promises());
+
+
+
 
 // getData()
 //     .then((data1) => {

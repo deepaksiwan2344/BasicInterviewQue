@@ -14,10 +14,11 @@ Socket.on('chat message', function(msg){
     console.log('recieved message:',msg)
 })
 
+
 //socket.emit is used to send a message from the client to the server.
 //For example, the following code sends a chat message event to the server with a message payload:
-
 Socket.emit('chat message',' Hello Server');
+
 
 
 

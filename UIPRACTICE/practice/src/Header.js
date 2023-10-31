@@ -23,6 +23,10 @@ const useStyles = makeStyles({
     },
   },
   Nav___List__Wrap: {},
+  header:{
+  
+
+  },
   Nav___List: {
     margin: "0",
     padding: "0px",
@@ -98,105 +102,37 @@ export const Header = () => {
             <Box className={classes.Nav___List} component={"ul"}>
               <Box component={"li"}>
                 <NavLink to="/" className={classes.NavLink___List2}>
-                  Home
+                  About
+                </NavLink>
+              </Box>
+               
+            </Box>
+          </Box>
+          <Box className={classes.Nav___List__Wrap}>
+            <Box className={classes.Nav___List} component={"ul"}>
+              <Box component={"li"}>
+                <NavLink to="/" className={classes.NavLink___List2}>
+                  Career
                 </NavLink>
               </Box>
                
             
             </Box>
           </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "none",
-            "@media(max-width : 900px)": { display: "block" },
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              padding: "1.5rem 2rem 1rem 2rem",
-              alignItems: "center",
-              "@media(max-width : 600px)": { padding: "1rem 0rem 0rem 0rem" },
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                width: "50%",
-                "@media(max-width : 600px)": {
-                  width: "60%",
-                  flexDirection: "row-reverse",
-                },
-              }}
-            >
-              <Box>
-                <Link to="/">
-                  {" "}
-                  <Typography
-                    component={"img"}
-                    src="https://www.codeaegis.com/public/user/images/logo.png"
-                    width={"100px"}
-                  />
-                </Link>
+          <Box className={classes.Nav___List__Wrap}>
+            <Box className={classes.Nav___List} component={"ul"}>
+              <Box component={"li"}>
+                <NavLink to="/" className={classes.NavLink___List2}>
+                  Home
+                </NavLink>
               </Box>
-              <Box onClick={handleClickOpen}>
-                <MenuIcon
-                  sx={{ color: "#07484A", cursor: "pointer", fontSize: "30px" }}
-                />
-              </Box>
+               
             </Box>
           </Box>
+          
         </Box>
-        <Dialog
-          fullScreen
-          open={open}
-          onClose={handleClose}
-          TransitionComponent={Transition}
-          sx={{
-            backgroundImage:
-              "linear-gradient(45deg, #716449, #ccb483, #716449)",
-            "& .MuiPaper-root": {
-              backgroundColor: "#4285f7",
-            },
-          }}
-        >
-          <AppBar
-            sx={{
-              position: "relative",
-              backgroundColor: "#4285f7",
-              boxShadow: "none",
-            }}
-          >
-            <Toolbar
-              sx={{
-                backgroundColor: "#4285f7",
-                boxShadow: "none",
-                justifyContent: "right",
-              }}
-            >
-              <IconButton
-                edge="start"
-                color="inherit"
-                onClick={handleClose}
-                aria-label="close"
-              >
-                <CloseIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <Box sx={{ textAlign: "center", display: "grid", gap: "20px" }}>
-            <NavLink className={classes.mob__nav} onClick={handleClose} to="/">
-              Home
-            </NavLink>
-           
-           
-           
-              
-          </Box>
-        </Dialog>
+    
+       
       </Container>
     </Box>
   );

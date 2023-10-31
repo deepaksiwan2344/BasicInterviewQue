@@ -19,7 +19,6 @@ const  UseMemo =()=>{
         <button onClick={()=>setCount(count + 1)}>Update count</button>
         <button onClick={()=>setItem(Item *10)}>Update item</button>
         </>
-
     )
 }
 export default UseMemo;

@@ -16,8 +16,11 @@
 
 // note some and every return boliean
 
+
+
 //example of every array Method
 let array = [2,4,6,8,10,12,27];
+
 // let evenNumber = array.every((number)=>{
 //     if(number % 2 == 0){
 //         return number
@@ -34,11 +37,11 @@ let somenumber = array.some((number)=>{
 console.log(somenumber)
 
 
+
 // let FindIndex = array.findIndex((element, index)=>{
 //      return element > 8
 // })
 // console.log(FindIndex)
-
 
 // const obj = {
 //     name: "deepak",
@@ -50,12 +53,10 @@ console.log(somenumber)
 // const {name} = obj
 // console.log("name", name)
 
-
 // let arr = [12,45,667,78,9];
 // for(let index in arr){
 //     console.log(index)
 // }
-
 
 // for(let value of arr){
 //     console.log(value)

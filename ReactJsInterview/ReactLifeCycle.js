@@ -1,11 +1,19 @@
 //ReactLife Cycle
 
+//componentDidMount  *********************************************
 //Mounting:These methods are called when an instance of a component is created and inserted into the DOM.
+
+//componentDidUpdate ***********************************************
 //Updating:  These methods are called when a component is re-rendered due to changes in props or state.
+
+//componentWillUnmount  **********************************************
 //Unmounting This method is called when a component is removed from the DOM.  
 
 
+
 //React life cycle in fucntional component
+
+
 import React, { useEffect, useState } from 'react';
 const ExampleComponent = () => {
   const [data, setData] = useState([]);
@@ -33,6 +41,9 @@ const ExampleComponent = () => {
 //     // JSX to render component
 //   );
 
+
+
 };
+
 
 export default ExampleComponent;

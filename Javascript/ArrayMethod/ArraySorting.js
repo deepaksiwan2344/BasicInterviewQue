@@ -10,6 +10,7 @@
 
 
 
+
 //Sorting in ascending
 // let sortd = numbers.sort(function(a, b){
 //     return b-a
@@ -21,8 +22,10 @@
 // let str = ["deepak, count", "mukesh", "praveen"]
 // console.log(str)
 
+
 // In a javascript for a number sorting sort not work proper for sorting  a number we use compare function like
 // above example
+
 
 
 // let a = [1, 3, 4, 45, 65];
@@ -49,6 +52,7 @@
 // });
 // const average = totalsum / arr8.length;
 // console.log("average", average);
+
 
 
 
@@ -81,6 +85,7 @@
 //     }
 //   }
   
+
 //   // If no second smallest number is found, return null
 //   if (secondSmallest === Infinity) {
 //     return null;
@@ -114,7 +119,9 @@
 //   let totalSum = 0; // Initialize total sum to 0
 //   let arraySum = 0; // Initialize array sum to 0
 
-//   // Calculate the total sum of odd numbers from 1 to n
+
+
+//   Calculate the total sum of odd numbers from 1 to n
 //   for (let i = 1; i <= arr.length + 1; i += 2) {
 //     totalSum += i;
 //   }
@@ -157,7 +164,6 @@
 // }, 0);
 
 // console.log("TotalAmount of deepak and depesh",deepakTotalAmount); // Output: 8000
-
 //let array = [12,4,56,76,3];
 
 // let map = array.map((item, i)=>{
@@ -169,9 +175,13 @@
  
 // )
 
+
+
 // let filter = array.filter((item)=> item >10)
 // console.log("find", find) //find does not return an array
 // console.log("filter", filter)//filter return an array
+
+
 
 
 let arr = [12,4,5,56,7]

@@ -1,5 +1,6 @@
 // Encapsulation in JavaScript refers to the bundling of data and related
 // functions (methods) into a single entity.
+//Incapsulation is defined as the wrapping of data under a single unit.
 
 const car = {
     _color: "blue",
@@ -15,6 +16,5 @@ const car = {
 }
 
 console.log(car.getColor());
-
 car.setColor("red")
 console.log("setMethod",car.getColor())

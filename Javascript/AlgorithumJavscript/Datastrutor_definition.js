@@ -1,0 +1,1 @@
+//A data structure is a way of organizing and storing data to perform operations efficiently.

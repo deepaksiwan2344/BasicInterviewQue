@@ -13,10 +13,9 @@
 //   console.log(sumByKey(data, "salary")); 
 
 const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }]; 
-
 function  totalsalary(arr, key){
     let sum = 0
-    for(let i = 0; i< arr?.length; i++){
+    for(let i = 0; i < arr?.length; i++){
         console.log("arr[i]", arr[i][key])
         sum += arr[i][key]
 
@@ -64,8 +63,8 @@ console.log("user", JSON.parse(jsonobj))
 
 
 
-// console.log([..."deepak"])
 
+// console.log([..."deepak"])
 // what destructuring in object
 //Example of nested object
 // const user={
@@ -77,11 +76,17 @@ console.log("user", JSON.parse(jsonobj))
 //     }
 // }
 
+
+
+
+
 // const {fullname: {name}} = user
 // console.log(name)
 
 
 //console.log({a:1} == {a: 1}) //output false
+
+
 
 // const value = {number: 10}
 // const multiply = (x = {...value})=>{

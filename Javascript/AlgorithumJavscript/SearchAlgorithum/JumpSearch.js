@@ -9,9 +9,7 @@ function jumpSearch(array, target) {
     let step = Math.min(blockSize, length) - 1; // Step size for jumping
 
     console.log("step", step)
-  
 
-    
     // Jumping to the block containing the target element
     while (array[Math.min(step, length) - 1] < target) {
       prev = step;
