@@ -23,7 +23,6 @@ console.log("unshieft",arr.unshift('pradeep'))
 //splice(startIndex, deleteCount, newElements)
 
 
-
 let array = [12,34,56,78,89];
  array.shift()
  console.log(array)

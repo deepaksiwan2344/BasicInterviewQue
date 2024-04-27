@@ -15,10 +15,6 @@
 //  an algorithm with a time complexity of Ω(n^2) means that the algorithm's runtime grows at
 //   least quadratically with the input size.
 
-
-
-
-
 // 3.Theta Notation (Θ):
 // By using asymptotic notation, you can make informed decisions about algorithm selection and 
 // optimize your code for better performance.

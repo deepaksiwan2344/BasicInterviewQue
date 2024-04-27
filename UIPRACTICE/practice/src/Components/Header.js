@@ -1,5 +1,13 @@
-import { Box, Typography, TextField } from "@mui/material";
-import React, { useState } from "react";
+import {
+  Box,
+  Typography,
+  TextField,
+  Menu,
+  MenuItem,
+  Button,
+  Divider,
+} from "@mui/material";
+import React, { useState, useEffect } from "react";
 import { makeStyles } from "@mui/styles";
 import { Link, NavLink } from "react-router-dom";
 import Dialog from "@mui/material/Dialog";
@@ -12,11 +20,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 const useStyles = makeStyles({
   main___Div: {
+   // padding: "2rem ",
+    height: "6rem",
     display: "flex",
-    justifyContent: "space-around",
+    gap: "1.5rem",
     alignItems: "center",
-    backgroundColor: "black",
-    //position: "fixed",
+    backgroundColor: "#fff",
+    boxShadow: " 0 1px 6px 0 rgba(0, 0, 0, 0.3)",
+
+    //position: "absolute",
     width: "100%",
     "@media(max-width : 900px)": {
       display: "none",
@@ -77,30 +89,51 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export const Header = () => {
   const classes = useStyles();
+  const [openmenu, setOpenMenu] = useState(false);
   const [open, setOpen] = React.useState(false);
   const [searchText, setSearchText] = useState("");
+
+  // *************************
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  //const openmenu = Boolean(anchorEl);
+  const handlemenuClick = (event) => {
+    setOpenMenu(true);
+    setAnchorEl(event.currentTarget);
+  };
+  const handlemenuClose = () => {
+    setOpenMenu(false);
+    setAnchorEl(null);
+  };
 
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
 
+  /******************************************************** */
+  const [anchorElservice, setAnchorElservice] = React.useState(null);
+  const openserve = Boolean(anchorElservice);
+  const handleClickserve = (event) => {
+    setAnchorElservice(event.currentTarget);
+  };
+  const handleCloseservice = () => {
+    setAnchorElservice(null);
+  };
   const handleSearchChange = (e) => {
     const value = e.target.value;
     if (value.length <= 15) {
       setSearchText(value);
     }
   };
-
   return (
     <Box>
-      <Box className={classes.main___Div}>
+      <Box  className={classes.main___Div}>
         <Box>
           <Link to="/">
-            <Typography sx={{width: "50%"}}
+            <Typography
+              sx={{ width: "50%" }}
               component={"img"}
               src="https://techwarezen.com/wp-content/uploads/2022/03/finale34.png"
             />
@@ -109,54 +142,103 @@ export const Header = () => {
         <Box className={classes.Nav___List__Wrap}>
           <Box className={classes.Nav___List} component={"ul"}>
             <Box component={"li"}>
-              <NavLink to="/About" className={classes.NavLink___List2}>
-                About
-              </NavLink>
+              <Button
+                // onClick={handlemenuClick}
+                onMouseEnter={handlemenuClick}
+                // onMouseLeave={handlemenuClose}
+                style={{ zIndex: 2000 }}
+              >
+                Company
+              </Button>
+              <Menu
+                anchorEl={anchorEl}
+                open={openmenu}
+                onClose={handlemenuClose}
+                sx={{ marginTop: "2rem" }}
+              >
+                <Box
+                  sx={{
+                    display: "flex",
+                    postion: "absolute !important",
+                    minWidth: "10rem !important",
+                    zIndex: "1",
+                  }}
+                >
+                  <Box>
+                    <MenuItem onClick={handlemenuClose}>About</MenuItem>
+                    <MenuItem onClick={handlemenuClose}>
+                      Mission, Vision and Value
+                    </MenuItem>
+                    <MenuItem onClick={handlemenuClose}>Awards</MenuItem>
+                    <MenuItem onClick={handlemenuClose}>
+                      Leadership Team
+                    </MenuItem>
+                  </Box>
+                  <Divider orientation="vertical" flexItem />
+                  <Box>
+                    <MenuItem onClick={handlemenuClose}>Careers</MenuItem>
+                    <MenuItem onClick={handlemenuClose}>Why Choose Us</MenuItem>
+                    <MenuItem onClick={handlemenuClose}>Location</MenuItem>
+                    <MenuItem onClick={handlemenuClose}>FAQ</MenuItem>
+                  </Box>
+                </Box>
+              </Menu>
             </Box>
           </Box>
         </Box>
         <Box className={classes.Nav___List__Wrap}>
           <Box className={classes.Nav___List} component={"ul"}>
             <Box component={"li"}>
-              <NavLink to="/Service" className={classes.NavLink___List2}>
-                Service
-              </NavLink>
-            </Box>
-          </Box>
-        </Box>
-        <Box className={classes.Nav___List__Wrap}>
-          <Box className={classes.search} component={"ul"}>
-            <Box component={"li"}>
-              <TextField
-                className={classes.input}
-                id="filled-search"
-                type="search"
-                variant="standard"
-                value={searchText}
-                onChange={handleSearchChange}
-                placeholder="Search"
-                InputProps={{
-                  disableUnderline: true,
+              <Button
+                id="basic-button"
+                aria-controls={openserve ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={openserve ? "true" : undefined}
+                onClick={handleClickserve}
+              >
+                IT Solution
+              </Button>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorElservice}
+                open={openserve}
+                onClose={handleCloseservice}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
                 }}
-              />
+              >
+                <MenuItem onClick={handleClose}>Mobile app development Company</MenuItem>
+                <MenuItem onClick={handleClose}>Android app development</MenuItem>
+                <MenuItem onClick={handleClose}>ISO App development</MenuItem>
+              </Menu>
+            </Box>
+          </Box>
+        </Box>
+       
+        <Box className={classes.Nav___List__Wrap}>
+          <Box className={classes.Nav___List} component={"ul"}>
+            <Box component={"li"}>
+              <Typography className={classes.NavLink___List2}>
+                Our Portfolio
+              </Typography>
             </Box>
           </Box>
         </Box>
         <Box className={classes.Nav___List__Wrap}>
           <Box className={classes.Nav___List} component={"ul"}>
             <Box component={"li"}>
-              <NavLink to="/" className={classes.NavLink___List2}>
-                Career
-              </NavLink>
+              <Typography  className={classes.NavLink___List2}>
+                IT Blog
+              </Typography>
             </Box>
           </Box>
         </Box>
         <Box className={classes.Nav___List__Wrap}>
           <Box className={classes.Nav___List} component={"ul"}>
             <Box component={"li"}>
-              <NavLink to="/Login" className={classes.NavLink___List2}>
-                Login
-              </NavLink>
+              <Typography  className={classes.NavLink___List2}>
+                Contact Us 
+              </Typography>
             </Box>
           </Box>
         </Box>
@@ -174,7 +256,6 @@ export const Header = () => {
             padding: "1.5rem 2rem 1rem 2rem",
             alignItems: "center",
             "@media(max-width : 600px)": { padding: "1rem 0rem 0rem 0rem" },
-
           }}
         >
           <Box
@@ -202,7 +283,11 @@ export const Header = () => {
             </Box>
             <Box onClick={handleClickOpen}>
               <MenuIcon
-                sx={{ color: "#00adc9 !important", cursor: "pointer", fontSize: "25px" }}
+                sx={{
+                  color: "#00adc9 !important",
+                  cursor: "pointer",
+                  fontSize: "25px",
+                }}
               />
             </Box>
           </Box>

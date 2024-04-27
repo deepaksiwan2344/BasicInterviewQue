@@ -18,11 +18,13 @@
 // }
 // console.log("x", x) //x is not defined
 
+
 // function Scope(){
 //   let x = 12;
 //   console.log(x)
 // }
 // Scope()
+
 
 // const scope = () => {
 //   let y = 19
@@ -36,12 +38,12 @@
 // scope()
 
 
-
 // var string = "deepak";
 // function myFunction(){
 //   console.log(this.string);
 // }
 // myFunction();
+
 
 // const obj = {
 //   myage :23,

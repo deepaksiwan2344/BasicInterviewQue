@@ -16,7 +16,6 @@
 //                 reject('Error fetching data');
 //             }
 
-
 //         }, 2000);
 //     });
 // }

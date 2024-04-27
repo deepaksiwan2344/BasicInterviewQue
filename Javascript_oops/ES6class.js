@@ -5,3 +5,6 @@ class Person{
 }
 let Persons  = new Person()
 console.log(Persons);
+
+
+

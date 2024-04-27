@@ -5,5 +5,7 @@ let MapMethod =  new Set(array)
 
  MapMethod.add({name: "deepak", age: 56})
  console.log("array", array)
+
+ 
  
  

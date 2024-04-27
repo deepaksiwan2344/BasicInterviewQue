@@ -8,6 +8,7 @@ let countouter = 0;
     console.log("count", count); //output = 1
   }
   console.log("countouter", countouter); // output = 0
+
 })();
 
 for (var i = 0; i < 3; i++) {

@@ -11,6 +11,7 @@ import Fantasycricketapp from "./Components/Fantasycricketapp"
 import Leadershipteam from "./Components/Leadershipteam"
 import Itblog from "./Components/Itblog"
 import Ourportfolio from "./Components/Ourportfolio"
+import Priceandplans from "./Components/Priceandplans"
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       <Route exact path ="/Leadership_Team" element={<Leadershipteam />} />
       <Route exact path ="/IT_Blog" element={<Itblog />} />
       <Route exact path ="/Our_Portfolio" element={<Ourportfolio />} />
+      <Route exact path ="/Price-and-plans" element={<Priceandplans />} />
+
       </Routes>
       </BrowserRouter>
     

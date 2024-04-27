@@ -3,19 +3,16 @@
 //how to create class in javascript
 
 
-
 class Car {
   getModle() {
     return "car Modle is 2023";
   }
 }
 
-
 let carObj = new Car();
 console.log("carObj", carObj);
 let modle = carObj.getModle();
 console.log(modle);
-
 
 
 class Scoter {

@@ -13,7 +13,6 @@ console.log(selectedFruits)
 
 
 //Splice
-
 //Syntax: array.splice(start, deleteCount, item1, item2, ...)
 
 const numbers = [10, 20, 30, 40, 50];

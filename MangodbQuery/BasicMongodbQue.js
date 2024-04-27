@@ -174,7 +174,6 @@
 //   ]);
 // db.products.find({ tags: { $elemMatch: { $eq: "electronics" } } })
 
-
 //17. It is possible to uddate MongoDb field using value of another field
 // Yes, it is possible 
 // example with Collection

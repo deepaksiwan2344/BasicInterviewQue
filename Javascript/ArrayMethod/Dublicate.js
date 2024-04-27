@@ -32,7 +32,6 @@
 
 
 var arr = [1,3,3,4,5,2,34,34]
-
 function findDublicate(arr){
     let Dublicate = []
     for(let i = 0; i < arr.length; i++){
@@ -42,10 +41,51 @@ function findDublicate(arr){
             }
         }
     }
-
     return Dublicate
 }
 console.log(findDublicate(arr))
+
+/********************************Dublicate using while loop *************/
+function findDuplicates(array) {
+    let duplicates = [];
+    let i = 0;
+    while (i < array.length) {
+        let j = i + 1;
+        while (j < array.length) {
+            if (array[i] === array[j] && !duplicates.includes(array[i])) {
+                duplicates.push(array[i]);
+            }
+
+            j++;
+        }
+
+        i++;
+    }
+
+    return duplicates;
+}
+
+console.log(findDuplicates(array));
+
+/*****************************Find Dublicate using Immediatley Invoke function*******/
+(function (array) {
+    let duplicates = [];
+  let i = 0;
+  while (i < array.length) {
+      let j = i + 1;
+      while (j < array.length) {
+          if (array[i] === array[j] && !duplicates.includes(array[i])) {
+              duplicates.push(array[i]);
+          }
+
+          j++;
+      }
+
+      i++;
+  }
+
+  console.log(duplicates)
+})(array)
 
 
 

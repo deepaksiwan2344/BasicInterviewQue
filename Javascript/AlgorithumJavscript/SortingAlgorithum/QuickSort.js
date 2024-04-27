@@ -1,7 +1,7 @@
 //Approach
 
 //Pivot and partition
-// pivot means selcet one number of given array
+// pivot means select one number of given array
 //partition means devide into two part
 
 

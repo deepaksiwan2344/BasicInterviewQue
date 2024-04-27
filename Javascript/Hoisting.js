@@ -11,17 +11,15 @@ console.log(x); // Output: undefined
 var x = 5;
 
 
-
-
 console.log("y", y) //Cannot access 'y'before initialization
 let y
+
 
 //Function Hoisting
 sayHello(); // Output: "Hello"
 function sayHello() {
   console.log("Hello");
 }
-
 
 sayGoodbye();
 var sayGoodbye = function() {

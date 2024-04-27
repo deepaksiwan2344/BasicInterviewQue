@@ -28,7 +28,6 @@ setInterval(array, 2000);
 function num (){
     let x = 10;
     console.log(x)
-
 }
 setInterval(num, 3000)
 
@@ -44,7 +43,6 @@ setInterval(()=>{
 
 clearInterval(()=>{
     
-
 })
 
 

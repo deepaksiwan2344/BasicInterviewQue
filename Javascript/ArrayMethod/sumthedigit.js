@@ -74,6 +74,7 @@ console.log(sumOfDigits(344))
 // })
 
 // console.log("sum", sum)
+
 function sumOfDigits(num) {
     let sum = 0;
     for(let i = 0; i< num.toString().length; i++){

@@ -25,6 +25,8 @@ class Dog extends Animal{
    }
 }
 
+
+
 const myDog = new Dog('Buddy', 'Labrador');
 myDog.eat()
 myDog.sleep();

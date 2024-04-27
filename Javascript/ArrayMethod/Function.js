@@ -39,7 +39,6 @@ function result(a, b) {
 
 }
 console.log(result(23, 45))
-
 const result1 = (a,b)=>{
     //console.log(arguments)
     return a + b

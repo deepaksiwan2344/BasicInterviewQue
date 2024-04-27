@@ -1,4 +1,12 @@
 //OOPs
+ 
+
+// Object-Oriented Programming (OOP) is a programming model(example) that organizes code around objects,
+// which are instances of classes or prototypes, enabling the modeling of real-world entities
+// with properties and methods.
+
+//OOPS is not a programing laungauge
+
 //three Important words to understant
 //1: Class
 //2: Object

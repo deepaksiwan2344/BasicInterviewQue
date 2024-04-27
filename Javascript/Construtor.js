@@ -13,9 +13,6 @@
 // }
 
 
-
-
-
 // const deepak = new Person(deepak, 23)
 // deepak.sayHello();
 

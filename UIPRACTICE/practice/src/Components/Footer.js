@@ -119,6 +119,9 @@ const Footer = () => {
   const handle_Ourportfolio = ()=>{
     navigate("/Our_Portfolio")
   }
+  const handlepriceandplans = ()=>{
+    navigate("/Price-and-plans")
+  }
 
   useEffect(() => {
     window.scrollTo(0, 4);
@@ -257,7 +260,7 @@ const Footer = () => {
                 <Typography className={classes.servicecontent}>
                   Contact Us
                 </Typography>
-                <Typography className={classes.servicecontent}>
+                <Typography onClick={handlepriceandplans} className={classes.servicecontent}>
                   Pricing and plans
                 </Typography>
                 <Typography className={classes.servicecontent}>

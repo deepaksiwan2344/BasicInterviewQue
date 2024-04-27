@@ -81,3 +81,6 @@ console.log("obj", obj)
 // console.log("obj", obj)
 
 
+//deep copy and show copy also follow array like object
+
+

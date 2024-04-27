@@ -14,6 +14,7 @@ class Shape {
   }
 }
 
+
 class Cricle extends Shape {
   constructor(radius) {
     super("Circle");
@@ -23,6 +24,7 @@ class Cricle extends Shape {
     return Math.PI * this.radius * this.radius;
   }
 }
+
 
 const circle = new Cricle(5)
 console.log(circle.calculateArea())

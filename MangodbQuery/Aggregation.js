@@ -21,7 +21,6 @@
 //$sum, $avg, $min, $max, and $count
 
 //find second greatest sallary in mongodb
-
 // db.employees.aggregate([
 //   { $sort: { salary: -1 } },
 //   { $group: { _id: null, salaries: { $push: "$salary" } } },
@@ -34,9 +33,7 @@
 // ]);
 
 
-
 //another way 
 //db.employees.find().sort({ salary: -1 }).skip(1).limit(1)
-
 //find third highest
 //db.employees.find().sort({ salary: -1 }).skip(2).limit(1)

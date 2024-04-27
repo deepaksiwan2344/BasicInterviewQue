@@ -17,8 +17,6 @@
 
 
 
-
-
 // var innerFn = outer();
 // innerFn(); // Output: 10
 
@@ -43,6 +41,7 @@
 
 // const result2 = outer1();
 //  console.log(result2())
+
 
 
 

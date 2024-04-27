@@ -15,7 +15,6 @@ setTimeout(() => {
   console.log("Result:", result);
 }, 2000);
 console.log("After");
-
 function add(a, b) {
   return a + b;
 }

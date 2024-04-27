@@ -4,7 +4,6 @@
 
 
 
-
 setTimeout(function () {
   console.log("hello1");
   setTimeout(function () {
@@ -32,8 +31,6 @@ setTimeout(function () {
 // Callback hell can be avoided in JavaScript by using various techniques such as Promises,
 // async/await, and libraries. Here is an example of how to use Promises to remove callback
 // hell in JavaScript:
-
-
 
 function getDataFromServer() {
   return new Promise(function (resolve, reject) {

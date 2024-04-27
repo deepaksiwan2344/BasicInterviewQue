@@ -19,9 +19,6 @@
 // totalsum(12)(34)(45)
 
 
-  
-
-
 function multiply(a){
     return function(b){
         return function(c){
@@ -41,6 +38,7 @@ function addition (a){
         }
     }
 }
+
 
 const addition1 = addition(3);
 const addition2 = addition1(9);

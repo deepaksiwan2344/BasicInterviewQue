@@ -17,7 +17,6 @@ function FibonanceSeries (n){
         return series
     }
     
-
 }
 
 var n = 10
