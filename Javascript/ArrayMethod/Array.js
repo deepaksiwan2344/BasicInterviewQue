@@ -25,11 +25,14 @@
 // map(): Creates a new array with the results of calling a provided 
 // function on every element in the array.
 
+
 // filter(): Creates a new array with all elements that pass the test
 // implemented by the provided function.
 
+
 // reduce(): Applies a function to an accumulator and each element
 //  in the array to reduce it to a single value.
+
 
 
 
