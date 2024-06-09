@@ -26,6 +26,8 @@ for(let i = 0; i < arr.length; i++){
 
 let arr1 = [5, 7, 9, 19, 21];
 let missingCount = 0;
+
+
 let missingNumber = []
 
 for (let i = 0; i < arr1.length - 1; i++) {
