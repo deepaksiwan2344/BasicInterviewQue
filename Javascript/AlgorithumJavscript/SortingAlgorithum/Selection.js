@@ -9,11 +9,7 @@
 
 //Selection sort has a time complexity of O(n^2),
 
-
-
-
-
-function Selectionsort(array){
+function SelectionSort(array){
     for (let i = 0;i< array.length; i++){
         let min = i;
         for(let j = i + 1; j < array.length; j++){
@@ -33,5 +29,5 @@ function Selectionsort(array){
 }
 
 let array = [23,5,67,8,90,1]
-let sort = Selectionsort(array);
+let sort = SelectionSort(array);
 console.log(sort)

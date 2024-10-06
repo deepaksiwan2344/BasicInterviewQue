@@ -6,7 +6,7 @@
 // Repeat this process for each pair of adjacent elements in the array, moving from the beginning to the end.
 // Bubble sort has a time complexity of O(n^2),
 
-function Bubblesort(array) {
+function BubbleSort(array) {
   const length = array.length;
   for (let i = 0; i < array.length - 1; i++) {
     for (let j = 0; j < length - i - 1; j++) {
@@ -21,7 +21,7 @@ function Bubblesort(array) {
   return array;
 }
 let array = [4, 0, 0, 0, 1, 1, 2, 2, 3];
-let sort = Bubblesort(array);
+let sort = BubbleSort(array);
 console.log(sort);
 
 //Note

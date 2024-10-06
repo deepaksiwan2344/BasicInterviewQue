@@ -23,21 +23,29 @@ for(let i = 0; i < arr.length; i++){
 // find missingOdd Number of given arr
 
 
-
-let arr1 = [5, 7, 9, 19, 21];
-let missingCount = 0;
-
-
-let missingNumber = []
-
-for (let i = 0; i < arr1.length - 1; i++) {
-    let current = arr1[i];
-    let next = arr1[i + 1];
-    while (current + 2 < next) {
+function findMissingOddNumbers(arr) {
+    let missingCount = 0;
+    let missingNumbers = [];
+  
+    for (let i = 0; i < arr.length - 1; i++) {
+      let current = arr[i];
+      let next = arr[i + 1];
+  
+      while (current + 2 < next) {
         current += 2;
-        missingNumber.push(current)
+        missingNumbers.push(current);
         missingCount++;
+      }
     }
-}
-console.log(missingCount);
-console.log(missingNumber)
+  
+    return {
+      missingCount: missingCount,
+      missingNumbers: missingNumbers
+    };
+  }
+  
+  // Test the function
+  let input = [5, 7, 9, 11, 15, 17];
+  let result = findMissingOddNumbers(input);
+  console.log(result); // { missingCount: 2, missingNumbers: [13, 15] }
+  
