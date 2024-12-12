@@ -31,6 +31,9 @@ var sayGoodbye = function() {
 //Arrow functions are not hoisted in JavaScript, so you cannot call an arrow function before 
 //it is defined.
 
+// Note: normal function are fully hoisting 
+
+
 
 
 

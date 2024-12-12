@@ -31,3 +31,5 @@ function SelectionSort(array){
 let array = [23,5,67,8,90,1]
 let sort = SelectionSort(array);
 console.log(sort)
+
+

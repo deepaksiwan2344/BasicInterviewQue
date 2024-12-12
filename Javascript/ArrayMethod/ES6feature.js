@@ -14,7 +14,7 @@
 //for in, for of Loop is also es6 features
 //In array(find,filter, includes, findIndex,every,some)
 
-// note some and every return boliean
+// note some and every return boolian
 
 
 
