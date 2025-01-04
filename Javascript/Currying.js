@@ -84,6 +84,18 @@ function addition(a){
 console.log(addition(23)(12)(34))
 
 
+function addition (a){
+    return function add1(b){
+        return function add2(){
+            return a + b + c
+        }
+
+    }
+}
+
+console.log(addition(23)(23)(34))
+
+
 
 
 
