@@ -21,7 +21,7 @@ function isSorted(array) {
 
 function sortCheck(array) {
     if (isSorted(array)) {
-        newarray = array.slice(); // Make a copy of the sorted array
+        newarray = array?.slice(); 
         return;
     } else if (array[i] <= array[j]) {
         i++;

@@ -88,6 +88,46 @@ console.log(findDuplicates(array));
 })(array)
 
 
+//find Dublicate 
+
+function findDuplicates(arr) {
+    let seen = new Set();
+    let duplicates = new Set();
+
+    for (let num of arr) {
+        if (seen.has(num)) {
+            duplicates.add(num); // If it's already in `seen`, it's a duplicate
+        } else {
+            seen.add(num); // Otherwise, add it to `seen`
+        }
+    }
+
+    return Array.from(duplicates); // Convert the Set to an Array
+
+
+}
+
+// find Dublicate using object and frequency count
+function findDuplicates(arr) {
+    let frequency = {}; 
+    let duplicates = []; 
+
+    for (let num of arr) {
+        frequency[num] = (frequency[num] || 0) + 1;
+    }
+    console.log("frequent", frequency)
+
+    for (let key in frequency) {
+        console.log("key", key)
+        if (frequency[key] > 1) {
+            duplicates.push(Number(key));
+        }
+    }
+    return duplicates;
+}
+
+
+
 
 
 

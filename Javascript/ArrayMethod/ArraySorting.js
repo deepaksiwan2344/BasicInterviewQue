@@ -166,13 +166,11 @@
 
 // let map = array.map((item, i)=>{
 //   console.log("item", item)
-
 // })
 
 // let find = array.find(item=> item>60
  
 // )
-
 
 
 // let filter = array.filter((item)=> item >10)
@@ -183,7 +181,6 @@
 
 
 let arr = [12,4,5,56,7]
-
 function sort(arr){
     for(let i = 0; i<arr.length; i++){
         for(let j = 0; j < arr.length; j++){
@@ -198,6 +195,36 @@ function sort(arr){
     
 }
 sort(arr)
+
+// above code we can also write in like
+function sort2 (arr){
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr.length; j++){
+            if(arr[j]> arr[j + 1]){
+                [arr[j] = arr[j + 1]] = [arr[j + 1], arr[j]]
+            }
+        }
+    }
+    return arr
+    
+}
+console.log("sort2",sort2(arr))
+
+
+//sorting using while loop
+function sorting(arr) {
+    let i = 0;
+    while(i < arr.length - 1){
+        if(arr[i] > arr[i + 1]){
+            [arr[i], arr[i + 1] ]= [arr[i + 1], arr[i]]
+            i = 0
+        }else{
+            i++
+        }
+        
+    }
+    return arr
+ }
 
 
 
