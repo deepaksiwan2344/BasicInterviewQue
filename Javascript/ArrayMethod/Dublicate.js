@@ -115,10 +115,7 @@ function findDuplicates(arr) {
     for (let num of arr) {
         frequency[num] = (frequency[num] || 0) + 1;
     }
-    console.log("frequent", frequency)
-
     for (let key in frequency) {
-        console.log("key", key)
         if (frequency[key] > 1) {
             duplicates.push(Number(key));
         }

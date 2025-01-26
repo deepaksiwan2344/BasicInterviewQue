@@ -11,8 +11,8 @@ function FibonanceSeries (n){
         return series
     }else{
         for(let i = 2;  i < n; i++){
-             let nextnumber = series[i - 1] + series[i - 2];
-             series.push(nextnumber)
+             let nextNumber = series[i - 1] + series[i - 2];
+             series.push(nextNumber)
         }
         return series
     }

@@ -57,3 +57,49 @@ console.log(capital(str))
 // }
 // console.log(result(str, 22))
 
+
+ /* **********  In a given string find vowel and consonant use function **********/
+
+ let str2 = "deepak";
+
+ function getVowelsAndConsonants (str2){
+    let vowels = "aeiou";
+    let vowelList = [];
+    let consonantList = [];
+    for(let char of str2.toLowerCase()){
+        if(vowels.includes(char)){
+            vowelList.push(char)
+        }else{
+            consonantList.push(char)
+        }
+    }
+    return {
+        vowels: vowelList,
+        consonant: consonantList
+    }
+ }
+
+ console.log(getVowelsAndConsonants(str2))
+
+
+/********************** lenght of longest subString of a given string ******************/
+
+function lengthOfLongestSubstring(s) {
+    let charIndexMap = {}; 
+    let maxLength = 0; 
+    let start = 0; 
+    for (let end = 0; end < s.length; end++) {
+        const char = s[end];
+        console.log("char", char)
+        if (char in charIndexMap && charIndexMap[char] >= start) {
+            start = charIndexMap[char] + 1; 
+        }
+        charIndexMap[char] = end;
+        maxLength = Math.max(maxLength, end - start + 1);
+    }
+    return maxLength;
+}
+
+// Test cases
+console.log(lengthOfLongestSubstring("abcabcbb"));
+

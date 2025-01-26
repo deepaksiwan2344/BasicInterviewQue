@@ -33,6 +33,11 @@ var sayGoodbye = function() {
 
 // Note: normal function are fully hoisting 
 
+// Arrow functions in JavaScript are not hoisted because they are function expressions,
+//  not function declarations.
+
+
+
 
 
 

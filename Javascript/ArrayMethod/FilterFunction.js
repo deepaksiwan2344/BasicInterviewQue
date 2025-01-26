@@ -1,5 +1,7 @@
 // const number = [3,7,23,56,76,]
 
+// Note: Filter and map does not modify the original array it create a new array
+
 // let Filter = number.filter((num)=>{
 //         return num % 2 === 0
 // })
