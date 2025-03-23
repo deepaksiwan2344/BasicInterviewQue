@@ -80,7 +80,7 @@ function scope(){
      console.log("x is grater than 9")
      const p =10; // block scope
      let r =20; //block scope;
-     let w = 30
+     var w = 30
    }
    console.log("p", p) //p is not defined because p is block scope
    console.log("r", r) //p is not defined because p is block scope

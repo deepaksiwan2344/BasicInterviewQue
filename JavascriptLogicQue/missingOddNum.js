@@ -30,7 +30,6 @@ function findMissingOddNumbers(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
       let current = arr[i];
       let next = arr[i + 1];
-  
       while (current + 2 < next) {
         current += 2;
         missingNumbers.push(current);

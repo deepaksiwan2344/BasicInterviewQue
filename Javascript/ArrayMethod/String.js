@@ -88,6 +88,19 @@ console.log(ascending)
 // (find(string))
 
 
+let str = "  deepak";
+console.log(str.trimStart())
+
+
+// String Modification method
+// .toUpperCase()	Converts to uppercase	"hello".toUpperCase() // 'HELLO'
+// .toLowerCase()	Converts to lowercase	"HELLO".toLowerCase() // 'hello'
+// .trim()	Removes whitespace from both ends	" hello ".trim() // 'hello'
+// .trimStart()	Removes whitespace from the start	" hello ".trimStart() // 'hello '
+// .trimEnd()	Removes whitespace from the end	" hello ".trimEnd() // ' hello'
+// .repeat(n)	Repeats string n times	"hi".repeat(3) // 'hihihi'
+
+
 
 
 

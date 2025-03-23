@@ -17,6 +17,10 @@ for (var i = 0; i < 3; i++) {
   }, 1000);
 }
 
+// var is function-scoped, meaning it ignores block scope (if, for, etc.).
+// let and const are block-scoped, meaning they exist only inside {}.
+// Use let and const instead of var to prevent scope-related bugs.
+
 
 function createIncrement() {
   let count = 0;

@@ -122,7 +122,6 @@ function userLogin(username, password) {
 
 
 const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
-
 function wordFrequency(arr) {
   const frequency = {};
   for (let words of arr) {
@@ -246,4 +245,115 @@ function findDuplicates(nums) {
 
 const num = [4, 3, 2, 7, 8, 2, 3, 1];
 console.log(findDuplicates(num)); // Output: [2, 3]
+
+
+// duplicate numbers and their counts
+function findDuplicatesWithCount(nums) {
+  const frequency = {};
+  const duplicates = {};
+
+  for (let num of nums) {
+      frequency[num] = (frequency[num] || 0) + 1;
+  }
+  
+  for (let num in frequency) {
+      if (frequency[num] > 1) {
+          duplicates[num] = frequency[num];
+      }
+  }
+
+  return duplicates;
+}
+
+console.log(findDuplicatesWithCount([23, 4, 4, 5, 45, 45, 4, 4, 59, 50]));
+
+
+
+
+/* In the given string find sum of number */
+//let str = "dee23456p2aksfsd3443";
+
+function result() {
+    let count = [];
+    let string = "";
+
+    for (let value of str) {
+        if (!isNaN(value)) {
+            count.push(Number(value));
+        } else {
+            string += value;
+        }
+    }
+    
+    return {count, string}
+}
+
+console.log(result()); 
+
+
+// In a geven multiple array find a single array
+
+let array = [
+  {name: "deepak"},
+  [{age: 23}, {address: "Noida"}, [{name: "Dewansh"}]],
+  
+  ];
+
+function flattenArray(arr) {
+  let result = [];
+  for(let value of arr){
+     if(Array.isArray(value)){
+         result.push(...flattenArray(value))
+     }else{
+         result.push(value)
+     }
+  }
+  return result
+} 
+
+console.log(flattenArray(array));
+
+
+// let array = [23,4,5,5,56,39];
+
+// console.log(array.indexOf(4))
+
+// function removeDublicate(array){
+//     let dublicate = []
+//     for(let i = 0; i < array?.length; i++){
+//          if(dublicate.indexOf(array[i]) === -1){
+//              dublicate.push(array[i])
+//          }
+//     }
+//     return dublicate
+// }
+
+// console.log(removeDublicate(array))
+
+
+//I have a a multiple object in a array , find single object in a given multiple Obj;
+
+
+// let arr = [
+//   {name: "Deepak", age: 23},
+//   {name1: "Deepak", age1: 27}
+//   ]
+  
+//   function combineObj (arr){
+//       let finalObj = {};
+//       for(let obj of arr){
+//           for(let key in obj){
+//               finalObj[key] = obj[key]
+//           }
+//       }
+//       return finalObj;
+      
+//   }
+//  console.log(combineObj(arr))
+  
+  
+
+
+
+
 

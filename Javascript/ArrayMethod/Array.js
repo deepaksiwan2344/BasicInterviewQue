@@ -41,3 +41,23 @@ let array = [[2, 3, 5, [12,4,5,]], 23, 4];
 let singlearray  = [].concat(...array);
 let finalarr = [].concat(...singlearray)
 
+
+
+//using loop
+function flattenArray(arr) {
+    let result = [];
+    
+    for (let item of arr) {
+        if (Array.isArray(item)) {
+            result.push(...flattenArray(item));  
+        } else {
+            result.push(item);
+        }
+    }
+    
+    return result;
+}
+
+console.log(flattenArray(array));
+
+

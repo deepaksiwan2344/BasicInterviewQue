@@ -55,3 +55,11 @@ function outerfunctoin (){
 const result = outerfunctoin();
 console.log(result())
 //console.log("variable", x)
+
+
+//Note:
+// Closures provide powerful capabilities in JavaScript programming.
+//1. Data Encapsulation (Private varaible)
+//2. Memoization (Performance Optimization)
+
+

@@ -18,7 +18,7 @@ function  totalsalary(arr, key){
     let sum = 0
     for(let i = 0; i < arr?.length; i++){
         console.log("arr[i]", arr[i][key])
-        sum += arr[i][key]
+        sum += arr[i][key] //dynamic access salary
 
     }
     console.log("sum", sum)
@@ -182,6 +182,34 @@ const logFullName1 = function(){
 }
 const logdeepakfullname = logFullName1.bind(object)
 console.log(logdeepakfullname())
+
+
+//Note  difference between call and bind method
+
+//1. Calls the function immediately where as bind() return a new function for later use
+
+//Note: Apply Method
+//Arguments are passed as an array (instead of individual arguments like in call()).
+
+
+// let student1 = {
+//     name: "Deepak",
+//     getDetails: function (age, city){
+//         return `My name is ${this.name} and age is ${age} and city is ${city}`;
+//     }
+// }
+
+// let result = student1.getDetails.apply(student1, [26, "Noida"]);
+// console.log(result);
+
+//Note Where we need call(), bind() and apply()
+// 1. Borrowing methods from one object to another.
+// 2.Explicitly setting the this value in a function.
+// 3.Controlling function execution.
+
+
+
+
 
 
 

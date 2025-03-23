@@ -27,6 +27,15 @@ let array = [12,34,56,78,89];
  array.shift()
  console.log(array)
 
+
+
+
+// let arr = [34,5,6,7,8,9];
+// let arr1 = arr.splice(1, 4, 45, 67)
+// console.log(arr1)
+
+ 
+
  
 
 
