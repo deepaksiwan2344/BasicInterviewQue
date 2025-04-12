@@ -103,3 +103,35 @@ function lengthOfLongestSubstring(s) {
 // Test cases
 console.log(lengthOfLongestSubstring("abcabcbb"));
 
+
+
+// function result(str) {
+//     let num = 0;
+//     let vowels = "";
+//     let consonants = "";
+//     const vowelChars = "aeiouAEIOU";
+  
+//     for (let value of str) {
+//       if (!isNaN(value)) {
+//         num +=  Number(value); 
+//       } else {
+//         if (vowelChars.includes(value)) {
+//             console.log(value)
+//           vowels += value;
+//         } else {
+//           consonants += value
+//         }
+//       }
+//     }
+  
+//     return {
+//       num: num,
+//       vowel: vowels,
+//       consonant: consonants,
+//     };
+//   }
+  
+//   let str = "123Deepak";
+//   console.log(result(str));
+  
+

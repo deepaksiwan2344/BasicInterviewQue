@@ -36,6 +36,16 @@ var sayGoodbye = function() {
 // Arrow functions in JavaScript are not hoisted because they are function expressions,
 //  not function declarations.
 
+//Note Hoisting in let and const (Temporal Dead Zone - TDZ)
+// The variable x is hoisted, but it remains in the Temporal Dead Zone until the actual line
+//  where it is initialized.
+//  Accessing x before its declaration results in a ReferenceError.
+
+
+
+
+
+
 
 
 

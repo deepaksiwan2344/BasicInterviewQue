@@ -31,3 +31,14 @@
 //In JavaScript, inheritance is a mechanism that allows one class to inherit 
 //properties and methods from another class. 
 
+class Person {
+    constructor(name, age){
+        this.name= name;
+        this.age= age;
+    }
+    greet(){
+        console.log(`my name is ${this.name}`)
+    }
+}
+const person1 = new Person("deepak", 25)
+console.log(person1.greet())

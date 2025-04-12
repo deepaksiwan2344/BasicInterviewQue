@@ -89,6 +89,12 @@ function scope(){
 scope()
 
 
+//Lexical Scope
+//Variables are accessible based on where they are defined in code
+
+
+
+
 
 
 

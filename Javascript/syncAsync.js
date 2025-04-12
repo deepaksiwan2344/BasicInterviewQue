@@ -25,6 +25,7 @@ function add(a, b) {
 // Asynchronous operations can include things like AJAX requests, file I/O, and database queries, 
 // which can take an unpredictable amount of time to complete.
 
+
 setTimeout(()=>{
      console.log("Hello deepak")
 })

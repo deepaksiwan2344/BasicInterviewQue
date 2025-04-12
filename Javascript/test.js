@@ -3,7 +3,6 @@ let arr = [1,0,0,1,2,1,0,2,1,2,0];
 function sort(arr){
     let obj = {}
     for(let num of arr){
-        console.log("objnum", obj[num])
         if(obj[num]){
             obj[num] += 1;
         }

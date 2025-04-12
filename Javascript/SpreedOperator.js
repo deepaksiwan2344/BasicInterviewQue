@@ -98,7 +98,6 @@ console.log("age", age)
 
 
 let array3 = [23,45,67];
-
 let obj2 = {
   name:"deepak",
   lastname: "kumar"
