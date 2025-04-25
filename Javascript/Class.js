@@ -1,6 +1,8 @@
 // In JavaScript, a class is a type of object constructor that defines a set of properties
 // and methods that can be used to create new objects of that type.
 //how to create class in javascript
+//A class is a blueprint for creating objects with shared properties and methods.
+
 
 
 class Car {

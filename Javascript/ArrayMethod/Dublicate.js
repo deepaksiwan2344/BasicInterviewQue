@@ -77,13 +77,10 @@ console.log(findDuplicates(array));
           if (array[i] === array[j] && !duplicates.includes(array[i])) {
               duplicates.push(array[i]);
           }
-
           j++;
       }
-
       i++;
   }
-
   console.log(duplicates)
 })(array)
 
@@ -93,7 +90,6 @@ console.log(findDuplicates(array));
 function findDuplicates(arr) {
     let seen = new Set();
     let duplicates = new Set();
-
     for (let num of arr) {
         if (seen.has(num)) {
             duplicates.add(num); // If it's already in `seen`, it's a duplicate

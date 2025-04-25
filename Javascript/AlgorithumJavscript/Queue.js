@@ -26,7 +26,7 @@ enqueue(20);
 dequeue(20)
 console.log(queue)
 
-//Apliction of queue
+//Aplication of queue
 // queues in JavaScript can be used for various purposes, and one common use case is implementing a
 //  task queue for managing asynchronous operations. Here's an example of how you can use a queue 
 //  in JavaScript to process asynchronous tasks sequentially:

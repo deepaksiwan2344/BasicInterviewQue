@@ -350,6 +350,43 @@ console.log(flattenArray(array));
       
 //   }
 //  console.log(combineObj(arr))
+
+
+/****************Validate Id Address *****************/
+function isValidIPAddress(ip) {
+  const parts = ip.split(".");
+  console.log(parts)
+
+  // IPv4 should have exactly 4 parts
+  if (parts.length !== 4) {
+      return "Not valid";
+  }
+
+  for (let part of parts) {
+      // Check part is numeric
+      if (part === "" || isNaN(part)) {
+          return "Not valid";
+      }
+
+      // Convert to number and check range
+      const num = Number(part);
+      if (num < 0 || num > 255) {
+          return "Not valid";
+      }
+
+      // No leading zeros (e.g., "01" is not allowed)
+      if (part.length > 1 && part.startsWith("0")) {
+          return "Not valid";
+      }
+  }
+
+  return "Valid";
+}
+let ip = "300.168.1.1"; 
+
+
+console.log(isValidIPAddress(ip))
+
   
   
 

@@ -12,7 +12,7 @@
 //Modules
 //Promises
 //for in, for of Loop is also es6 features
-//In array(find,filter, includes, findIndex,every,some)
+//In array(find,filter, includes, findIndex,every,some, slice, splice)
 
 // note some and every return boolian
 
