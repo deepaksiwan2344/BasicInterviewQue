@@ -233,7 +233,7 @@ function findDuplicates(nums) {
   for (let num of nums) {
       frequency[num] = (frequency[num] || 0) + 1;
   }
-  
+
   for (let num in frequency) {
       if (frequency[num] > 1) {
           duplicates.push(parseInt(num));
@@ -242,6 +242,26 @@ function findDuplicates(nums) {
 
   return duplicates;
 }
+
+function findDublicate(arr){
+  let frequency = {}
+  let dublicate = []
+  for(let num of arr){
+      if(frequency[num]){
+          frequency[num]++
+      }else{
+          frequency[num] = 1
+      }
+  }
+  for(let num in frequency){
+     // console.log(frequency[num])
+      if(frequency[num] > 1)
+      dublicate.push(Number(num))
+  }
+  return dublicate
+}
+let arr = [23,4,5,5,6,6,78,9];
+console.log(findDublicate(arr))
 
 const num = [4, 3, 2, 7, 8, 2, 3, 1];
 console.log(findDuplicates(num)); // Output: [2, 3]
@@ -386,6 +406,29 @@ let ip = "300.168.1.1";
 
 
 console.log(isValidIPAddress(ip))
+
+
+let x = 0.1 + 0.2;
+let y = 0.3;
+console.log(x)
+console.log(x == y); //output false because 
+// This is because of floating point precision error in JavaScript (and most programming languages).
+//JavaScript uses binary (base-2) floating point numbers (IEEE 754 standard).
+
+
+
+// const arr = [1, 2, 3];
+// arr.forEach((num) => num * 2);
+// console.log(arr); output [1,2,3] because forEach does return and not modify original array
+
+
+//let arr = ["apple", "banana", "mango"]
+//let output = arr.slice(1)
+//console.log(output)
+//slice method in javascript is a method to extract the portion of a array without modify the origin array
+
+
+
 
   
   

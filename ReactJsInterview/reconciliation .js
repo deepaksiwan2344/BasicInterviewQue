@@ -1,4 +1,4 @@
-// what is reconciliation  in Reactjs
+// what is reconciliation  in React js
 
 //In React.js, reconciliation is the process by which React compares the current 
 //state of a component's rendered output with its previous state and determines 

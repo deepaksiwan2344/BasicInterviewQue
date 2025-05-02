@@ -36,7 +36,6 @@ function findMissingOddNumbers(arr) {
         missingCount++;
       }
     }
-  
     return {
       missingCount: missingCount,
       missingNumbers: missingNumbers

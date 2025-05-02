@@ -41,8 +41,6 @@ const ExampleComponent = () => {
 //     // JSX to render component
 //   );
 
-
-
 };
 
 

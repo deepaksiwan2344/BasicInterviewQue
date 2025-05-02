@@ -9,7 +9,7 @@
 //2.Context Consumer
 
 
-  //Context Provider: The Provider is used to wrap the parent componet that will provide the context data 
+  //Context Provider: The Provider is used to wrap the parent component that will provide the context data 
   // and consumer is used in child components that need access to the context data. 
 // The Consumer component is typically used when a component needs to access data from 
 // a context

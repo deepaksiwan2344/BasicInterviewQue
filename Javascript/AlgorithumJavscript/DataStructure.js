@@ -7,8 +7,8 @@
 
 
 
-//it is a way to organize data so that we can use data efficientaly
-//Operation of Datastructor
+//it is a way to organize data so that we can use data Efficientaly
+//Operation of Data Structure
 // traversal                                              
 // Insertion
 // deletion

@@ -4,7 +4,6 @@ function jumpSearch(array, target) {
     const length = array.length;
     const blockSize = Math.floor(Math.sqrt(length)); // Set the block size for jumping
     console.log("blockSize", blockSize)
-  
     let prev = 0; // Previous index
     let step = Math.min(blockSize, length) - 1; // Step size for jumping
 
