@@ -79,8 +79,6 @@ console.log("obj", obj)
 
 // const obj = JSON.parse(jsonString);
 // console.log("obj", obj)
-
-
 //deep copy and show copy also follow array like object
 
 

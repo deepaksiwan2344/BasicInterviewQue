@@ -2,7 +2,7 @@
 // while a setter is a method that sets the value of a specific property on an object. Getters
 // and setters are used to control access to an object's properties and add extra logic to
 // property access or assignment.
-// constructor is callled automatically when new object is created.
+// constructor is called automatically when new object is created.
 // Getter is used to retrieve the value.
 // Setter is used to assigned a value
 

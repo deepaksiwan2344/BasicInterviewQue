@@ -42,3 +42,10 @@ class Person {
 }
 const person1 = new Person("deepak", 25)
 console.log(person1.greet())
+
+//Note: constructor is a special method in a class that initialize the object properties when the object
+// the created
+
+/*The constructor in a class is a special method that runs automatically when an object is created.
+ It's used to initialize properties and customize object data during instantiation. */
+

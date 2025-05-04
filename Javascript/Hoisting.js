@@ -1,5 +1,5 @@
 //Hoisting
-//two type of hositing in javascript
+//two type of hoisting in javascript
 // 1. Variable Hoisting
 // 2.function Hoisting
 

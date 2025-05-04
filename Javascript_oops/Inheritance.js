@@ -3,7 +3,7 @@
 // properties and methods from another object.
 
 // Parent class
-class Animal{
+ /*class Animal{
     constructor(name){
         this.name = name
     }
@@ -14,8 +14,6 @@ class Animal{
         console.log(`${this.name} is sleeping`)
     }
 }
-
-
 
 class Dog extends Animal{
    constructor(name, breed){
@@ -101,3 +99,6 @@ let emp1 = new emp("deepak");
 console.log(emp1.pubfun())
 
 Mixing
+
+
+*/

@@ -1,4 +1,8 @@
-// Abstract Example
+
+/*Abstraction is the concept of hiding internal details and showing only the essential features of an object.
+ example of Abstraction
+
+
 
 
 class Shape {
@@ -29,6 +33,9 @@ class Cricle extends Shape {
 const circle = new Cricle(5)
 console.log(circle.calculateArea())
 console.log(circle.displayInfo())
+
+
+*/
 
 
  

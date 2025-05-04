@@ -2,7 +2,6 @@
 //forEach Loop does not return a value like for loop
 
 //ForEach loop
-
 // const number = [2,4,67,78,4];
 // number.forEach(function(num){
 //     console.log("num", num)
@@ -17,6 +16,8 @@
 // for(let i = 0; i< number?.length;i++){
 //     console.log("[i]",number[i])
 // }
+
+
 
 // let array = [12,34,56];
 // array.forEach(function(arr){

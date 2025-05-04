@@ -1,7 +1,6 @@
 //Higher order function
 // array and filer does not modifies the original array
-
-//map, filter and find are example of Higher Order Function
+//map, filter, reduce, ForEach and find are example of Higher Order Function
 //higher order function is a function that pass an argument as function in javascript map and filter is example of higher order function
 
 let array = [23,45,67,8];

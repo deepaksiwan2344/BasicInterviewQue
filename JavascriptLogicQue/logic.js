@@ -428,6 +428,136 @@ console.log(x == y); //output false because
 //slice method in javascript is a method to extract the portion of a array without modify the origin array
 
 
+/*function printPrimeUpTon(n){
+  for(let i = 0; i <= n; i++){
+      if(isPrime(i)){
+          console.log(i)
+      }
+  }
+}
+
+function isPrime(num){
+  if(num <= 2) return false;
+  for(let i = 2; i <= Math.sqrt(num); i++){
+      if(num % 2 === 0) return false
+  }
+  return true
+}
+
+printPrimeUpTon(20)*/
+
+
+/*const users = [
+  { name: "Alice", role: "admin" },
+  { name: "Bob", role: "user" },
+  { name: "Charlie", role: "admin" },
+];
+
+function result (users){
+    let obj = {}
+    for(let i = 0; i < users?.length; i++){
+        let role = users[i]?.role
+        if(!obj[role]){
+            obj[role] = []
+        }
+        
+        obj[role].push(users[i])
+        
+    }
+    return obj
+    
+}*/
+
+/*const grouped = users.reduce((acc, user) => {
+  if (!acc[user.role]) {
+    acc[user.role] = [];
+  }
+  acc[user.role].push(user);
+  return acc;
+}, {});
+
+console.log(grouped);
+
+*/
+
+/* const arr = [
+  ["name", "Deepak"],
+  ["age", 27]
+];
+
+let obj = Object.fromEntries(arr);
+console.log(obj)
+
+Another method
+let obj = arr.reduce((acc, [key, value])=>{
+  acc[key] = value
+  return acc
+}, {})
+
+let obj ={}
+for(let value of arr){
+    if(Array.isArray){
+        obj[value[0]] = value[1]
+    }
+} */
+
+
+   /* const arr = [
+      ["name", "Deepak"],
+      ["age", 27],
+      {address: "Noida"}
+    ];
+    
+    let obj ={}
+    for(let value of arr){
+        if(Array.isArray(value)){
+            obj[value[0]] = value[1]
+        }else if(typeof value === "object" && !Array.isArray(value)){
+            obj = {...obj, ...value}
+        }
+    }
+    console.log(obj)
+    */
+
+
+    
+
+  /*  let obj = { '5': 1, '6': 2, '23': 1, '45': 2 }
+//output like [5,6,6,23,45,45]
+
+let result = []
+for(let key in obj){
+    let count = obj[key]
+    for(let i = 0; i < count; i++){
+        result.push(Number(key))
+    }
+}
+console.log(result) */
+
+
+
+ /* function sumOfEven (n){
+  let sum = 0
+  for(let i = 0; i <=n; i++){
+      if(i % 2 === 0){
+          sum = sum + i
+      }
+  }
+  return sum
+}
+console.log(sumOfEven(20))
+
+*/
+
+
+    
+
+
+
+
+
+
+
 
 
   
