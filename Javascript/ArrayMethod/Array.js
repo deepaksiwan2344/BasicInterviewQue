@@ -42,7 +42,6 @@ let singlearray  = [].concat(...array);
 let finalarr = [].concat(...singlearray)
 
 
-
 //using loop
 function flattenArray(arr) {
     let result = [];

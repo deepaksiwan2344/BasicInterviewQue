@@ -14,7 +14,6 @@ console.log(a)
 console.log("javascript")
 
   /********************  How React Work ********************/
-
 // 1. Virtual DOM (VDOM)
 // React doesn’t touch the real DOM directly.
 // It creates a Virtual DOM, which is a lightweight copy of the actual DOM in memory.

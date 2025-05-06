@@ -89,7 +89,7 @@ console.log(ascending)
 
 
 let str = "  deepak";
-console.log(str.trimStart())
+console.log(str.trimStart());
 
 
 // String Modification method

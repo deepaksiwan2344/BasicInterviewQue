@@ -24,7 +24,6 @@ let obj = {
   age: 12
 }
 
-
 let objlength = Object.keys(obj).length;
 console.log(objlength)
 

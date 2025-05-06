@@ -65,6 +65,7 @@ console.log("user", JSON.parse(jsonobj))
 
 
 
+
 // console.log([..."deepak"])
 // what destructuring in object
 //Example of nested object

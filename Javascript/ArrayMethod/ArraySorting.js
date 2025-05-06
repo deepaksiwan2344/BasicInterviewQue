@@ -161,6 +161,10 @@
 //   return totalAmount;
 // }, 0);
 
+
+
+
+
 // console.log("TotalAmount of deepak and depesh",deepakTotalAmount); // Output: 8000
 //let array = [12,4,56,76,3];
 
