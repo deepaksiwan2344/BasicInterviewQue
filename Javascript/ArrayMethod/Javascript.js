@@ -14,6 +14,25 @@
 // It is a major update to the JavaScript programming language, introducing several 
 // new features
 
+/*
+Array.prototype is an object in JavaScript that contains all the methods shared by arrays,
+such as .map(), .filter(), .forEach(), .push(), etc.
+*/
+
+/*
+
+ECMA = European Computer Manufacturers Association
+Script = Scripting language specification
+
+JavaScript was created by Netscape in the 1990s. To standardize the language across different browsers,
+ECMAScript was developed and maintained by ECMA International.
+
+JavaScript follows the ECMAScript standard, which means:
+JavaScript is the language you write.
+ECMAScript is the set of rules it follows.
+
+
+*/
 
 
 

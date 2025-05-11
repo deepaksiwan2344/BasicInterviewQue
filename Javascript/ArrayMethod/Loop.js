@@ -43,9 +43,9 @@
 
 
 //factorial *******************************************************
-//how to write factoerial of 5
+//how to write factorial of 5
 
-// function factorialize(num) {
+// function factorialise(num) {
 //     if (num < 0)
 //           return -1;
 //     else if (num == 0)

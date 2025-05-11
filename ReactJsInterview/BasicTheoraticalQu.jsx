@@ -29,6 +29,7 @@
 // What is a pure component?
 // A component that does a shallow comparison of props and state to prevent unnecessary renders.
 
+
 // 🔹 Intermediate-Level Questions
 // What are hooks in React?
 // Hooks are functions that let you use state and other React features in functional components.

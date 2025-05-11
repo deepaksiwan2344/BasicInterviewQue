@@ -14,7 +14,6 @@
 // minIndex+1
 
 
-
 function BinarySearch(array, number) {
     let min = 0;
     let max = array.length - 1;
@@ -35,7 +34,6 @@ function BinarySearch(array, number) {
   console.log(result); 
 
   //Binary search using for loop
-
 function BinarySearch(arr, target){
   for(let left = 0; right = arr.length - 1; left <= right){
       let mid = Math.floor((left + right) / 2)

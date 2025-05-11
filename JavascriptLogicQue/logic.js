@@ -549,6 +549,193 @@ console.log(sumOfEven(20))
 
 */
 
+ /*function convertToRoman(num) {
+  const romanMap = [
+    { value: 1000, symbol: 'M' },
+    { value: 900,  symbol: 'CM' },
+    { value: 500,  symbol: 'D' },
+    { value: 400,  symbol: 'CD' },
+    { value: 100,  symbol: 'C' },
+    { value: 90,   symbol: 'XC' },
+    { value: 50,   symbol: 'L' },
+    { value: 40,   symbol: 'XL' },
+    { value: 10,   symbol: 'X' },
+    { value: 9,    symbol: 'IX' },
+    { value: 5,    symbol: 'V' },
+    { value: 4,    symbol: 'IV' },
+    { value: 1,    symbol: 'I' }
+  ];
+
+  let result = '';
+  for (const { value, symbol } of romanMap) {
+      console.log(value)
+    if(num >= value) {
+      result += symbol;
+      num -= value;
+    }
+  }
+
+  return result;
+}
+
+console.log(convertToRoman(60))
+
+*/
+
+
+/*
+let arr = [12,3,4,5,56,78,9,2];
+function result (arr){
+    let even = [];
+    let odd = []
+    let e = 0;
+    let o = 0
+    for(let i = 0; i < arr?.length; i++){
+         if(arr[i] % 2 === 0){
+             even[e] = arr[i]
+             e++
+             
+         }else{
+            odd[o] = arr[i]
+            o++
+         }
+    }
+    return  output =  {
+        even: even,
+        odd: odd
+    }
+}
+console.log(result(arr))
+*/
+
+
+/*
+function reverseAfterPosition(arr, m) {
+    let start = m + 1;
+    let end = arr.length - 1;
+    if (start < end) {
+        let temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp
+        start++;
+        end--;
+
+         //another way
+        //  if(start < end){
+        // [arr[start], arr[end]] = [arr[end], arr[start]]
+        // start++
+        // end--
+    }
+       
+    
+
+    return arr;
+}
+
+let ARR = [1, 2, 3, 4, 5, 6, 23, 4];
+let M = 3;
+
+console.log(reverseAfterPosition(ARR, M)); 
+
+*/
+
+/*
+const arr = [
+  { name: "diwnash" },
+  8,
+  23,
+  "hello",
+  "deepak",
+  { name: "pradeep", age: 23 }
+];
+
+function result(arr) {
+    let obj = [];
+    let str = [];
+    let num = [];
+
+    let objIndex = 0;
+    let strIndex = 0;
+    let numIndex = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        const val = arr[i];
+
+        if (typeof val === "number") {
+            num[numIndex] = val;
+            numIndex++;
+        } else if (typeof val === "object" && val !== null && !Array.isArray(val)) {
+            obj[objIndex] = val;
+            objIndex++;
+        } else if (typeof val === "string") {
+            str[strIndex] = val;
+            strIndex++;
+        }
+    }
+
+    return {
+        obj: obj,
+        num: num,
+        str: str
+    };
+}
+
+console.log(result(arr));
+
+*/
+
+/*********************Using Switch Statement *********************/
+ /* const arr = [
+  { name: "diwnash" },
+  8,
+  23,
+  "hello",
+  "deepak",
+  { name: "pradeep", age: 23 }
+];
+
+function result(arr) {
+    let obj = [];
+    let str = [];
+    let num = [];
+    let objIndex = 0;
+    let strIndex = 0;
+    let numIndex = 0;
+    for (let i = 0; i < arr.length; i++) {
+        const val = arr[i];
+       switch (typeof val){
+           case "number":
+               num[numIndex++] = val;
+               break;
+            case "string":
+                str[strIndex++] = val;
+                break;
+            case "object":
+                if(val !== null){
+                    obj[objIndex++] = val;
+                }
+               break;
+       }
+    }
+    return {
+        obj: obj,
+        num: num,
+        str: str
+    };
+}
+
+console.log(result(arr));
+
+*/
+
+
+
+
+
+
+
+
+
 
     
 
