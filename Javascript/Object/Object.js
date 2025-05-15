@@ -49,7 +49,6 @@ for([index, values] of data){
 function customObjAdd (obj, newProperties){
     for(let key in newProperties){
         console.log(newProperties.hasOwnProperty(key))
-
         if(newProperties.hasOwnProperty){
             obj[key] = newProperties[key]
         }

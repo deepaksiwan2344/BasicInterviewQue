@@ -18,6 +18,5 @@ function FibonanceSeries (n){
     }
     
 }
-
 var n = 10
 console.log(FibonanceSeries(6))

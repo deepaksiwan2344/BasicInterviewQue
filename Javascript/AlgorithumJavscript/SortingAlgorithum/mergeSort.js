@@ -3,14 +3,16 @@
 // step3 merge the selected array into single array
 
 
+//Time complexity is O(n log n)
+//Time complexity O(n log n) is better than O(n²)
+
 
 
 function mergeSort(arr) {
     if (arr.length <= 1) {
       return arr;
     }
-  
-    
+
     // Split the array into two halves
     const middle = Math.floor(arr.length / 2);
     const left = arr.slice(0, middle);

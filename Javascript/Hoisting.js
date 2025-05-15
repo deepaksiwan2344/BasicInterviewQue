@@ -23,7 +23,7 @@ function sayHello() {
 
 sayGoodbye();
 var sayGoodbye = function() {
-  console.log("Goodbye!"); //show error because function exprestion is not hoisting
+  console.log("Goodbye!"); //show error because function expression is not hoisting
 };
 
 

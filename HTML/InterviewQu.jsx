@@ -104,6 +104,28 @@ Latest major version (released 2014+), introduced semantic tags, audio/video sup
 <!DOCTYPE html>
 
 
+. What is the difference between <b> and <strong>, and between <i> and <em> tags?
+
+The <b> and <i> tags are used for styling text to be bold and italic respectively,
+ without conveying any extra importance or emphasis. In contrast, <strong> and <em> not only 
+ style the text (bold and italic respectively) but also semantically indicate that the text is 
+ of greater importance (<strong>) or should be emphasized (<em>). 
+ This semantic meaning can be beneficial for accessibility and SEO.
+
+
+  How can you make an HTML element editable in the browser?
+
+  To make an HTML element editable directly in the browser, you can set the contenteditable
+  attribute to true. This allows users to edit the content of the element in place.
+  <div contenteditable="true">
+  This is an editable div. Click here to edit the text.
+</div>
+
+
+What is an HTML Attribute?
+An attribute provides additional information about an HTML element. It's always written
+in the opening tag of an element in the form of name="value"
+
 
 */
 

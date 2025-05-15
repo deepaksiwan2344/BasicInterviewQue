@@ -32,6 +32,127 @@ JavaScript is the language you write.
 ECMAScript is the set of rules it follows.
 
 
+Note: How Javascript work(step by step)
+JavaScript runs inside a program called a JavaScript engine (like V8 in Chrome and Node.js, or
+SpiderMonkey in Firefox).
+Step 1: Parsing
+The engine reads the code line by line.
+It checks syntax and turns the code into a Data Structure called the Abstract Syntax Tree (AST).
+
+Step 2: Compilation
+JavaScript is interpreted, but modern engines compile it on the fly (JIT).
+It converts code into bytecode or machine code just before execution for better performance.
+
+Step 3: Execution
+The engine runs the compiled code in the Execution Context using the Call Stack.
+
+ 3. Key Components of JavaScript
+ Execution Context
+This is where your code runs. There are three types:
+Global Execution Context (default one)
+Function Execution Context (for each function)
+Eval Execution Context (rarely used)
+Every time a function runs, a new context is created and pushed onto the Call Stack.
+
+
+Call Stack
+A stack data structure that keeps track of which function is being run.
+When a function is called, it's added (pushed) to the stack.
+When a function finishes, it’s removed (popped) from the stack.
+
+
+ Memory Heap
+ A large, unstructured memory area where JavaScript stores objects and variables.
+ All objects and functions are stored here.
+
+
+4. JavaScript Runtime Environment
+The JavaScript runtime environment includes:
+JavaScript engine (executes code)
+Web APIs (like setTimeout, DOM, etc. – provided by browser)
+Callback queue (messages waiting to be processed)
+Event loop (handles async code)
+
+
+Event Loop – Handles Async Code (Very Important)
+JavaScript is single-threaded, so it uses the event loop to handle async tasks like setTimeout,
+promises, API calls, etc.
+
+ Summary Diagram (Text Version)
+ 
+        Code
+         ↓
+      Parser
+         ↓
+   Abstract Syntax Tree
+         ↓
+       JIT Compiler
+         ↓
+   Machine Code Execution
+         ↓
+  ┌────────────┐
+  │ Call Stack │ ← Execution Contexts (global + functions)
+  └────────────┘
+         ↓
+ Async → Web APIs → Callback Queue → Event Loop → Call Stack
+         ↑
+     Memory Heap (for variables/objects)
+
+
+*/
+
+
+/*
+Lexical scope
+Lexical scope in JavaScript means that a variable’s accessibility is determined by its position in
+the source code at the time of declaration.
+
+function outer() {
+  let a = 10;
+
+  function inner() {
+    console.log(a); // inner has access to 'a' from outer
+  }
+
+  inner();
+}
+outer();
+
+*/
+
+
+/*
+What is Polyfills?
+Polyfills in JavaScript are code (usually JavaScript code) that implement modern features 
+on older browsers that do not natively support them.
+
+or
+A polyfill is a piece of code that adds missing functionality to older browsers by emulating 
+modern JavaScript features.
+
+if (!Array.prototype.includes) {
+  Array.prototype.includes = function(element, fromIndex) {
+    if (this == null) {
+      throw new TypeError('Array.prototype.includes called on null or undefined');
+    }
+    var array = Object(this);
+    var len = array.length >>> 0;
+    if (len === 0) {
+      return false;
+    }
+    var start = fromIndex | 0;
+    var k = Math.max(start >= 0 ? start : len - Math.abs(start), 0);
+
+    while (k < len) {
+      if (array[k] === element || (typeof element === 'number' && typeof array[k] === 'number' && isNaN(element) && isNaN(array[k]))) {
+        return true;
+      }
+      k++;
+    }
+    return false;
+  };
+}
+
 */
 
 

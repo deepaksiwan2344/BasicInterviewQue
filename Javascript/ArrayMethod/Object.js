@@ -208,6 +208,21 @@ console.log(logdeepakfullname())
 // 2.Explicitly setting the this value in a function.
 // 3.Controlling function execution.
 
+/*
+
+let obj = {
+    name: "Deepak",
+    details: {
+        age: 25
+    }
+}
+let copy = structuredClone(obj)
+copy.details.age = 30
+console.log(obj.details.age)
+
+
+*/
+
 
 
 

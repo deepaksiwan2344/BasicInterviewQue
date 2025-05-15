@@ -5,6 +5,10 @@
 //partition means devide into two part
 
 
+// Time complexity 
+// Worse case: O(n²)
+// best case and average case: O(n log n)
+
 
 
 function quickSort(arr) {
@@ -22,9 +26,7 @@ function quickSort(arr) {
       right.push(arr[i]);
     }
   }
-
   return [...quickSort(left), pivot, ...quickSort(right)];
-  
 }
 let arr = [23, 4, 5, 6, 67, 8];
 console.log(quickSort(arr));

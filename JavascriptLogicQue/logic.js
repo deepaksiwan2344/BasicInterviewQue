@@ -728,6 +728,23 @@ console.log(result(arr));
 
 */
 
+/*
+let a ={
+  name: "deepak"
+}
+let b = {
+  ...a
+}
+b.name = "pradeep"
+console.log(a)
+
+In that case, the spread operator only copies the reference to the nested object,
+not the actual nested object itself. So changes to nested properties will affect 
+both objects. If we need to avoid that, we would use deep copy techniques like structuredClone()
+or libraries like Lodash’s cloneDeep()."
+
+*/
+
 
 
 

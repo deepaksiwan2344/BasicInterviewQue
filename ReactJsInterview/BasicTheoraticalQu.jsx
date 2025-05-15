@@ -1,6 +1,7 @@
 // Beginner-Level Questions
 // What is React?
-// React is a JavaScript library for building user interfaces, maintained by Facebook. It uses a component-based architecture and a virtual DOM for efficient updates.
+// React is a JavaScript library for building user interfaces, maintained by Facebook.
+//  It uses a component-based architecture and a virtual DOM for efficient updates.
 
 // What are components in React?
 // Components are independent, reusable pieces of UI in a React app. They can be functional or class-based.
@@ -150,6 +151,12 @@
 
 // What is redux-thunk?
 // A middleware that allows writing async logic that interacts with the store.
-
 // What is the use of useSelector and useDispatch in Redux?
 // useSelector accesses state from the store; useDispatch sends actions to the store.
+
+/*
+1.What is React Fiber?
+React Fiber is the reconciliation engine in React — it’s the algorithm that figures out what
+changed in the UI and what to update in the DOM.
+*/
+

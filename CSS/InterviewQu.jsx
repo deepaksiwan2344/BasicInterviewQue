@@ -1,5 +1,7 @@
 /*
 
+CSS3 is more faster with compare to CSS
+
 1. What is CSS and why is it used?
 Answer:
 CSS (Cascading Style Sheets) is used to style HTML elements—such as layout, colors, fonts, and spacing.
@@ -81,6 +83,29 @@ Copy
 Edit
 a:hover { color: red; }  
 input:focus { border-color: blue; }
+
+
+
+
+Some Feature of CSS3
+1. Border Radius
+2. Box Shadow
+3. Text Shadow
+4.Gradients
+5.Transforms
+6.Transitions
+7.Animations
+8.Flexbox
+Layout model for arranging items in rows or columns with control over alignment and spacing.
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+9.Media Queries
+10.Opacity and RGBA/HSLA Colors
+
+
 
  */
 

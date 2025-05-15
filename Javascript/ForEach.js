@@ -8,7 +8,7 @@
 // })
 
 //For loop Syntax
-//for(initialization, condition, increament){
+//for(initialization, condition, increment){
     //code to be executed
 //}
 
