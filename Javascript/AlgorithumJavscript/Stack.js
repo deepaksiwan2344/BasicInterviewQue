@@ -55,3 +55,32 @@ console.log("pop", data)
 // In JavaScript, you can use a stack data structure for various purposes, such as managing 
 // function calls, tracking history, and solving certain algorithmic problems
 
+
+/*
+ stack example with class
+
+class Stack {
+  constructor(maxSize) {
+    this.stack = [];
+    this.max = maxSize;
+  }
+
+  push(value) {
+    if (this.stack.length >= this.max) {
+      console.log("Stack overflow");
+      return;
+    }
+    this.stack.push(value);
+  }
+
+  print() {
+    console.log(this.stack);
+  }
+}
+
+const s = new Stack(5);
+s.push(10);
+s.push(20);
+s.print(); // Output: [10, 20]
+
+*/

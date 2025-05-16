@@ -13,6 +13,9 @@
 // if(arary[minIndex] < Number(7))
 // minIndex+1
 
+//its time complexity is O(log n)
+//Note: O(log n) is mush faster than O(n)
+
 
 function BinarySearch(array, number) {
     let min = 0;
