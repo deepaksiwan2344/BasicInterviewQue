@@ -1,4 +1,4 @@
-//THere are two scope in javascript local scope and global scope
+//There are two scope in javascript local scope and global scope
 
 //Global scope refers to a functions and variable that are accessible in anywhere
 //what is function scope in javascript

@@ -6,9 +6,40 @@
 
 
 
+/*
+How Javascript work?
+When JavaScript code runs (in the browser or Node.js), it goes through these main phases:
+Note:  Parsing → 2. Compilation → 3. Execution
+Each step is handled by the JavaScript engine (e.g., V8 in Chrome/Node.js, SpiderMonkey in Firefox).
 
+Js Engine:
+1. parsing:
+The JavaScript engine (when parsing your code to run it)
+Before your code runs, the JavaScript engine (like V8 in Chrome) parses your code into
+an Abstract Syntax Tree (AST) — a data structure that represents your code.
+
+2.compilation (Just-In-Time (JIT) Compilation);
+Compilation is the process of converting source code (human-readable code) into a 
+lower-level form that a computer can understand and execute.
+
+3.execution
+Execution is the process of running your JavaScript code, step by step, so the browser
+or environment (like Node.js) can perform the actions you've written.
+
+*/
+
+
+/*
+Event Loop
+call Stack
+web API
+microStack queue(Promises)
+callback queue
+
+
+
+*/
 //Javascript is used for both Frontend and Backend like using  node js 
-
 //ES6
 // ECMAScript is the standardized specification that JavaScript follows.
 // It is a major update to the JavaScript programming language, introducing several 
@@ -20,7 +51,6 @@ such as .map(), .filter(), .forEach(), .push(), etc.
 */
 
 /*
-
 ECMA = European Computer Manufacturers Association
 Script = Scripting language specification
 
@@ -154,6 +184,12 @@ if (!Array.prototype.includes) {
 }
 
 */
+
+
+
+
+
+
 
 
 

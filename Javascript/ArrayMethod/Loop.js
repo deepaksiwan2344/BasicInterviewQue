@@ -119,7 +119,7 @@ function findThirdLargest(arr) {
   let largest = arr[0];
   let secondLargest = -Infinity;
   let thirdLargest = -Infinity;
-  
+
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] > largest) {
       thirdLargest = secondLargest;
@@ -132,7 +132,6 @@ function findThirdLargest(arr) {
       thirdLargest = arr[i];
     }
   }
-  
   return thirdLargest;
 }
 
@@ -161,5 +160,15 @@ let arr4 = [34,6,78,90];
 for(index in arr4){
   console.log(index)
 }
+
+/*
+let i = 10;
+do{
+    console.log(i);
+    i++
+}while(i > 20) //output 10 because do while loop run at least one if condition is false or true
+
+
+*/
 
 

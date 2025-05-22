@@ -38,7 +38,10 @@ const person = {
 
   //different detween call() and bind()
   //1. call( immediately invokes the function) where as bind not immediately invoked
+  //The call method invokes a function immediately with a given this context, while bind returns a
+  //new function with the specified this context without invoking it immediately.
 
+  
   let obj = {
     name: "deepak",
     age: 23,

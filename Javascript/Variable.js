@@ -52,6 +52,12 @@ var x = 10;
 {
   var x = 30;
 }
-console.log(x)//output 30;
+console.log(x)//output 30; because var is functional scope variable
+
+let x = 10;
+{
+  let x = 30
+}
+console.log(x)//output 10 because let is block scope variable
 
 

@@ -1,5 +1,8 @@
 //Slice
 //Syntax: array.slice(start, end)
+// slice returns a shallow copy of a portion of an array.
+
+
 
 
 

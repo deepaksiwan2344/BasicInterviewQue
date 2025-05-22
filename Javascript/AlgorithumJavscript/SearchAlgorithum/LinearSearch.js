@@ -1,6 +1,6 @@
 //Linear Search
 
-//TimeComplexity is  o(n)
+//TimeComplexity is  O(n)
 
  let arr = [12,4,5,6,89,40];
  function LinearSearch(arr, value){

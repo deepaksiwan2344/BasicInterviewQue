@@ -2,6 +2,7 @@
 // Promise.race (execute only resolve if 3 promise and 1 is resolve and 2, 3 is reject then only 1 promise execute)
 // Promise.all  (Runs all promises in parallel → much faster.)
 // Promise.allSettled (If you need a detailed success/failure report without stopping execution. execute both for resolve and reject)
+//Promise.any (Promise.any() resolves with the value of the first fulfilled promise.)
 
 //Promises is a code either executed or fails
 //Promises are a way to handle asynchronous operations in JavaScript
@@ -242,3 +243,23 @@ promise.then((res) => {
 });
 
 console.log(4);
+
+
+
+/*
+const p1 = Promise.reject("Error from p1");
+const p2 = new Promise((resolve) => setTimeout(resolve, 100, "p2 success"));
+const p3 = new Promise((resolve) => setTimeout(resolve, 200, "p3 success"));
+
+Promise.any([p1, p2, p3])
+  .then((value) => {
+    console.log("Resolved with:", value); // Output: "Resolved with: p2 success"
+  })
+  .catch((error) => {
+    console.log("Rejected with:", error);
+  });
+*/
+
+
+
+

@@ -17,7 +17,6 @@
 //   console.log(divide(10, 0)); // Output: Error: Cannot divide by zero
 
 
-
 // function divide1(c,d){
 //   try{
 //     if(c === 0){

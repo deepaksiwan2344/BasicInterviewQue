@@ -160,6 +160,63 @@ React Fiber is the reconciliation engine in React — it’s the algorithm that 
 changed in the UI and what to update in the DOM.
 */
 
+/*
+
+Hooks
+useState,
+useEffect,
+useContext,
+useReducer,
+useRef
+
+
+Important Hooks for Experience
+
+useReducer:
+useReducer is a React hook used to manage more complex state logic than useState.
+when to use:
+When the next state depends on previous state
+When you have multiple related pieces of state,
+When you want to Redux like pattern is a simpler way
+Example: const [state, dispatch] = useReducer(reducer, initialState);
+
+
+useContext:
+useContext is used to consume values from a React Context without manually drilling props.
+When you want to share state/data (like theme, user info, language) across many components.
+Shares data between deeply nested components	
+
+useRef:
+useRef is a React hook that gives you a way to create a mutable reference which persists across renders.
+const myRef = useRef(initialValue);
+1. Accessing DOM Elements (like document.querySelector)
+2. Storing Mutable Values Without Re-render
+
+
+
+*/
+
+/*
+Custom Hooks:
+Why Use Custom Hooks?
+Logic written once and reused
+Easier to maintain and test
+Cleaner, more modular components
+*/
+
+/*
+NPM (Node package manager)
+The default package manager for Node.js
+A tool that helps you install, manage, and update third-party libraries, tools, and frameworks
+node_modules contains all your installed packages
+package.json: Declares what packages your app uses
+package-lock.json: It saves the exact version installed (e.g., 1.5.0) and all nested dependencies.
+
+*/
+
+
+
+
 
 
 

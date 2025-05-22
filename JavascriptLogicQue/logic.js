@@ -582,6 +582,38 @@ console.log(convertToRoman(60))
 
 */
 
+/*
+function romanToInt(s) {
+    const romanMap = {
+        'I': 1,
+        'V': 5,
+        'X': 10,
+        'L': 50,
+        'C': 100,
+        'D': 500,
+        'M': 1000
+    };
+
+    let total = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        const current = romanMap[s[i]];
+        const next = romanMap[s[i + 1]];
+        if (next > current) {
+            total += next - current;
+            i++; 
+        } else {
+            total += current;
+        }
+    }
+    return total;
+}
+
+console.log(romanToInt("MMMDCCXLIX"))
+
+
+*/
+
 
 /*
 let arr = [12,3,4,5,56,78,9,2];
@@ -742,6 +774,116 @@ In that case, the spread operator only copies the reference to the nested object
 not the actual nested object itself. So changes to nested properties will affect 
 both objects. If we need to avoid that, we would use deep copy techniques like structuredClone()
 or libraries like Lodash’s cloneDeep()."
+
+*/
+
+/*
+
+Note: Custom Split Function 
+
+for single character
+function customSplit(str, delimiter) {
+    const result = [];
+    let temp = '';
+    for (let i = 0; i < str.length; i++) {
+        console.log(str[i])
+        if (str[i] === delimiter) {
+            result.push(temp);
+            temp = '';
+        } else {
+            temp += str[i];
+        }
+    }
+    result.push(temp);
+    return result;
+}
+
+console.log(customSplit("abc def ghi", " "));
+
+*/
+
+/*
+
+For multiple character
+
+function customSplit(str, delimiter) {
+    const result = [];
+    let temp = '';
+    let i = 0;
+    let index = 0
+    const dLen = delimiter.length;
+    while (i < str.length) {
+        let isMatch = true;
+        for (let j = 0; j < dLen; j++) {
+            if (str[i + j] !== delimiter[j]) {
+                isMatch = false;
+                break;
+            }
+        }
+        if (isMatch) {
+            result[index++] = temp;
+            temp = '';
+            i += dLen; 
+        } else {
+            temp += str[i];
+            i++;
+        }
+    }
+    result[index] = temp; 
+    return result;
+}
+
+console.log(customSplit("123.233.//231", ".//"));
+
+*/
+
+/*
+
+let arr = [23, 45, 6, 7, 84];
+function result(arr) {
+let firstSmallest = arr[0];
+let secondSmallest = arr[1]
+if (secondSmallest < firstSmallest){
+    [secondSmallest, firstSmallest] = [firstSmallest, secondSmallest]
+}
+   for(let i = 2; i < arr.length; i++){
+       if(arr[i] < firstSmallest){
+         secondSmallest = firstSmallest;
+         firstSmallest = arr[i]
+       }else if (arr[i] < secondSmallest &&  arr[i] !== firstSmallest ){
+           secondSmallest = arr[i]
+           
+       }
+   }
+  console.log(secondSmallest)
+}
+
+result(arr);
+*/
+
+
+/*
+Note is a given two sorted array create a function to merge both array with sorted
+
+let arr1 = [1, 3, 5, 7];
+let arr2 = [2, 4, 6, 8, 9];
+
+console.log(mergeSrotedArr(arr1, arr2))
+function mergeSrotedArr (arr1, arr2){
+    let result = [];
+    let i = 0; 
+    let j= 0;
+    while(i < arr1?.length && j < arr2?.length){
+        if(arr1[i] < arr2[j]){
+            result.push(arr1[i]);
+            i++
+        }else{
+            result.push(arr2[j]);
+            j++
+        }
+    }
+    return result.concat(arr1.slice(i), arr2.slice(j))
+}
 
 */
 

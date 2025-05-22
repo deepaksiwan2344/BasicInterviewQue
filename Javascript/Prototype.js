@@ -16,13 +16,11 @@
 //   console.log(student.greet()); // "Hello!"
   
 
-
-
-
 // let obj = {
 //   name: "deepak",
 //   age: 23,
 // };
+
 // console.log(obj);
 // let array = ["deepak"];
 // console.log(array);

@@ -96,6 +96,13 @@ function addition (a){
 console.log(addition(23)(23)(34))
 
 
+/*
+Benefit of currying:
+1. Reusability
+2. Avoid Duplication
+*/
+
+
 
 
 

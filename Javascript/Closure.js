@@ -62,4 +62,48 @@ console.log(result())
 //1. Data Encapsulation (Private varaible)
 //2. Memoization (Performance Optimization)
 
+/*
+
+let a = 23;
+function add (){
+    function result (){
+        console.log(a)
+    }
+    return result
+    let a = "deepak"
+}
+let output = add();
+console.log(output())
+
+its output show like 
+ReferenceError: Cannot access 'a' before initialization
+because:
+When a variable is declared inside a scope with the same name as an outer variable,
+it overrides (or hides) the outer one within that scope.
+
+*/
+
+/*
+Note: Closures are one of the most powerful features in JavaScript. 
+Closures allow you to create private variables that cannot be accessed 
+directly from outside a function.
+
+
+
+function secretCounter() {
+  let count = 0; // private
+
+  return function () {
+    count++;
+    console.log("Count:", count);
+  };
+}
+
+const counter = secretCounter();
+counter(); // Count: 1
+counter(); // Count: 2
+
+
+*/
+
 
