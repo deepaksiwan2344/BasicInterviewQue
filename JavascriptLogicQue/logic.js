@@ -887,6 +887,166 @@ function mergeSrotedArr (arr1, arr2){
 
 */
 
+/*
+
+const employees = [
+  { name: 'Alice', salary: 60000, department: 'Engineering' },
+  { name: 'Bob', salary: 48000, department: 'Engineering' },
+  { name: 'Charlie', salary: 52000, department: 'Sales' },
+  { name: 'David', salary: 49000, department: 'Sales' },
+  { name: 'Eva', salary: 70000, department: 'HR' },
+  { name: 'Frank', salary: 30000, department: 'HR' },
+  { name: 'Grace', salary: 55000, department: 'Marketing' }
+];
+
+function getDepartmentsWithHighAvgSalary(employees) {
+  const departmentStats = {};
+  for (let i = 0; i < employees.length; i++) {
+    const emp = employees[i];
+    const dept = emp.department;
+
+    if (!departmentStats[dept]) {
+      departmentStats[dept] = { totalSalary: 0, count: 0 };
+    }
+
+    departmentStats[dept].totalSalary += emp.salary;
+    departmentStats[dept].count += 1;
+  }
+  
+  
+
+  // Step 2: Filter and build final result using average salary
+  const result = {};
+
+  for (let dept in departmentStats) {
+    const totalSalary = departmentStats[dept].totalSalary;
+    const count = departmentStats[dept].count;
+    const average = totalSalary / count;
+
+    if (average > 50000) {
+      result[dept] = totalSalary;
+    }
+  }
+  return result;
+}
+console.log(getDepartmentsWithHighAvgSalary(employees));
+
+*/
+
+/*
+const str = "engineers are energetic";
+
+console.log(result(str));
+
+function result(str) {
+    let obj = {};
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char === ' ') continue; 
+        if (obj[char]) {
+            obj[char]++;
+        } else {
+            obj[char] = 1;
+        }
+    }
+    let maxChar = '';
+    let maxCount = 0;
+    console.log(obj)
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (char === ' ') continue;
+        if (obj[char] > maxCount) {
+            maxCount = obj[char];
+            maxChar = char;
+        }
+    }
+
+    return maxChar;
+}
+
+*/
+
+/*
+Find First Non-Repeating Character in a given string
+
+const input = "xxyz";
+
+console.log(result(input))
+function result (str){
+    let obj = {}
+for(let value of input){
+    if(obj[value]){
+        obj[value]++
+    }else{
+        obj[value]= 1
+    }
+}
+
+for(let i = 0; i < str.length; i++){
+    let ch = str[i];
+    if(obj[ch] === 1){
+        return ch
+    }
+    
+}
+return null
+
+
+}
+*/
+/*
+Find MIssing Number in a given array;
+
+const arr = [3, 0, 1];
+
+console.log(result(arr))
+function result (arr){
+    let n = arr.length
+   let expectedSum = (n *(n + 1)/2)
+   let totalSum = 0
+   for(let value of arr){
+       totalSum += value
+       
+   }
+   return  expectedSum - totalSum
+
+}
+
+*/
+
+/*
+
+Find the Longest Consecutive Character Streak
+
+function longestStreak(str) {
+  if (str.length === 0) return { char: null, count: 0 };
+
+  let maxChar = str[0];
+  let maxCount = 1;
+
+  let currentChar = str[0];
+  let currentCount = 1;
+
+  for (let i = 1; i < str.length; i++) {
+    if (str[i] === currentChar) {
+      currentCount++;
+    } else {
+      currentChar = str[i];
+      currentCount = 1;
+    }
+
+    if (currentCount > maxCount) {
+      maxCount = currentCount;
+      maxChar = currentChar;
+    }
+  }
+
+  return { char: maxChar, count: maxCount };
+}
+
+*/
+
 
 
 

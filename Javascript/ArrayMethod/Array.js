@@ -26,6 +26,7 @@
 // function on every element in the array.
 
 
+
 // filter(): Creates a new array with all elements that pass the test
 // implemented by the provided function.
 

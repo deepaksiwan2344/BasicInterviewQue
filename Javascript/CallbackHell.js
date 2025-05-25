@@ -25,7 +25,7 @@ setTimeout(function () {
 }, 1000);
 
 
-//How to remove callbackhell in javascript
+//How to remove callback hell in javascript
 // Callback hell can be avoided in JavaScript by using various techniques such as Promises,
 // async/await, and libraries. Here is an example of how to use Promises to remove callback
 // hell in JavaScript:

@@ -36,7 +36,6 @@ let somenumber = array.some((number)=>{
 })
 console.log(somenumber)
 
-
 // let FindIndex = array.findIndex((element, index)=>{
 //      return element > 8
 // })

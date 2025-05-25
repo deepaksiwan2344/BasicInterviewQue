@@ -41,7 +41,6 @@ class BankAccount {
         console.log("Invalid deposit amount");
       }
     }
-  
     withdraw(amount) {
       if (amount <= this.#balance) {
         this.#balance -= amount;

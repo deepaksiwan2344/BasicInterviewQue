@@ -10,7 +10,6 @@ const Home =()=>{
         InputRef.current.focus()
         InputRef.current.style.color = "green"
     }
-    
 
     return(
         <>

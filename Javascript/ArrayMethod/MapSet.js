@@ -34,9 +34,6 @@ let array = new Set([23,445,33,23,2,3,34,23])
  array.delete(445)
  console.log(array)
 
-
-
-
  */
 
 

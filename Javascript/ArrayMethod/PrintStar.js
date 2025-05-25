@@ -11,8 +11,9 @@
 //       console.log(row);
 //     }
 //   }
+//   printRightTriangle(10); \
 
-//   printRightTriangle(10); 
+
 
 
 

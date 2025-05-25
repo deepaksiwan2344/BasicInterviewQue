@@ -109,7 +109,7 @@ JavaScript is single-threaded, so it uses the event loop to handle async tasks l
 promises, API calls, etc.
 
  Summary Diagram (Text Version)
- 
+
         Code
          ↓
       Parser

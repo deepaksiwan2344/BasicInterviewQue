@@ -19,7 +19,7 @@
 // State is a local data storage that is mutable and managed within a component.
 
 // What is the difference between props and state?
-// Props are read-only and passed from parent to child; state is internal and can be updated.
+// Props are read-only and passed from parent to child state is internal and can be updated.
 
 // What is a functional component?
 // A function that returns JSX and does not use lifecycle methods or local state (before hooks).
@@ -31,7 +31,7 @@
 // A component that does a shallow comparison of props and state to prevent unnecessary renders.
 
 
-// 🔹 Intermediate-Level Questions
+// Intermediate-Level Questions
 // What are hooks in React?
 // Hooks are functions that let you use state and other React features in functional components.
 
@@ -62,7 +62,7 @@
 // What is an event in React?
 // A synthetic wrapper around native browser events used in React components.
 
-// 🔹 Advanced-Level Questions
+// Advanced-Level Questions
 // What is reconciliation in React?
 // The process of comparing the current and previous virtual DOM to update the real DOM efficiently.
 

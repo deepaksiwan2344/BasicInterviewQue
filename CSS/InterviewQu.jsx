@@ -21,18 +21,12 @@ Answer:
 The Box Model consists of:
 
 Content – the actual text or image.
-
 Padding – space between content and border.
-
 Border – a line surrounding the element.
-
 Margin – space outside the border (between elements).
-
 4. What is the difference between class and id selectors in CSS?
 Answer:
-
 #id targets an element with a specific ID (must be unique).
-
 .class targets one or multiple elements with the same class.
 
 css
@@ -46,11 +40,8 @@ Edit
 Answer:
 
 relative: Moves relative to its normal position.
-
 absolute: Positions relative to the nearest positioned ancestor.
-
 fixed: Stays fixed relative to the viewport.
-
 sticky: Switches between relative and fixed depending on scroll position.
 
 
@@ -58,21 +49,14 @@ sticky: Switches between relative and fixed depending on scroll position.
 Answer:
 
 px – absolute pixel size.
-
 em – relative to the parent's font-size.
-
 rem – relative to the root (html) font-size.
-
 % – relative to the parent element's size.
-
 8. How is visibility: hidden different from display: none?
 Answer:
 
 display: none: Element is removed from the layout (takes no space).
-
 visibility: hidden: Element is invisible but still occupies space.
-
-
 9. What is a pseudo-class in CSS?
 Answer:
 A pseudo-class is used to define a special state of an element.
@@ -83,8 +67,6 @@ Copy
 Edit
 a:hover { color: red; }  
 input:focus { border-color: blue; }
-
-
 
 
 Some Feature of CSS3
@@ -104,8 +86,6 @@ Layout model for arranging items in rows or columns with control over alignment 
 }
 9.Media Queries
 10.Opacity and RGBA/HSLA Colors
-
-
 
  */
 

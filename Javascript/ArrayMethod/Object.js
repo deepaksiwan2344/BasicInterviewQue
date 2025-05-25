@@ -13,6 +13,7 @@
 //   const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }];
 //   console.log(sumByKey(data, "salary")); 
 
+
 const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }]; 
 function  totalsalary(arr, key){
     let sum = 0
@@ -51,8 +52,7 @@ console.log(totalsalary(data, "salary"))
 // a[c] = 234
 
 // console.log(a[b]);
-
-//what is json.stringfy and jsonparse
+//what is json.stringify and json parse
 
 const user = {
     name: "deepak", 
@@ -79,17 +79,10 @@ console.log("user", JSON.parse(jsonobj))
 // }
 
 
-
-
-
 // const {fullname: {name}} = user
 // console.log(name)
 
-
 //console.log({a:1} == {a: 1}) //output false
-
-
-
 // const value = {number: 10}
 // const multiply = (x = {...value})=>{
 //     console.log((x.number *= 2));

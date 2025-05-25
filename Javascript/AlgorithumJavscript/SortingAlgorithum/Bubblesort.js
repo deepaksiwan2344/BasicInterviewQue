@@ -29,7 +29,6 @@ function OptimizedBubbleSort(array) {
   const length = array.length;
   for (let i = 0; i < length - 1; i++) {
     let swapped = false; // Add a flag
-
     for (let j = 0; j < length - i - 1; j++) {
       if (array[j] > array[j + 1]) {
         // Swap

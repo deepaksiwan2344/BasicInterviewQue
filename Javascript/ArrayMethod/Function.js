@@ -8,6 +8,7 @@
 
 //Arrow function in javascript
 
+
 //Before Arrow function
 // Hello = function () {
 //     return "Hello deepak"
@@ -46,6 +47,7 @@ const result1 = (a,b)=>{
 }
 console.log(result1(23, 56))
 
+
 //second difference In arrow function constructure is not use but normal function constructure is use
 
 
@@ -57,7 +59,9 @@ console.log(result1(23, 56))
  const car = (name)=>{
     this.brand = name
  }
-const carData = new car('maruti')
+const carData = new car('maruti');
+
+
 console.log(carData) //car is not a constructor
 
 

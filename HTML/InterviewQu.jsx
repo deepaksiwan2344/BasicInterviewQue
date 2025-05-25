@@ -114,7 +114,6 @@ The <b> and <i> tags are used for styling text to be bold and italic respectivel
 
 
   How can you make an HTML element editable in the browser?
-
   To make an HTML element editable directly in the browser, you can set the contenteditable
   attribute to true. This allows users to edit the content of the element in place.
   <div contenteditable="true">
