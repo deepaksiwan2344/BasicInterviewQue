@@ -76,3 +76,256 @@ function findThirdSmallest(arr) {
 }
 
 */
+
+/*
+
+"5" + 1      // "51"  → number 1 is coerced to string, then concatenated
+"5" - 1      // 4     → string "5" is coerced to number, subtraction happens
+true + 1     // 2     → true becomes 1
+false + "1"  // "false1" → false becomes string, concatenation happens
+null + 1     // 1     → null becomes 0
+
+*/
+
+
+/*
+Question: Reverse a array without in build function;
+
+let arr = [23,4,5,56,78,9];
+console.log(reverseArr(arr))
+function  reverseArr (arr){
+    let startIndex = 0;
+    let endIndex = arr.length - 1;
+    while(startIndex < endIndex){
+        [arr[startIndex], arr[endIndex]] = [arr[endIndex], arr[startIndex]]
+        startIndex++;
+        endIndex--
+    }
+    return arr
+}
+*/
+
+/*
+Input Output
+let obj = {
+    name: "Deepak",
+    age: 23,
+    details (){
+       return `my name is ${this.name}`
+    }
+}
+
+let copy = obj.details
+console.log(copy()) //output show undefined
+because we copy the obj.details but we not context of this show output is undefined we can fixed 
+using bind method like
+
+let obj = {
+    name: "Deepak",
+    age: 23,
+    details (){
+       return `my name is ${this.name}`
+    }
+}
+
+let copy = obj.details.bind(obj)
+console.log(copy())  output my name is Deepak
+
+*/
+
+/*
+const employee = {
+  name: "Ravi",
+  getName: function () {
+    return this.name;
+  }
+};
+
+const manager = {
+  name: "Swati"
+};
+
+manager.getName = employee.getName;
+
+console.log(manager.getName()); //output Swati
+*/
+
+/*
+const a = { value: 10 };
+const b = a;
+const c = { value: 10 };
+
+//same memory
+console.log(a === b); // ? true
+
+//different object in memory
+console.log(a === c); // ? false
+console.log(JSON.stringify(a) === JSON.stringify(c)); // ? true
+*/
+
+/*
+
+let obj = {
+    name: "deepak"
+}
+
+let obj2 = {
+    name: "deepak"
+}
+//In JavaScript, objects are compared by reference, not by value.
+console.log(obj === obj2) //false
+
+console.log(JSON.stringify(obj) === JSON.stringify(obj2))// true
+
+*/
+
+/*
+console.log(a);  // What is the output here?
+
+var a = 10;
+
+function test() {
+    console.log(a);  // What is the output here?
+    var a = 20;
+    console.log(a);  // And here?
+}
+
+test();
+console.log(a);  // And finally here?
+
+its output are
+undefined
+undefined
+20
+10
+*/
+
+/*
+console.log(false == '0'); //true    // ?
+console.log(false === '0'); //false    // ?
+console.log(null == undefined); //true // ?
+console.log(null === undefined); //false // ?
+console.log([] == false);   //true    // ?
+console.log([] === false);  //false  //
+console.log([] + 1); // Output 1
+*/
+
+/*
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const fn1 = outer();
+fn1();
+fn1();
+fn1();
+
+const fn2 = outer(); create a new closure and new count
+fn2();
+
+//Output
+1
+2
+3
+1
+
+*/
+
+/*
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout 1");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise 1");
+});
+
+console.log("End");
+
+//Output
+Start
+End
+Promise 1
+Timeout 1
+
+*/
+
+/*
+let a = { value: 10 };
+let b = a;
+let c = { value: 10 };
+
+b.value = 20;
+
+console.log(a.value);   // 20 ? 
+console.log(c.value);  // 10 ?
+console.log(a === b);  // true ?
+console.log(a === c);  //  false?
+*/
+
+/*
+const user = {
+  name: "Deepak",
+  age: 25
+};
+
+const { name, age, city = "Delhi", age: userAge } = user;
+
+console.log(name);     // Deepak ?
+console.log(age);      // 25 ?
+console.log(city);     // Delhi ?
+console.log(userAge);  // 25 ?
+
+*/
+
+/*
+const obj1 = {
+  name: "Deepak",
+  skills: ["JS", "React"]
+};
+
+const obj2 = { ...obj1 };
+
+obj2.name = "Ravi";
+obj2.skills.push("Node.js");
+
+console.log(obj1.name);     // Deepak ?
+console.log(obj2.name);     // Ravi ?
+console.log(obj1.skills);   // Js, React Node.js ?
+console.log(obj2.skills);   //  Js, React, Node.js?
+console.log(obj1 === obj2); // false ?
+
+*/
+
+/*
+console.log(false == 0);         // true ?
+console.log(false === 0);        // false ?
+console.log(null == undefined);  //  true?
+console.log(null === undefined); // false ?
+console.log("5" == 5);           // true ?
+console.log("5" === 5);          // false ?
+
+*/
+
+/*
+function makeCounter() {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+const counter1 = makeCounter();
+const counter2 = makeCounter();
+counter1(); // 1 ?
+counter1(); //  2?
+counter2(); //  1?
+counter1(); // 3 ?
+counter2(); // 2 ?
+*/

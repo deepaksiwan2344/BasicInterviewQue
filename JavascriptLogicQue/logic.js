@@ -645,7 +645,7 @@ console.log(result(arr))
 function reverseAfterPosition(arr, m) {
     let start = m + 1;
     let end = arr.length - 1;
-    if (start < end) {
+    while (start < end) {
         let temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp
@@ -662,6 +662,27 @@ function reverseAfterPosition(arr, m) {
     
 
     return arr;
+}
+
+let ARR = [1, 2, 3, 4, 5, 6, 23, 4];
+let M = 3;
+
+console.log(reverseAfterPosition(ARR, M)); 
+
+*/
+
+/*
+Note: do while loop
+function reverseAfterPosition(arr, m) {
+    let start = m + 1;
+    let end = arr.length - 1;
+    do{
+        [arr[start], arr[end]] = [arr[end], arr[start]];
+        start++;
+        end--;
+        
+    }while(start < end)
+    return arr
 }
 
 let ARR = [1, 2, 3, 4, 5, 6, 23, 4];
@@ -868,8 +889,8 @@ Note is a given two sorted array create a function to merge both array with sort
 let arr1 = [1, 3, 5, 7];
 let arr2 = [2, 4, 6, 8, 9];
 
-console.log(mergeSrotedArr(arr1, arr2))
-function mergeSrotedArr (arr1, arr2){
+console.log(mergeSortedArr(arr1, arr2))
+function mergeSortedArr (arr1, arr2){
     let result = [];
     let i = 0; 
     let j= 0;
