@@ -15,7 +15,7 @@
 
 
 const data = [  { name: "John", age: 25, salary: 50000 },  { name: "Jane", age: 30, salary: 60000 },  { name: "Bob", age: 35, salary: 70000 }]; 
-function  totalsalary(arr, key){
+function  totalSalary(arr, key){
     let sum = 0
     for(let i = 0; i < arr?.length; i++){
         console.log("arr[i]", arr[i][key])
@@ -26,7 +26,7 @@ function  totalsalary(arr, key){
     return sum
 }
 
-console.log(totalsalary(data, "salary"))
+console.log(totalSalary(data, "salary"))
 
 //convert array into object
 

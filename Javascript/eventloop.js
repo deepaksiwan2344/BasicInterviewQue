@@ -2,8 +2,8 @@
 //  single-threaded environment.
 
 // callstack
-// taskquea
-// microquea
+//  Task Queue or Macro task Queue
+// Microtask Queue
 
 
 //function
@@ -12,8 +12,6 @@
 
 
 //threads are units of execution that allow multiple tasks to run concurrently
-
-
 
 /*
 Event loop:

@@ -34,6 +34,29 @@ const circle = new Cricle(5)
 console.log(circle.calculateArea())
 console.log(circle.displayInfo())
 
+*/
+
+/*
+class Car {
+    #engineStarted = false;
+    engineStart(){
+        this.#engineStarted = true
+        console.log("engine Started")
+    }
+    drive(){
+        if(this.#engineStarted){
+            console.log("car is starting")
+        }else{
+            console.log("car is not starting")
+        }
+    }
+}
+
+const myCar = new Car();
+console.log(myCar.engineStart())
+console.log(myCar.drive())
+
+Here: #engineStarted is hidden from outside access.
 
 */
 

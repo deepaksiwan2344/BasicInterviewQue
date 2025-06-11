@@ -16,6 +16,8 @@
 
 // Note: Heap sort has a time complexity of O(n log n) in all cases,
 
+//leave node formula of heap sort (n / 2) + 1 to n
+
 let array = [23, 56, 7, 78, 9, 120];
 function heapSort(array) {
     const length = array.length;

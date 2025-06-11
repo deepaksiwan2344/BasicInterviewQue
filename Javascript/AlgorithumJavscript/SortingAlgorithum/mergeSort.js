@@ -1,11 +1,10 @@
 // step1 split the given array into middle, left and right
-// step2 use recurcive for both part means left and right part of array
+// step2 use recursive for both part means left and right part of array
 // step3 merge the selected array into single array
 
 
 //Time complexity is O(n log n)
 //Time complexity O(n log n) is better than O(n²)
-
 
 
 function mergeSort(arr) {

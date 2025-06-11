@@ -2,7 +2,7 @@
 
 //Pivot and partition
 // pivot means select one number of given array
-//partition means devide into two part
+//partition means divide into two part
 
 
 // Time complexity 

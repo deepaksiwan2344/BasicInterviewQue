@@ -6,7 +6,6 @@ function newValue(){
 }
 
 
-
 var num  = 12;
 var sum = 100;
 num =24;

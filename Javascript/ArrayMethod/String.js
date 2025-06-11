@@ -39,7 +39,7 @@
 // console.log(maxCount)
 // console.log(minCount)
 
-// const Maxcharacter= (str)=>{
+// const MaxCharacter= (str)=>{
 //     let obj = {}
 //     for(let char of str){
     
@@ -50,11 +50,11 @@
 
 // }
 
-// Maxcharacter("deepak")
+// MaxCharacter("deepak")
 
 
 
-const maxcharactor =(str)=>{
+const maxCharacter =(str)=>{
     let obj = {}
     for(let i of str){
         (!obj[i])?obj[i] = 1:obj[i]++
@@ -62,7 +62,7 @@ const maxcharactor =(str)=>{
     console.log(obj)
 }
 
-maxcharactor("deepak")
+maxCharacter("deepak")
 
 
 let string = "abcceddha";

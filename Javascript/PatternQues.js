@@ -196,6 +196,169 @@ for (let i = n; i >= 1; i--) {
 }
 */
 
+/*
+        * 
+      *   * 
+    *       * 
+  *           * 
+* * * * * * * * * 
+
+let num = 5;
+
+if (num > 1) {  
+    for (let i = 1; i <= num; i++) {
+        let pattern = "";  
+        for (let j = 1; j <= (num - i); j++) { 
+            pattern += "  ";
+        }
+        for (let k = 1; k <= ((2 * i) - 1); k++) {  
+            if (k === 1 || k === ((2 * i) - 1) || i === num) { 
+                pattern += "* ";
+            } else {
+                pattern += "  ";
+            }
+        }
+        console.log(pattern);
+    }
+}
+
+*/
+
+/*
+
+          * 
+        * * * 
+      * * * * * 
+    * * * * * * * 
+  * * * * * * * * * 
+* * * * * * * * * * * 
+
+let n = 6;
+for (let i = 1; i <= n; i++) {
+    let pattern = "";
+    for (let j = 1; j <= n - i; j++) {
+        pattern += "  ";
+    }
+    for (let star = 1; star <= 2 * i - 1; star++) {
+        pattern += "* ";
+    }
+    console.log(pattern);
+}
+
+
+*/
+
+
+/*
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+ ******* 
+  *****  
+   ***   
+    *  
+      
+
+let n = 5;
+
+// Upper triangle
+for (let i = 1; i <= n; i++) {
+  let pattern = "";
+
+  // spaces
+  for (let j = 1; j <= n - i; j++) {
+    pattern += " ";
+  }
+
+  // stars
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    pattern += "*";
+  }
+
+  console.log(pattern);
+}
+
+// Lower triangle
+for (let i = n - 1; i >= 1; i--) {
+  let pattern = "";
+
+  // spaces
+  for (let j = 1; j <= n - i; j++) {
+    pattern += " ";
+  }
+
+  // stars
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    pattern += "*";
+  }
+
+  console.log(pattern);
+}
+
+*/
+
+/*
+  
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+    
+ let n = 5;
+
+// Upper half
+for (let i = 1; i <= n; i++) {
+  let pattern = "";
+
+  // Leading spaces
+  for (let j = 1; j <= n - i; j++) {
+    pattern += " ";
+  }
+
+  // Stars and hollow space
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    if (k === 1 || k === 2 * i - 1) {
+      pattern += "*";
+    } else {
+      pattern += " ";
+    }
+  }
+
+  console.log(pattern);
+}
+
+// Lower half
+for (let i = n - 1; i >= 1; i--) {
+  let pattern = "";
+
+  // Leading spaces
+  for (let j = 1; j <= n - i; j++) {
+    pattern += " ";
+  }
+
+  // Stars and hollow space
+  for (let k = 1; k <= 2 * i - 1; k++) {
+    if (k === 1 || k === 2 * i - 1) {
+      pattern += "*";
+    } else {
+      pattern += " ";
+    }
+  }
+
+  console.log(pattern);
+}
+
+
+
+*/
+
 
 
 

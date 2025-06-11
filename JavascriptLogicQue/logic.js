@@ -206,23 +206,48 @@ function reverseWords(sentence) {
 //  specific target. You may assume that each input would have exactly one solution, and you may not 
 //  use the same element twice.
 
-function twoSum(nums, target) {
-  const obj = {};
-  for (let i = 0; i < nums.length; i++) {
-      const complement = target - nums[i];
+// function twoSum(nums, target) {
+//   const obj = {};
+//   for (let i = 0; i < nums.length; i++) {
+//       const complement = target - nums[i];
 
-      if (obj.hasOwnProperty(complement)) {
-          return [obj[complement], i];
-      }
-      obj[nums[i]] = i;
-  }
-  throw new Error("No two sum solution");
-}
+//       if (obj.hasOwnProperty(complement)) {
+//           return [obj[complement], i];
+//       }
+//       obj[nums[i]] = i;
+//   }
+//   throw new Error("No two sum solution");
+// }
 
-const nums = [2, 7, 11, 15];
-const target = 18;
+// const nums = [2, 7, 11, 15];
+// const target = 18;
 //console.log(twoSum(nums, target)); // Output: [0, 1]
 
+
+/*
+function allPairs(arr, target) {
+    let obj = {};
+    let results = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let complement = target - arr[i];
+        if (obj.hasOwnProperty(complement)) {
+            results.push([obj[complement], i]);
+        }
+        obj[arr[i]] = i;  
+    }
+
+    return results;
+}
+
+let arr = [2, 3, 4, 6, 10, 6, 7];
+console.log(allPairs(arr, 10));
+
+
+[ [ 2, 3 ], [ 2, 5 ], [ 1, 6 ] ]
+
+
+*/
 
 /***************************** Question 8 ************************************* */
 // Given an array of integers nums, find all the elements that appear more than once in the array.
@@ -311,7 +336,7 @@ function result() {
 console.log(result()); 
 
 
-// In a geven multiple array find a single array
+// In a given multiple array find a single array
 
 let array = [
   {name: "deepak"},
@@ -520,7 +545,6 @@ for(let value of arr){
     */
 
 
-    
 
   /*  let obj = { '5': 1, '6': 2, '23': 1, '45': 2 }
 //output like [5,6,6,23,45,45]
@@ -905,7 +929,6 @@ function mergeSortedArr (arr1, arr2){
     }
     return result.concat(arr1.slice(i), arr2.slice(j))
 }
-
 */
 
 /*
@@ -1012,13 +1035,45 @@ for(let i = 0; i < str.length; i++){
     
 }
 return null
-
-
 }
 */
+
+/*
+const input = "xxyyyyz";
+
+// Find First more Repeating Character in a given string
+// its output is y
+
+console.log(result(input))
+function result (str){
+    let obj = {};
+    for(let value of str){
+        if(obj[value]){
+            obj[value]++
+        }else{
+            obj[value] = 1
+        }
+    }
+    
+    let maxChar = "";
+    let maxCount = 0
+  for(let char of str){
+      if(obj[char] > maxCount){
+          maxCount = obj[char];
+          maxChar = char
+      }
+  }
+  return {
+      maxChar: maxChar,
+      maxCount: maxCount
+  }
+   
+}
+
+*/
+
 /*
 Find MIssing Number in a given array;
-
 const arr = [3, 0, 1];
 
 console.log(result(arr))

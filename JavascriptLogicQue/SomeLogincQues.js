@@ -329,3 +329,108 @@ counter2(); //  1?
 counter1(); // 3 ?
 counter2(); // 2 ?
 */
+
+/*
+console.log([12,34,5] + [34,5]) //output 12,34,534,5
+console.log(0.1 + 0.2 === 0.3) //output false
+JavaScript uses binary floating-point numbers (IEEE 754 standard), which cannot precisely represent 
+some decimal values, like 0.1 and 0.2.
+console.log([] + true); Output true
+
+*/
+/*
+let a = [1, 2, 3];
+let b = [1, 2, 3];
+
+console.log(a == b);
+console.log(a === b);
+//they are two different object in memory
+*/
+
+/*
+"3" - 1 //output 2 because - is a numeric operator only. JavaScript expects both sides to be numbers.
+So it tries to convert the string "3" to number:
+
+"3" + 1 //output + is the string concatenation operator if any operand is a string.
+
+*/
+
+/*
+
+function isPrime(n) {
+    if (n <= 1) return false;
+    for (let i = 2; i * i <= n; i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+function countPrimesBetween(start, end) {
+    let count = 0;
+    for (let i = start; i <= end; i++) {
+        if (isPrime(i)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(countPrimesBetween(20, 278));
+
+*/
+
+/*
+//Count Prime Number and its value 
+function isPrime(n) {
+    if (n <= 1) return false;
+    for (let i = 2; i * i <= n; i++) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+function countPrimesBetween(start, end) {
+    let count = 0;
+    let primeNum = []
+    for (let i = start; i <= end; i++) {
+        if (isPrime(i)) {
+            primeNum.push(i)
+            count++;
+        }
+    }
+    return {
+        count: count,
+        primeNum: primeNum
+    };
+}
+
+console.log(countPrimesBetween(1, 20));
+*/
+
+
+/*
+let str = "how are you";
+let result = "";
+let capitalizeNext = true
+
+for (let char of str) {
+   if(char === " "){
+       result += char;
+       capitalizeNext = true
+   }else{
+       if(capitalizeNext){
+           result += char.toUpperCase();
+           capitalizeNext = false
+           
+       }else{
+           result += char
+           
+       }
+       
+   }
+}
+
+console.log(result); output: How Are You
+
+*/
+

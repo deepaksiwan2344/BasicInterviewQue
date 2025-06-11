@@ -39,8 +39,8 @@
 
 
 let array = [[2, 3, 5, [12,4,5,]], 23, 4];
-let singlearray  = [].concat(...array);
-let finalarr = [].concat(...singlearray)
+let singleArray  = [].concat(...array);
+let finalArr = [].concat(...singleArray)
 
 
 //using loop

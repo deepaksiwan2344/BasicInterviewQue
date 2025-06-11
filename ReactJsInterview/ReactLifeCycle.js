@@ -11,7 +11,7 @@
 
 
 
-//React life cycle in fucntional component
+//React life cycle in functional component
 
 
 import React, { useEffect, useState } from 'react';

@@ -1,5 +1,5 @@
 // An algorithm is a step-by-step set of instructions to solve a specific problem or perform a task.
-//Algorithum are the core of computer programming
+//Algorithm are the core of computer programming
 
 
 

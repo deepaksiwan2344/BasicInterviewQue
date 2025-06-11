@@ -1,9 +1,9 @@
-// const additon = function (num1, num2) {
+// const addition = function (num1, num2) {
 //     return num1 + num2
 
 // }
 
-// console.log(additon(34, 38))
+// console.log(addition(34, 38))
 
 
 //Arrow function in javascript

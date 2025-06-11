@@ -45,7 +45,7 @@ const secondSmallest1 = findsecondsmallest(arr1)
 
 
 const arr2 = [2, 34, 56, 48]
-function findArraysum(arr2) {
+function findArraySum(arr2) {
     let sum = 0
     for (let i = 0; i < arr2?.length; i++) {
         // console.log("allarray", arr2)
@@ -54,8 +54,8 @@ function findArraysum(arr2) {
     }
     return sum
 }
-const totalsum = findArraysum(arr2)
-//console.log(totalsum)
+const totalSum = findArraySum(arr2)
+//console.log(totalSum)
 
 //total sum using reduce method
 const sum = (arr2) => {
@@ -65,8 +65,8 @@ const sum = (arr2) => {
 
 }
 
-const totalvalue = sum(arr2)
-//console.log(totalsum)
+const totalValue = sum(arr2)
+//console.log(totalSum)
 
 
 // function isPrime(n) {
@@ -155,7 +155,7 @@ const totalvalue = sum(arr2)
 
 
 
-//wrire a fibonanci serires using swape 
+//write a fibonanci series using swape
 // let a = 0;
 // let b = 1;
 

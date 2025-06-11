@@ -1,5 +1,6 @@
-//In ForEach Loop we can not use break and continue statement directaly within a forEach
+//In ForEach Loop we can not use break and continue statement directly within a forEach
 //forEach Loop does not return a value like for loop
+//forEach does not return anything
 
 //ForEach loop
 // const number = [2,4,67,78,4];

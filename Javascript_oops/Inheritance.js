@@ -102,3 +102,77 @@ Mixing
 
 
 */
+
+/*
+Inheritance Example of Banking
+
+// Parent Class
+class BankAccount {
+    constructor(accountNumber, holderName, balance) {
+        this.accountNumber = accountNumber;
+        this.holderName = holderName;
+        this.balance = balance;
+    }
+
+    deposit(amount) {
+        this.balance += amount;
+        console.log(`Deposited ₹${amount}. New balance: ₹${this.balance}`);
+    }
+
+    withdraw(amount) {
+        if (amount <= this.balance) {
+            this.balance -= amount;
+            console.log(`Withdrew ₹${amount}. Remaining balance: ₹${this.balance}`);
+        } else {
+            console.log("Insufficient balance.");
+        }
+    }
+
+    displayDetails() {
+        console.log(`Account No: ${this.accountNumber}, Name: ${this.holderName}, Balance: ₹${this.balance}`);
+    }
+}
+
+class SavingsAccount extends BankAccount {
+    constructor(accountNumber, holderName, balance, interestRate) {
+        super(accountNumber, holderName, balance);
+        this.interestRate = interestRate;
+    }
+
+    addInterest() {
+        let interest = (this.balance * this.interestRate) / 100;
+        this.balance += interest;
+        console.log(`Interest ₹${interest} added. New balance: ₹${this.balance}`);
+    }
+}
+class CurrentAccount extends BankAccount {
+    constructor(accountNumber, holderName, balance, overdraftLimit) {
+        super(accountNumber, holderName, balance);
+        this.overdraftLimit = overdraftLimit;
+    }
+
+    withdraw(amount) {
+        if (amount <= this.balance + this.overdraftLimit) {
+            this.balance -= amount;
+            console.log(`Withdrew ₹${amount}. New balance: ₹${this.balance}`);
+        } else {
+            console.log("Overdraft limit exceeded.");
+        }
+    }
+}
+
+const saving = new SavingsAccount("SB123", "Deepak", 10000, 5);
+saving.displayDetails();
+saving.addInterest();
+saving.deposit(2000);
+saving.withdraw(5000);
+
+console.log("----------");
+
+const current = new CurrentAccount("CA456", "Kumar", 5000, 3000);
+current.displayDetails();
+current.withdraw(7000);  // Within overdraft
+current.withdraw(2000);  // Exceeds overdraft
+
+
+*/

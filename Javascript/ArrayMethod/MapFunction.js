@@ -16,3 +16,13 @@ let squire = number.map((num1)=>{
 
 console.log(squire)
 
+/*
+difference between map and reduce method in Javascript
+reduce method in Java script can be return any data type depending upon  how to use it
+reduce method return like object, array, number
+where as map method return always array
+
+
+*/
+
+

@@ -8,7 +8,6 @@ function getChar(str) {
 
     let max = 1;
     let char = str[0];
-
     for (let k in map) {
         console.log(map[k])
         if (map[k] > max) {

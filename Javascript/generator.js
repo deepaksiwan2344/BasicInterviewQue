@@ -2,8 +2,6 @@
 //generator function provide better control over iteration and can save memory.
 
 
-
-
 // function* eventNames(){
 //     let num = 0;
 //     while(true){

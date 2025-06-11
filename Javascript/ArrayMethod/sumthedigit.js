@@ -1,7 +1,7 @@
 //sum the digit in the given number
 
 // let number = 34284384;
-// const sumdigit = (number)=>{
+// const sumDigit = (number)=>{
 //     console.log("number",number.toString())
 //     let arr = number.toString().split("").map(Number);
 //     console.log("arr", arr)
@@ -9,12 +9,12 @@
 //         return acc + cur
 //     })
 // }
-// console.log(sumdigit(number));
+// console.log(sumDigit(number));
 
 // let digit = 2434;
 // const reverse = (digit)=>{
-//     let numreverse = digit.toString().split('').reverse().join('')
-//     return numreverse
+//     let numReverse = digit.toString().split('').reverse().join('')
+//     return numReverse
 // }
 // console.log(reverse(digit))
 

@@ -74,8 +74,13 @@ Middleware allows you to run code before a request is completed, useful for redi
 auth checks, etc. It runs on the edge (faster than server).
 
 
+Benefits of SSR
+Faster First Page Load
+Better SEO (search engines see full HTML)
+Works better on slow networks or devices
 
 
+Note: Next.js is Better for SEO than React.js
 
 
 

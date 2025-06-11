@@ -20,15 +20,15 @@
 // var innerFn = outer();
 // innerFn(); // Output: 10
 
-// function outerfunction (){
+// function outerFunction (){
 //     var string = "deepak kumar"
-//     function innerfunction(){
+//     function innerFunction(){
 //         console.log(string)
 //     }
-//     return innerfunction
+//     return innerFunction
 // }
 
-// const result =  outerfunction();
+// const result =  outerFunction();
 // result();
 
 // const outer1 =()=>{
@@ -45,14 +45,14 @@
 
 
 
-function outerfunctoin (){
+function outerFunction (){
     let x  = 23;
-    function innerfunction(){
+    function innerFunction(){
         console.log("x", x)
     }
-    return innerfunction
+    return innerFunction
 }
-const result = outerfunctoin();
+const result = outerFunction();
 console.log(result())
 //console.log("variable", x)
 
