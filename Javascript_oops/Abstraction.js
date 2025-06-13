@@ -19,7 +19,7 @@ class Shape {
 }
 
 
-class Cricle extends Shape {
+class Circle extends Shape {
   constructor(radius) {
     super("Circle");
     this.radius = radius;
@@ -30,7 +30,7 @@ class Cricle extends Shape {
 }
 
 
-const circle = new Cricle(5)
+const circle = new Circle(5)
 console.log(circle.calculateArea())
 console.log(circle.displayInfo())
 
@@ -55,7 +55,6 @@ class Car {
 const myCar = new Car();
 console.log(myCar.engineStart())
 console.log(myCar.drive())
-
 Here: #engineStarted is hidden from outside access.
 
 */

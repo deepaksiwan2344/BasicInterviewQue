@@ -34,7 +34,6 @@
 //  (e.g. an array or a string)
 //  into individual elements.
 
-
 // let array =[ [24,56,76,76]];
 // console.log(...array)
 

@@ -101,9 +101,8 @@ function lengthOfLongestSubstring(s) {
 }
 
 // Test cases
+
 console.log(lengthOfLongestSubstring("abcabcbb"));
-
-
 
 // function result(str) {
 //     let num = 0;

@@ -376,7 +376,6 @@ function countPrimesBetween(start, end) {
 }
 
 console.log(countPrimesBetween(20, 278));
-
 */
 
 /*

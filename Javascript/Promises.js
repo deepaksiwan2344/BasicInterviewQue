@@ -103,6 +103,7 @@ var pl1 = new Promise((resolve, reject) => {
   resolve(sqldata1);
 });
 
+
 Promise.all([
   pl.catch((err) => {
     return err;
@@ -117,6 +118,7 @@ Promise.all([
   .catch((err) => {
     console.log("err", err);
   });
+
 
 function user() {
   return new Promise((resolve, reject) => {

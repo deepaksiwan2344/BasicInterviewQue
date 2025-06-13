@@ -35,7 +35,6 @@ myObject1.myMethod1();
 
 // obj.fullAddress();
 
-
 'use strict'
 let obj = {
     name: "deepak",
