@@ -24,7 +24,7 @@ function array(){
 }
 setInterval(array, 2000);
 
-//Promises is microtask where as setInterval is macrotast so, promises is higher priority and setInterval is lower priority
+//Promises is microtask where as setInterval is macro task so, promises is higher priority and setInterval is lower priority
 
 
 function num (){

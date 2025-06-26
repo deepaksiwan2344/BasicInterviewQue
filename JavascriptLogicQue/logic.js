@@ -86,14 +86,18 @@ function getTitleByCategory(books, category) {
   }
   return result;
 }
-// console.log(getTitleByCategory(books, "Fiction"))
 
+
+// console.log(getTitleByCategory(books, "Fiction"))
 /****************************Question3***********************************/
 //    You are tasked with implementing a simple login system. Write a function called login that takes a username
 //     and password as input and returns a message indicating whether the login was successful or not.
 
 // You are given a predefined array of objects representing user credentials.
 // Each user object contains a username and password property.
+
+
+
 
 const users = [
   { username: "user1", password: "password1" },
@@ -518,6 +522,7 @@ let obj = arr.reduce((acc, [key, value])=>{
   acc[key] = value
   return acc
 }, {})
+
 
 let obj ={}
 for(let value of arr){

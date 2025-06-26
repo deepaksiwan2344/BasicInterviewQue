@@ -43,7 +43,7 @@
 // y()
 // function x(){
 //     setTimeout(()=>{
-//         console.log("settimeou")
+//         console.log("settimeout")
 //     }, 0)
 
 // }

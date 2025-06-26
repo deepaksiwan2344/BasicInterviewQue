@@ -34,6 +34,14 @@ let array = [12,34,56,78,89];
 // let arr1 = arr.splice(1, 4, 45, 67)
 // console.log(arr1)
 
+
+/*
+split
+let str = "deepak";
+console.log(str.split(""))
+
+*/
+
  
 
  

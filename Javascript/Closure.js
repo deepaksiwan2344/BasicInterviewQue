@@ -59,7 +59,7 @@ console.log(result())
 
 //Note:
 // Closures provide powerful capabilities in JavaScript programming.
-//1. Data Encapsulation (Private varaible)
+//1. Data Encapsulation (Private variable)
 //2. Memoization (Performance Optimization)
 
 /*

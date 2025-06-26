@@ -6,28 +6,28 @@
 
 
 class Car {
-  getModle() {
-    return "car Modle is 2023";
+  getModule() {
+    return "car Module is 2023";
   }
 }
 
 let carObj = new Car();
 console.log("carObj", carObj);
-let modle = carObj.getModle();
-console.log(modle);
+let module = carObj.getModule();
+console.log(module);
 
 
 class Scoter {
   constructor(brand, price) {
     (this.brand = brand), (this.price = price);
   }
-  getModle() {
-    return "old modle";
+  getModule() {
+    return "old module";
   }
 }
 
 let ScoterObj = new Scoter("new", 20000);
-console.log(ScoterObj.getModle());
+console.log(ScoterObj.getModule());
 
 
 class product {

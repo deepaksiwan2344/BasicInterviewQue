@@ -7,7 +7,6 @@ rendering (SSR), static site generation (SSG), API routes, and automatic code sp
 
 
 2. What are the key features of Next.js?
-
 Server-side rendering (SSR)
 Static site generation (SSG)
 File-based routing

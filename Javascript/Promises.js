@@ -1,4 +1,4 @@
-//three type of Promises
+//four type of Promises
 // Promise.race (execute only resolve if 3 promise and 1 is resolve and 2, 3 is reject then only 1 promise execute)
 // Promise.all  (Runs all promises in parallel → much faster.)
 // Promise.allSettled (If you need a detailed success/failure report without stopping execution. execute both for resolve and reject)

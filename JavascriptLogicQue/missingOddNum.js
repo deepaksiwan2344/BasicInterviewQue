@@ -26,7 +26,6 @@ for(let i = 0; i < arr.length; i++){
 function findMissingOddNumbers(arr) {
     let missingCount = 0;
     let missingNumbers = [];
-  
     for (let i = 0; i < arr.length - 1; i++) {
       let current = arr[i];
       let next = arr[i + 1];

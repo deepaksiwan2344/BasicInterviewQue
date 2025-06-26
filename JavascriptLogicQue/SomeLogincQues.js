@@ -129,7 +129,7 @@ let obj = {
 }
 
 let copy = obj.details.bind(obj)
-console.log(copy())  output my name is Deepak
+console.log(copy())  output my name is Deepak;
 
 */
 
@@ -140,6 +140,9 @@ const employee = {
     return this.name;
   }
 };
+
+
+
 
 const manager = {
   name: "Swati"
@@ -164,7 +167,6 @@ console.log(JSON.stringify(a) === JSON.stringify(c)); // ? true
 */
 
 /*
-
 let obj = {
     name: "deepak"
 }
@@ -172,6 +174,7 @@ let obj = {
 let obj2 = {
     name: "deepak"
 }
+    
 //In JavaScript, objects are compared by reference, not by value.
 console.log(obj === obj2) //false
 
@@ -420,7 +423,6 @@ for (let char of str) {
        if(capitalizeNext){
            result += char.toUpperCase();
            capitalizeNext = false
-           
        }else{
            result += char
            
@@ -432,4 +434,309 @@ for (let char of str) {
 console.log(result); output: How Are You
 
 */
+
+/*
+let arr = [23,45,6,78,9, 9];
+//output like [23,45,6,78,9]
+console.log(result(arr))
+function result (arr){
+    let obj = {};
+    let unique = [];
+    for(let value of arr){
+        if(!obj.hasOwnProperty(value)){
+            obj[value] = true;
+            unique.push(value)
+        }
+        //     or
+        //      if(!obj[value]){
+        //     obj[value] = true;
+        //     unique.push(value)
+        // }
+
+    }
+    return unique
+}
+
+*/
+
+/*
+let arr = [
+  { id: 1, name: "A" },
+  { id: 2, name: "B" },
+  { id: 1, name: "c" },
+];
+
+function getFirstDuplicates(arr) {
+  let count = {};
+  let first = {};
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let id = arr[i].id;
+    if (count[id]) {
+      count[id]++;
+    } else {
+      count[id] = 1;
+      first[id] = arr[i]; 
+    }
+  }
+  for (let id in count) {
+    if (count[id] > 1) {
+      result.push(first[id]);
+    }
+  }
+
+  return result;
+}
+
+console.log(getFirstDuplicates(arr)); // [{ id: 1, name: "A" }]
+
+*/
+
+/*
+let arr = [
+  { id: 1, name: "X" },
+  { id: 2, name: "Y" },
+  { id: 3, name: "X" },
+  { id: 4, name: "Z" }
+];
+
+// Expected output:
+// [
+//   { id: 1, name: "X" },
+//   { id: 3, name: "X" }
+// ]
+console.log(result(arr))
+
+function result (arr){
+    let obj = {};
+    let finalOutput = []
+    for(let item of arr){
+        if(obj[item?.name]){
+            obj[item?.name]++
+        }else{
+            obj[item?.name] = 1
+        }
+    }
+
+    for(let value of arr){
+        if(obj[value?.name] > 1){
+            finalOutput.push(value)
+        }
+    }
+    return finalOutput
+}
+
+*/
+
+/*
+let arr = [
+  { id: 1, name: "A" },
+  { id: 2, name: "B" },
+  { id: 1, name: "A" }
+];
+
+// Expected output:
+// [
+//   { id: 1, name: "A" },
+//   { id: 2, name: "B" }
+// ]
+console.log(result(arr))
+
+function result(arr){
+    let obj = {};
+    let output = []
+    for(let i= 0; i < arr?.length; i++){
+        let name = arr[i]?.name;
+        if(!obj[name]){
+           obj[name] = true;
+           output.push(arr[i])
+        }
+    }
+    
+    return output
+}
+
+*/
+
+/*
+let arr = [
+  { id: 1, name: "A", details: { city: "Delhi" } },
+  { id: 2, name: "B", details: { city: "Mumbai" } },
+  { id: 3, name: "A", details: { city: "Delhi" } } // duplicate of id 1 by value
+];
+
+// Remove duplicates based on deep equality.
+// Expected Output:
+[
+  { id: 1, name: "A", details: { city: "Delhi" } },
+  { id: 2, name: "B", details: { city: "Mumbai" } }
+]
+
+console.log(result(arr))
+function result (arr){
+    let obj = {};
+    let output = []
+    for(let i = 0; i < arr?.length; i++){
+        let city = arr[i]?.details?.city;
+        if(obj[city]){
+            obj[city]++
+            
+        }else{
+            obj[city] = 1
+            output.push(arr[i])
+        }
+    }
+   
+    return output
+    
+}
+*/
+
+/*
+let users = [
+  { id: 1, name: "Alice", department: { name: "HR" } },
+  { id: 2, name: "Bob", department: { name: "IT" } },
+  { id: 3, name: "Charlie", department: { name: "HR" } },
+  { id: 4, name: "David", department: { name: "Finance" } },
+  { id: 5, name: "Eve", department: { name: "IT" } }
+];
+
+//expected output
+// {
+//   HR: 2,
+//   IT: 2,
+//   Finance: 1
+// }
+
+console.log(result(users))
+function result (users){
+    let obj = {};
+    for(let value of users){
+        let name = value?.department?.name;
+        if(obj[name]){
+            obj[name]++
+        }else{
+            obj[name] = 1
+        }
+    }
+    return obj
+}
+
+*/
+
+/*
+
+let arr1 = [
+  { id: 1, name: "Alice", details: { age: 25 } },
+  { id: 2, name: "Bob", details: { age: 30 } }
+];
+
+let arr2 = [
+  { id: 2, location: "NY", details: { city: "New York" } },
+  { id: 3, name: "Charlie", location: "LA" }
+];
+
+let finalArr = [...arr1, ...arr2]
+console.log(result(finalArr))
+function result (arr){
+    let obj = {};
+     let output = []
+    for(let value of arr){
+        let id = value?.id;
+        if(obj[id]){
+            obj[id]++
+        }else{
+            obj[id] = 1
+            output.push(value)
+        }
+    }
+    return output
+}
+
+*/
+
+/*
+let words = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+// expected output
+// [
+//   ["eat", "tea", "ate"],
+//   ["tan", "nat"],
+//   ["bat"]
+// ]
+
+console.log(result(words))
+function result (arr){
+    let obj = {};
+    for(let value of arr){
+        let sorted = value.split("").sort().join("");
+         if(obj[sorted]){
+             obj[sorted].push(value)
+         }else{
+             obj[sorted] = [value]
+         }
+    }
+    return Object.values(obj)
+}
+
+*/
+
+/*
+let str = "aabccdd";
+
+// expected output
+// "c"
+// Because 'a', 'b', and 'd' all repeat, but 'c' occurs only once and comes first.
+
+console.log(result(str))
+
+function result (str){
+    let obj ={};
+   
+    for(let value of str){
+        if(obj[value]){
+            obj[value]++
+        }else{
+            obj[value] = 1
+            
+           
+        }
+    }
+
+    for(let count of str){
+        if(obj[count] === 1){
+            return count
+        }
+    }
+}
+
+*/
+
+/*
+function result(arr, target) {
+  arr.sort((a, b) => a - b); // sort the array
+  let left = 0;
+  let right = arr.length - 1;
+
+  while (left < right) {
+    let sum = arr[left] + arr[right];
+    if (sum === target) {
+      return [arr[left], arr[right]];
+    } else if (sum < target) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+
+  return [];
+}
+
+console.log(result([12, 45, 67, 8, 2], 10)); // [2, 8]
+
+*/
+
+
+
+
 

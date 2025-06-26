@@ -20,27 +20,22 @@
 // splice(): Changes the contents of an array by removing, replacing, 
 // or adding elements.
 
-
 // forEach(): Executes a provided function once for each array element.
 // map(): Creates a new array with the results of calling a provided 
 // function on every element in the array.
 
-
-
 // filter(): Creates a new array with all elements that pass the test
 // implemented by the provided function.
-
 
 // reduce(): Applies a function to an accumulator and each element
 //  in the array to reduce it to a single value.
 
 
 
-
-
 let array = [[2, 3, 5, [12,4,5,]], 23, 4];
 let singleArray  = [].concat(...array);
 let finalArr = [].concat(...singleArray)
+let singleArr = array.flat(Infinity)
 
 
 //using loop

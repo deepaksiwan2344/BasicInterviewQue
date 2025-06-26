@@ -44,6 +44,43 @@
 //     console.log(row);
 // }
 
+
+
+/*
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+
+function result (){
+   let n = 6
+   for(let i = 1; i <= n; i++){
+       let pattern = "";
+       for(let j = 1; j <= i; j++){
+           pattern += j + " "
+       }
+       console.log(pattern)
+   }
+   for(let i = n - 1; i >= 1; i--){
+       let pattern = "";
+       for(let j = 1; j <= i; j++){
+           pattern += j + " "
+       }
+       console.log(pattern)
+   }
+   
+}
+result()
+
+*/
+
 //Character
 // let n = 4;
 

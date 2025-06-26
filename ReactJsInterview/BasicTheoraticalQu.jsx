@@ -24,6 +24,7 @@
 // What is a functional component?
 // A function that returns JSX and does not use lifecycle methods or local state (before hooks).
 
+
 // What is a class component?
 // A component defined using ES6 classes that can use state and lifecycle methods.
 
@@ -146,6 +147,7 @@
 // What is the Redux store?
 // The centralized state container in a Redux application.
 
+
 // Difference between Redux and Context API?
 // Redux is more powerful and suited for complex state management, while Context API is simpler and built-in.
 
@@ -194,7 +196,6 @@ const myRef = useRef(initialValue);
 
 
 */
-
 /*
 Custom Hooks:
 Why Use Custom Hooks?
@@ -213,6 +214,100 @@ package.json: Declares what packages your app uses
 package-lock.json: It saves the exact version installed (e.g., 1.5.0) and all nested dependencies.
 
 */
+
+/*
+Component Optimization in React js
+ useCallback,
+ useMemo,
+ React.memo
+
+*/
+
+/*
+What is Babel?
+Babel is a JavaScript compiler that allows you to write modern JavaScript (ES6/ES7/ESNext) and convert it 
+into backward-compatible JavaScript that can run in older browsers or environments.
+
+*/
+
+/*
+ What is Webpack?
+Webpack is a module bundler that takes many files and dependencies (JavaScript, CSS, images) 
+and bundles them into a small set of optimized files, usually bundle.js.
+ Key Features:
+JSX to JS conversion (for React).
+
+Supports TypeScript conversion.
+
+Plugin system (@babel/preset-env, @babel/preset-react).
+
+*/
+
+/*
+What is NPM?
+NPM is the default package manager for Node.js. It lets you install libraries, frameworks, 
+tools, and dependencies for JavaScript development.
+Why NPM is important?
+Manages project dependencies (React, Babel, Webpack, etc.).
+Shares and reuses open-source code.
+
+
+Scripts automation (npm run dev, npm start).
+Key Concepts:
+package.json: File that lists your project's dependencies and scripts.
+node_modules/: Folder where all downloaded packages are stored.
+
+*/
+
+/*
+SSG – Static Site Generation
+What is SSG?
+Pages are pre-rendered at build time.
+HTML files are generated once and reused on every request.
+*/
+
+/*
+SSR – Server-Side Rendering
+What is SSR?
+Page is generated on each request on the server.
+Ensures up-to-date content always.
+
+
+*/
+/*
+ISR – Incremental Static Regeneration
+What is ISR?
+Combines best of SSG and SSR.
+Static HTML is generated at build, and then regenerated on the server in the background after a set time.
+Update static pages without rebuilding the whole app.
+
+
+*/
+/*
+latest version of node js
+Node.js v24.2.0:
+
+latest version of React js
+  React 19.1.0
+
+*/
+
+/*
+difference between react query and redux toolkit
+React Query is a data-fetching library focused on managing server state like API calls, caching, 
+pagination, and background syncing.
+Redux Toolkit is a state management library used for managing client-side (UI) state, like user authentication, 
+modals, theme toggles, and shared UI data.
+
+
+React Query: Manage server state
+Redux toolkit: Manage client/UI state
+
+Client/UI state refers to data that lives only in the frontend (browser) and is used to control the 
+behavior or appearance of the user interface (UI).
+
+*/
+
 
 
 
