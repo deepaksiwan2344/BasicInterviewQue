@@ -737,6 +737,129 @@ console.log(result([12, 45, 67, 8, 2], 10)); // [2, 8]
 */
 
 
+/*
+let str = "hello world";
+let result = "";
+let word = "";
+
+//output olleh dlrow 
+for(let i = 0; i <= str?.length; i++){
+    if(str[i] === " " || i === str?.length){
+        let reveseWord = " ";
+       for(let j = word?.length - 1; j >= 0; j--){
+            reveseWord += word[j]
+       }
+       result += reveseWord;
+       if(i !== str?.length){
+           result += ""
+       }
+       word = " "
+       
+    
+    }else{
+        word += str[i]
+    }
+    
+}
+
+console.log(result); // Output: "olleh dlrow"
+*/
+
+/*
+let obj = {
+  name: "deepak",
+  age: null,
+  city: "",
+  job: "dev"
+};
+// Output: { name: "deepak", job: "dev" }
+
+
+
+let output = {};
+for(let key in obj){
+    if(obj[key] !== null && obj[key] !== ""){
+        output[key] = obj[key]
+    }
+}
+console.log(output);
+*/
+
+/*
+
+let str = "aaaccdddde";
+
+//output like a3c2d4e1;
+
+let newStr = "";
+let count = 1;
+for(let i= 0; i < str?.length; i++){
+    if(str[i] === str[i + 1]){
+        count++
+    }else{
+        newStr += str[i] + count
+        count = 1
+    }
+    
+}
+console.log(newStr)
+*/
+
+/*
+let arr = [
+  { id: 3, name: "C" },
+  { id: 1, name: "A" },
+  { id: 6, name: "A" },
+  { id: 2, name: "B" }
+];
+// Output: Sorted by id
+console.log(sort(arr))
+function sort (arr){
+    for(let i = 0; i <= arr?.length; i++){
+        for(let j = 0; j <= arr.length - i - 1; j++){
+            if(arr[j]?.id > arr[j + 1]?.id){
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+                
+            }
+        }
+    }
+    return arr
+}
+
+*/
+
+/*
+
+let str = "listen";
+let str1 = "silent";
+console.log(anagram(str, str1))
+function anagram (str, str1){
+    if(str?.length !== str1?.length) false;
+    let obj = {};
+    for(let i = 0; i <= str?.length; i++){
+        if(obj[str[i]]){
+            obj[str[i]]++
+        }else{
+            obj[str[i]] = 1
+        }
+    }
+    for(let value of str1){
+        if(!obj[value]){
+            return false
+        }else{
+            obj[value]--
+        }
+    }
+    return true;
+}
+*/
+
+
+
+
+
+
+
 
 
 

@@ -1127,6 +1127,74 @@ function longestStreak(str) {
 
 */
 
+/*
+function result(str) {
+    let decoded = "";
+
+    for (let i = 0; i < str.length; i += 2) {
+        let char = str[i];        
+        let count = Number(str[i + 1]); 
+        decoded += char.repeat(count);
+    }
+
+    return decoded;
+}
+
+console.log(result("a3b2c1")); // Output: aaabbc
+
+*/
+
+/*
+function result(str) {
+    let decoded = "";
+
+    for (let i = 0; i < str.length; i += 2) {
+        let char = str[i];    
+        console.log(char)
+        let count = Number(str[i + 1]); 
+        for(let i = 1; i <= count; i++){
+              decoded += char
+        }
+      
+    }
+
+    return decoded;
+}
+
+console.log(result("a3b2c1")); // Output: aaabbc
+*/
+
+/*
+let str =  "aabbccdde"
+
+// Find the first non-repeating character in a string
+// Output: "d"
+
+let obj = {};
+for(let char of str){
+    if(obj[char]){
+        obj[char]++
+    }else{
+        obj[char] = 1
+    }
+}
+let newChar = null
+
+for(let key in obj){
+    if(obj[key] === 1){
+         newChar = key
+         break;
+        
+    }else{
+        newChar = null
+    }
+    
+}
+console.log(newChar)
+
+*/
+
+
 
 
 
