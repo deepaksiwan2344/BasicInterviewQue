@@ -160,6 +160,13 @@
 1.What is React Fiber?
 React Fiber is the reconciliation engine in React — it’s the algorithm that figures out what
 changed in the UI and what to update in the DOM.
+
+key feature of Fiber:
+Reconciliation	Finds what changed in the UI
+Prioritization	Handles urgent tasks first (like user input)
+Incremental Work	Breaks large updates into small steps
+Interruptible	Can pause and resume rendering
+Concurrent Mode	Enables React to prepare multiple screens at once
 */
 
 /*
@@ -305,6 +312,23 @@ Redux toolkit: Manage client/UI state
 
 Client/UI state refers to data that lives only in the frontend (browser) and is used to control the 
 behavior or appearance of the user interface (UI).
+
+*/
+
+/*
+What is render props in react js
+Render props is a technique in React where a component receives a function as a prop and 
+calls it to determine what to render.
+
+Render props is a pattern in React that allows components to share logic by passing a function as a prop, 
+which returns JSX to control the rendered output.
+
+*/
+
+/*
+useDeferredValue Hooks:
+ 1. A React hook that delays rendering
+ 2. Use for Delaying rendering of slow UI
 
 */
 

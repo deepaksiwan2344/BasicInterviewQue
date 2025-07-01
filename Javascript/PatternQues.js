@@ -390,8 +390,156 @@ for (let i = n - 1; i >= 1; i--) {
 
   console.log(pattern);
 }
+*/
 
 
+/*
+//pattern
+// 1 1 1 1 1
+// 2 2 2 2 2
+// 3 3 3 3 3 
+// 4 4 4 4 4 
+// 5 5 5 5 5
+
+result(5)
+function result (n){
+    for(let i = 1; i <= n; i++){
+        let pattern = "";
+        for(let j= 1; j <= n; j++){
+            pattern +=  i + ""
+        }
+        console.log(pattern)
+    }
+}
+*/
+
+
+/*
+//pattern
+//   1
+//   2 2 
+//   3 3 3
+//   4 4 4 4
+//   5 5 5 5 5
+//   4 4 4 4
+//   3 3 3
+//   2 2 
+//   1
+
+result(5)
+function result (n){
+    
+    //upper
+     for(let i = 1; i <=n; i++){
+         let pattern = "";
+         for(let j = 1; j <= i; j++){
+            pattern += i + ""
+         }
+         console.log(pattern)
+     }
+     
+     //lower
+     for(let i = n - 1; i >= 1; i--){
+         let pattern = "";
+         for(let j = 1; j <= i; j++){
+            pattern += i + ""
+         }
+         console.log(pattern)
+     }  
+}
+*/
+
+/*
+//pattern
+//         1
+//       2 2
+//     3 3 3
+//   4 4 4 4
+// 5 5 5 5 5
+
+result(5)
+function result (n){
+     for(let i = 1; i <=n; i++){
+         let pattern = "";
+         for(let j = 1; j <= n - i; j++){
+            pattern += " " 
+         }
+         for(let k = 1; k <= i; k++){
+             pattern += i + ""
+         }
+         console.log(pattern)
+     }
+     
+     
+    
+}
+*/
+
+/*
+//pattern
+//  1 
+//  2 3 
+//  4 5 6 
+//  7 8 9 10 
+//  11 12 13 14 15 
+
+
+result(5)
+function result (n){
+    let num = 1
+     for(let i = 1; i <=n; i++){
+         let pattern = " ";
+         for(let j = 1; j <= i ; j++){
+            pattern += num + " "
+            num++
+         }
+         console.log(pattern)
+     }  
+}
+*/
+
+/*
+//pattern
+//         1
+//       2 1
+//     3 2 1
+//   4 3 2 1
+// 5 4 3 2 1
+result(5)
+function result (n){
+     for(let i = 0; i <=n; i++){
+         let pattern = " ";
+         for(let space = 0; space <= n - i; space++){
+             pattern += " "
+         }
+         for(let j = i; j >= 1; j--){
+             pattern += j + ""
+         }
+        console.log(pattern)
+     }
+}
+*/
+
+/*
+pascalsTriangle(5);
+
+// A
+// BB
+// CCC
+// DDDD
+// EEEEE
+
+
+function pascalsTriangle(n) {
+    for (let i = 0; i < n; i++) {
+        let pattern = ""
+        let char = String.fromCharCode(65 + i)
+       for(let j = 0; j <= i; j++){
+           pattern += char
+       }
+        console.log(pattern);
+    }
+}
 
 */
 
