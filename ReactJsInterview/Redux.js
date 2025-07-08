@@ -7,10 +7,13 @@
 //Store: Holds state of application,
 
 
+
 //Redux toolkit (RTK)
 //To reduce boilerplate, simplify async logic, and enforce best practices.
 //1.How does createAsyncThunk work?
 // It dispatches pending, fulfilled, and rejected actions automatically for async calls.
+
+
 
 
 

@@ -1,4 +1,4 @@
-//basically jsx is the extention of javascript and with the help of jsx we can write 
+//basically jsx is the Extensions of javascript and with the help of jsx we can write 
 //html,css code in javascript.
 
 //jsx is not a regular javascript object and Babel convert the jsx into regular javascript 

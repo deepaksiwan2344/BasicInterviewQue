@@ -16,8 +16,6 @@
 
 // note some and every return boolian
 
-
-
 //example of every array Method
 let array = [2,4,6,8,10,12,27];
 

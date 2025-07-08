@@ -82,7 +82,6 @@ function sumOfDigits(num) {
     }
     return sum
   }
-  
 console.log("sdfsd",sumOfDigits(1234567))
 
 

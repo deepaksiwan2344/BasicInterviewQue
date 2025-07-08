@@ -41,6 +41,8 @@ console.log(totalSalary(data, "salary"))
 //     a: "three"
 // }
 
+
+
 // console.log("obj", obj)
 
 // const a = {};
@@ -61,9 +63,6 @@ const user = {
 const jsonobj = JSON.stringify(user)
 console.log("jsonobj", jsonobj)
 console.log("user", JSON.parse(jsonobj))
-
-
-
 
 
 // console.log([..."deepak"])

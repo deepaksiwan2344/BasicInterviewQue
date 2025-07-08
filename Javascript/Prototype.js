@@ -6,6 +6,7 @@
 // In JavaScript, every object has a hidden internal property called [Prototype],
 // which refers to another object — this is how inheritance works in JS.
 
+
 // Example:
 // const person = {
 //     greet() {
@@ -20,6 +21,7 @@
 //   name: "deepak",
 //   age: 23,
 // };
+
 
 // console.log(obj);
 // let array = ["deepak"];
