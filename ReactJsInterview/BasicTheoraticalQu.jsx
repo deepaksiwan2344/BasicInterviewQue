@@ -94,7 +94,7 @@
 // What is Suspense in React?
 // A component that allows waiting for something before rendering (usually used with React.lazy).
 
-// 🔹 Performance Optimization
+//  Performance Optimization
 // How to optimize React app performance?
 // Use memoization (useMemo/useCallback), lazy loading, React.memo, and avoid unnecessary re-renders.
 
@@ -125,7 +125,7 @@
 // What is debounce in React?
 // A technique to delay execution of a function after a pause in input events.
 
-// 🔹 Testing and Ecosystem
+//  Testing and Ecosystem
 // How to test React components?
 // Use Jest and React Testing Library for unit and integration testing.
 

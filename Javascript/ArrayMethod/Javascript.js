@@ -28,7 +28,6 @@ or environment (like Node.js) can perform the actions you've written.
 
 */
 
-
 /*
 Event Loop
 call Stack
@@ -126,9 +125,8 @@ promises, API calls, etc.
          ↓
  Async → Web APIs → Callback Queue → Event Loop → Call Stack
          ↑
-     Memory Heap (for variables/objects)
-
-
+    Memory Heap (for variables/objects)
+    
 */
 
 
@@ -172,7 +170,6 @@ if (!Array.prototype.includes) {
     }
     var start = fromIndex | 0;
     var k = Math.max(start >= 0 ? start : len - Math.abs(start), 0);
-
     while (k < len) {
       if (array[k] === element || (typeof element === 'number' && typeof array[k] === 'number' && isNaN(element) && isNaN(array[k]))) {
         return true;
@@ -182,8 +179,8 @@ if (!Array.prototype.includes) {
     return false;
   };
 }
-
 */
+
 
 
 

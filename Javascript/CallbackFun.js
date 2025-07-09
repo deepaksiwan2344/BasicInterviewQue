@@ -11,12 +11,9 @@ function sayBye() {
   console.log("Bye!");
 }
 greet("Deepak", sayBye);
-
 Another example of callback Function
 setTimeout(callback, 4000)
 function callback(){
     console.log("hello deepak kumar")
 }
-
-
 */

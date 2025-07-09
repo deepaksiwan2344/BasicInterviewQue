@@ -983,7 +983,6 @@ console.log(getDepartmentsWithHighAvgSalary(employees));
 
 /*
 const str = "engineers are energetic";
-
 console.log(result(str));
 
 function result(str) {
@@ -1147,7 +1146,6 @@ console.log(result("a3b2c1")); // Output: aaabbc
 /*
 function result(str) {
     let decoded = "";
-
     for (let i = 0; i < str.length; i += 2) {
         let char = str[i];    
         console.log(char)

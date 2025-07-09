@@ -9,7 +9,6 @@ for(let i = 0; i < array?.length - 1; i++){
 }
 
 console.log(array);
-
 //Another way is element in given array is already sort then there is no need to swapped them(Optimize the code)
 function result(arr) {
     let swapped = true; 

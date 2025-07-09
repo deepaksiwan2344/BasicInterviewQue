@@ -59,7 +59,6 @@ const person = {
 }
 
 const person2 = { name: "Deepak" };
-
 introduce.apply(person2, ["Hello", "!"]); 
 
 //Why we used call, bind and apply
