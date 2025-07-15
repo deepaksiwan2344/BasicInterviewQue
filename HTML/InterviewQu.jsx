@@ -9,7 +9,6 @@ Block-level elements take up the full width available and start on a new line (e
 
 Inline elements do not start on a new line and only take up as much width as necessary (e.g., <span>, <a>, <img>).
 
-
 3. What are semantic HTML tags?
 Answer:
 Semantic HTML tags clearly describe their meaning to both the browser and the developer. Examples include:
