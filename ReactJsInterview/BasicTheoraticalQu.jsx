@@ -158,8 +158,8 @@
 
 /*
 1.What is React Fiber?
-React Fiber is the reconciliation engine in React — it’s the algorithm that figures out what
-changed in the UI and what to update in the DOM.
+React Fiber is the reconciliation algorithm introduced in React 16.
+It is responsible for how React updates the DOM, especially when the UI becomes complex.
 
 key feature of Fiber:
 Reconciliation	Finds what changed in the UI
@@ -331,6 +331,58 @@ useDeferredValue Hooks:
  2. Use for Delaying rendering of slow UI
 
 */
+
+
+/*
+
+note:If interviewer ask me your role and responsibility
+
+I’m currently working as a Senior Frontend Developer. My core responsibilities include:
+1. Developing and maintaining frontend modules using React.js, TypeScript, and Redux Toolkit.
+2.Translating Figma designs into responsive UI using libraries like MUI or Chakra UI, ensuring 
+  pixel-perfect accuracy.
+
+3. Integrating RESTful APIs provided by the backend team, handling edge cases, errors, and loading states.
+
+4. Writing reusable components, optimizing performance, and applying best practices like lazy loading and debouncing.
+
+5. Mentoring junior developers, doing code reviews, and guiding them with clean code practices and architecture.
+
+6. Working closely with product and backend teams during requirement discussions, estimating tasks, and delivering on deadlines.
+
+7. Also implemented features like dark/light mode, calendar UIs, notifications with popovers, and toasts, 
+keeping accessibility and responsiveness in mind.
+
+8. Apart from project work, I often take ownership of solving complex UI/UX or state management challenges.
+
+*/
+
+/*
+What is debouncing?
+Debouncing is a technique used to limit the rate at which a function is executed, especially when the function 
+is called repeatedly in quick succession (like typing or scrolling).
+
+Debouncing is used to improve performance by ensuring that a function like search or resize is not called 
+too frequently.
+Instead, it’s triggered only after the event has stopped firing for a certain delay. 
+This is very useful in search inputs, scroll events, and window resizing.
+
+*/
+
+/*
+What is a Memory Leak in React.js?
+A memory leak happens when your application keeps holding on to memory that it no longer needs, 
+preventing the garbage collector from freeing it.
+Over time, this can cause your app to slow down or even crash.
+
+In React, memory leaks typically happen when:
+Components are unmounted, but background tasks still run (e.g., timers, subscriptions, fetches).
+Event listeners or intervals are not properly cleaned up.
+Large objects (like refs, state, or global variables) are never released.
+
+*/
+
+
 
 
 

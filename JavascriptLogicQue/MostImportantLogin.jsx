@@ -23,7 +23,6 @@ for(let value of arr){
 console.log(mostFrequent)
 
 */
-
 /*
 let arr1 = [23, 45, 67, 8, 9, 8];
 let arr2 = [8, 9, 23, 4, 5, 6, 8];

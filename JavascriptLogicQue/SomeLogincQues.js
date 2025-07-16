@@ -827,9 +827,7 @@ function sort (arr){
 }
 
 */
-
 /*
-
 let str = "listen";
 let str1 = "silent";
 console.log(anagram(str, str1))
