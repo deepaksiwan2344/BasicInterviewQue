@@ -382,6 +382,71 @@ Large objects (like refs, state, or global variables) are never released.
 
 */
 
+/*
+Why use Key when we show list item in react js using map
+
+The key is used because React uses a process called reconciliation to efficiently update the DOM. 
+During this process, React compares the previous virtual DOM with the new virtual DOM to figure out 
+what has changed.
+
+
+When we don’t use a key in a list rendered using .map(), React uses the index as the default key.
+So, during the reconciliation process, when React compares the previous virtual DOM to the current virtual DOM, 
+it gets confused about which item has changed — especially if the list is reordered, or items are added/removed.
+
+This confusion can lead to:
+
+Incorrect DOM updates
+
+Lost component state (e.g., in inputs)
+
+Unexpected UI behavior
+
+
+*/
+
+/*
+useLayoutEffect
+
+useLayoutEffect runs after the DOM is updated but before the browser paints the screen. 
+This gives me a chance to measure elements or make DOM changes without the user seeing any flicker."
+
+*/
+
+/*
+How do you optimize performance in a large React application?
+
+In large React apps, performance issues often come from unnecessary re-renders, heavy components, or 
+expensive computations. I use several techniques to optimize performance:
+
+1. React.memo()
+I wrap functional components with React.memo() to prevent re-renders when props haven't changed.
+
+const MyComponent = React.memo(({ name }) => <div>{name}</div>);
+ 2. useCallback & useMemo
+I use useCallback to memoize functions and useMemo to memoize computed values.
+
+const memoizedValue = useMemo(() => expensiveCalc(a, b), [a, b]);
+ 3. Code Splitting
+I use React.lazy() and Suspense to load components on demand instead of all at once.
+
+
+const LazyComp = React.lazy(() => import('./HeavyComp'));
+ 4. Virtualization
+For long lists, I use libraries like react-window or react-virtualized to render only visible items.
+
+ 5. Avoid Inline Functions & Objects
+I move inline functions/objects out of the render method to avoid triggering unnecessary renders.
+
+6. Throttle/Debounce Expensive Events
+I debounce or throttle search inputs, scroll handlers, and resize events using lodash.debounce or custom hooks.
+
+7. Profiling
+I use the React DevTools Profiler to identify slow components or re-renders.
+
+*/
+
+
 
 
 
