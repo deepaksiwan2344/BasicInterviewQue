@@ -470,7 +470,6 @@ function result (n){
          console.log(pattern)
      }
      
-     
     
 }
 */

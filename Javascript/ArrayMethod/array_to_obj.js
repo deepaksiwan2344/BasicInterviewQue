@@ -58,8 +58,6 @@ return a
 //   }
 //   return obj
 // }
-//  console.log(objResult(str))
-
-
+//  console.log(objResult(str)
 
 

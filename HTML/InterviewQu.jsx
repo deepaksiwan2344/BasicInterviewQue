@@ -14,7 +14,6 @@ Answer:
 Semantic HTML tags clearly describe their meaning to both the browser and the developer. Examples include:
 
 <article> for an article
-
 <section> for a section
 
 <header>, <footer>, <nav> for layout elements
@@ -57,9 +56,7 @@ The <meta> tag provides metadata about the document like character set, author, 
 
 Example:
 
-html
-Copy
-Edit
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 9. What is the difference between <section> and <div>?
@@ -88,7 +85,7 @@ that the text should be emphasized when read by screen readers.
 
 <i> is used to display text in italic style purely for visual effect, without adding any semantic importance.
  Use <em> when the emphasis matters contextually (accessibility and SEO).
-  Use <i> for styling purposes (e.g., icon fonts, technical terms).
+ Use <i> for styling purposes (e.g., icon fonts, technical terms).
 
 
   12. What is the purpose of the DOCTYPE declaration in HTML?
@@ -103,7 +100,8 @@ Latest major version (released 2014+), introduced semantic tags, audio/video sup
 <!DOCTYPE html>
 
 
-. What is the difference between <b> and <strong>, and between <i> and <em> tags?
+.What is the difference between <b> and <strong>, and between <i> and <em> tags?
+
 
 The <b> and <i> tags are used for styling text to be bold and italic respectively,
  without conveying any extra importance or emphasis. In contrast, <strong> and <em> not only 

@@ -91,5 +91,41 @@ Layout model for arranging items in rows or columns with control over alignment 
  */
 
 
+/*
+What is the difference between em, rem, %, px, vh, and vw in CSS?
+Answer:
+
+px: Absolute unit. Fixed size.
+
+em: Relative to the font-size of the parent.
+
+rem: Relative to the root element's font-size (usually <html>).
+
+%: Relative to the parent element's dimensions.
+
+vh: Relative to 1% of the viewport height.
+
+vw: Relative to 1% of the viewport width.
+
+*/
+
+/*
+What are pseudo-elements and pseudo-classes in CSS?
+Answer:
+
+Pseudo-class (:hover, :focus, :nth-child()): Targets a specific state.
+Pseudo-element (::before, ::after, ::first-line): Targets parts of an element.
+
+button:hover {
+  background-color: blue;
+}
+p::first-letter {
+  font-size: 2em;
+}
+
+*/
+
+
+
 
 

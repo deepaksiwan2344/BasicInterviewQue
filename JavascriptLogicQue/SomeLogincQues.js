@@ -551,7 +551,7 @@ function result(arr){
         if(!obj[name]){
            obj[name] = true;
            output.push(arr[i])
-        }
+        } 
     }
     
     return output
@@ -787,6 +787,7 @@ console.log(output);
 
 /*
 
+   
 let str = "aaaccdddde";
 
 //output like a3c2d4e1;
@@ -851,6 +852,10 @@ function anagram (str, str1){
     return true;
 }
 */
+
+
+
+
 
 
 

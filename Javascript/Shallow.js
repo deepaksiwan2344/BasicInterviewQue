@@ -21,6 +21,8 @@
 // console.log(deepCopy); // Output: {a: 1, b: {c: 3}}
 
 
+
+
 let obj = {
     name: "deepak",
     lastname: "Kumar"
