@@ -446,6 +446,18 @@ I use the React DevTools Profiler to identify slow components or re-renders.
 
 */
 
+/*
+Compare between HOC and custom hooks in react js;
+similar
+1.Both are used to reuse logic across components.
+2.Both make code more modular, maintainable, and DRY (Don’t Repeat Yourself).
+
+different:
+HOC Returns a new component where as custom hook Returns data, state, functions (not JSX)
+HOC is used in Adding auth protection, logging, conditional UI where as custom hook
+use in Fetching data, form handling
+*/
+
 
 
 

@@ -11,10 +11,10 @@
   (function(){
     console.log("hello deepak")
   })()
-
   (function(){
     console.log("hi deepak")
   })()
+  
 
 
 

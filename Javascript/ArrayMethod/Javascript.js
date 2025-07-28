@@ -12,6 +12,7 @@ When JavaScript code runs (in the browser or Node.js), it goes through these mai
 Note:  Parsing → 2. Compilation → 3. Execution
 Each step is handled by the JavaScript engine (e.g., V8 in Chrome/Node.js, SpiderMonkey in Firefox).
 
+
 Js Engine:
 1. parsing:
 The JavaScript engine (when parsing your code to run it)

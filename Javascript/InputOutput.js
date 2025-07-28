@@ -108,6 +108,10 @@
 //     console.log(item);
 //   }
 
+
+
+
+
 // let x = [1, 2, 3];
 // x.map((num) => {
 //   if (typeof num === "number") {
@@ -340,6 +344,7 @@
 //         console.log(v);
 //     });
 
+
 // console.log("hello")
 // console.log(Promise.resolve("hello deepak kumar"))
 // console.log("test")
@@ -389,6 +394,20 @@ function Output(){
     }
 }
 Output(); 
+
+
+/*
+Note: key Order
+const obj = {
+  100: "a",
+  2: "b",
+  7: "c",
+  name: "d"
+};
+console.log(Object.keys(obj));
+//output show [ '2', '7', '100', 'name' ]
+
+*/
 
 
 

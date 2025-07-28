@@ -853,6 +853,59 @@ function anagram (str, str1){
 }
 */
 
+/*
+let s = "[{[{]}]}]";
+//asking in interview question
+
+// expected output id {} or [] or () present is given string then return 
+// true otherwise false
+
+function validate(s) {
+    for (let i = 0; i < s.length - 1; i++) {
+        if (
+            (s[i] === "(" && s[i + 1] === ")") ||
+            (s[i] === "{" && s[i + 1] === "}") ||
+            (s[i] === "[" && s[i + 1] === "]")
+        ) {
+            return true; 
+        }
+    }
+    return false; 
+}
+
+console.log(validate(s));
+
+*/
+
+/*
+let str = "deepak kumar";
+
+console.log(result(str)); // Output: "kumar deepak"
+
+function result(str) {
+    let word = "";
+    let arr = [];
+    for (let i = str.length - 1; i >= 0; i--) {
+        if (str[i] === " ") {
+            arr.push(word);
+            word = "";
+        } else {
+            word = str[i] + word;
+        }
+    }
+     
+    arr.push(word); // push the last word
+    return arr.join(" ");
+}
+*/
+
+
+
+
+
+
+
+
 
 
 

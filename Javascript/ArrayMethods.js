@@ -13,6 +13,7 @@ console.log(arr.join())//output deepak,praveen,dewansh
 
 
 
+
 //slice(startIndex, endIndex)
 console.log(arr.slice(1, 3))
 //shift(): This method removes the first element from an array and returns it.

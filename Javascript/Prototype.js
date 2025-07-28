@@ -15,7 +15,8 @@
 //   };
 //   const student = Object.create(person);
 //   console.log(student.greet()); // "Hello!"
-  
+
+
 
 // let obj = {
 //   name: "deepak",

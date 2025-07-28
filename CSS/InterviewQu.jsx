@@ -11,7 +11,6 @@ It separates content (HTML) from presentation, improving maintainability and des
 Answer:
 
 Inline CSS – written inside an HTML element using the style attribute.
-
 Internal CSS – written inside a <style> tag within the <head> section.
 
 External CSS – written in a separate .css file and linked using <link>.
@@ -29,9 +28,7 @@ Answer:
 #id targets an element with a specific ID (must be unique).
 .class targets one or multiple elements with the same class.
 
-css
-Copy
-Edit
+
 #header { color: blue; }  
 .title { font-size: 18px; }
 
@@ -62,10 +59,6 @@ Answer:
 A pseudo-class is used to define a special state of an element.
 Examples:
 
-
-css
-Copy
-Edit
 a:hover { color: red; }  
 input:focus { border-color: blue; }
 
@@ -89,20 +82,15 @@ Layout model for arranging items in rows or columns with control over alignment 
 10.Opacity and RGBA/HSLA Colors
 
  */
-
-
 /*
 What is the difference between em, rem, %, px, vh, and vw in CSS?
 Answer:
 
 px: Absolute unit. Fixed size.
-
 em: Relative to the font-size of the parent.
 
 rem: Relative to the root element's font-size (usually <html>).
-
 %: Relative to the parent element's dimensions.
-
 vh: Relative to 1% of the viewport height.
 
 vw: Relative to 1% of the viewport width.
@@ -122,6 +110,26 @@ button:hover {
 p::first-letter {
   font-size: 2em;
 }
+
+*/
+
+/*
+The z-index property controls the stacking order of elements on the z-axis (front to back). It only works on 
+positioned elements (position: relative, absolute, fixed, or sticky).
+
+*/
+
+/*
+difference between inline and inline-block;
+
+1. display: inline
+Does not start on a new line
+Respects the width of its content only
+Width & height cannot be set
+
+2.display: inline-block;
+Does not start on a new line (like inline)
+BUT: You can set width and height
 
 */
 

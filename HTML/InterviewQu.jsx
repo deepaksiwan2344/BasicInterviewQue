@@ -35,9 +35,7 @@ class can be reused across multiple elements (.class in CSS).
 Answer:
 It opens the linked document in a new browser tab or window.
 
-html
-Copy
-Edit
+
 <a href="https://example.com" target="_blank">Visit</a>
 
 7. What are void (self-closing) elements in HTML?

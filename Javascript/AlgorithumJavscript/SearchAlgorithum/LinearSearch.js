@@ -17,7 +17,6 @@
  let result = LinearSearch(arr, 40);
  console.log(result);
 
-
 //  The efficiency of linear search, binary search, and jump search depends on the size and 
 //characteristics of the data set you are working with. Each algorithm has its own advantages and disadvantages:
 

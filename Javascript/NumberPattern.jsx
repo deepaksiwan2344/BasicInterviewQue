@@ -35,7 +35,6 @@ pyramid(4);
 function rightAlignedTriangle(n) {
   for (let i = 1; i <= n; i++) {
     let row = "";
-
     // Print spaces
     for (let j = 1; j <= n - i; j++) {
       row += " ";
@@ -49,7 +48,6 @@ function rightAlignedTriangle(n) {
     console.log(row);
   }
 }
-
 rightAlignedTriangle(4);
 
 */

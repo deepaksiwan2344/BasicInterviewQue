@@ -549,8 +549,6 @@ for(let value of arr){
     console.log(obj)
     */
 
-
-
   /*  let obj = { '5': 1, '6': 2, '23': 1, '45': 2 }
 //output like [5,6,6,23,45,45]
 
@@ -667,7 +665,6 @@ function result (arr){
 }
 console.log(result(arr))
 */
-
 
 /*
 function reverseAfterPosition(arr, m) {

@@ -16,9 +16,6 @@
 }
 
 
-
-
-
 console.log(car.getColor());
 car.setColor("red")
 console.log("setMethod",car.getColor())
