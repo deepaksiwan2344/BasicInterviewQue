@@ -62,6 +62,7 @@ const person2 = { name: "Deepak" };
 introduce.apply(person2, ["Hello", "!"]); 
 
 //Why we used call, bind and apply
+//Borrowing Methods Between Objects
 //1.Borrowing method: You can borrow methods from one object or prototype and apply to another
 //2.When working with function dynamically
 

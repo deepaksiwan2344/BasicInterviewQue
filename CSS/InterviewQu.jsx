@@ -133,6 +133,15 @@ BUT: You can set width and height
 
 */
 
+/*
+.accordion input:checked ~ .accordion-content
+
+The ~ is the general sibling combinator.
+It means: "select the following sibling element with class .accordion-content that appears 
+after the input in the DOM (not necessarily immediately).
+
+*/
+
 
 
 

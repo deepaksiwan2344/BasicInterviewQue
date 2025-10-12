@@ -10,12 +10,10 @@ class Car {
     return "car Module is 2023";
   }
 }
-
 let carObj = new Car();
 console.log("carObj", carObj);
 let module = carObj.getModule();
 console.log(module);
-
 
 class Scoter {
   constructor(brand, price) {

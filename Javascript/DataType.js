@@ -21,6 +21,7 @@ console.log (p)
 // A: The primitive data types in JavaScript are number, string, boolean, undefined, and null.
 
 
+
 // Q: What is the difference between null and undefined in JavaScript?
 // A: Null represents the intentional absence of any object value, whereas undefined represents a variable that has not been assigned a value.
 
@@ -30,10 +31,8 @@ console.log (p)
 // Q: Can you give an example of a complex data type in JavaScript?
 // A: Yes, an example of a complex data type in JavaScript is the object data type, which represents a collection of properties and methods.
 
-
 // Q: What is dynamic typing in JavaScript?
 // A: Dynamic typing in JavaScript means that variables are not bound to any specific data type and can change their type at runtime.
-
 
 // Q: What is the symbol data type in JavaScript?
 // A: The symbol data type in JavaScript represents a unique identifier.
@@ -47,8 +46,10 @@ console.log (p)
 let r = null;
 console.log(r)
 
-
 let array1 =[1,2,3];
 let array2 = [1,2,3];
 console.log(array1 == array2) //it return false in both case == and === 
+
+
+
 

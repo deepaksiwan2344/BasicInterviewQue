@@ -16,7 +16,6 @@ function even (x){
     return x % 2 === 0
 
 }
-
 let evenNumber = arr.filter(even)
 console.log(evenNumber)
 

@@ -114,7 +114,7 @@ let obj = {
        return `my name is ${this.name}`
     }
 }
-
+                      
 let copy = obj.details
 console.log(copy()) //output show undefined
 because we copy the obj.details but we not context of this show output is undefined we can fixed 
@@ -177,7 +177,6 @@ let obj2 = {
     
 //In JavaScript, objects are compared by reference, not by value.
 console.log(obj === obj2) //false
-
 console.log(JSON.stringify(obj) === JSON.stringify(obj2))// true
 
 */
@@ -807,12 +806,12 @@ console.log(newStr)
 */
 
 /*
-let arr = [
-  { id: 3, name: "C" },
-  { id: 1, name: "A" },
-  { id: 6, name: "A" },
-  { id: 2, name: "B" }
-];
+    let arr = [
+    { id: 3, name: "C" },
+    { id: 1, name: "A" },
+    { id: 6, name: "A" },
+    { id: 2, name: "B" }
+    ];
 // Output: Sorted by id
 console.log(sort(arr))
 function sort (arr){

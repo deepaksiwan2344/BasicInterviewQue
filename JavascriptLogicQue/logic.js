@@ -317,15 +317,12 @@ function findDuplicatesWithCount(nums) {
 console.log(findDuplicatesWithCount([23, 4, 4, 5, 45, 45, 4, 4, 59, 50]));
 
 
-
-
 /* In the given string find sum of number */
 //let str = "dee23456p2aksfsd3443";
 
 function result() {
     let count = [];
     let string = "";
-
     for (let value of str) {
         if (!isNaN(value)) {
             count.push(Number(value));
@@ -380,7 +377,7 @@ console.log(flattenArray(array));
 // console.log(removeDublicate(array))
 
 
-//I have a a multiple object in a array , find single object in a given multiple Obj;
+//I have a multiple object in a array , find single object in a given multiple Obj;
 
 
 // let arr = [
@@ -652,7 +649,6 @@ function result (arr){
          if(arr[i] % 2 === 0){
              even[e] = arr[i]
              e++
-             
          }else{
             odd[o] = arr[i]
             o++
@@ -714,7 +710,6 @@ let ARR = [1, 2, 3, 4, 5, 6, 23, 4];
 let M = 3;
 
 console.log(reverseAfterPosition(ARR, M)); 
-
 */
 
 /*
@@ -826,7 +821,6 @@ or libraries like Lodash’s cloneDeep()."
 /*
 
 Note: Custom Split Function 
-
 for single character
 function customSplit(str, delimiter) {
     const result = [];
@@ -885,7 +879,7 @@ console.log(customSplit("123.233.//231", ".//"));
 
 /*
 
-let arr = [23, 45, 6, 7, 84];
+  let arr = [23, 45, 6, 7, 84];
 function result(arr) {
 let firstSmallest = arr[0];
 let secondSmallest = arr[1]

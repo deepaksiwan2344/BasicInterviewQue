@@ -12,7 +12,6 @@ for(let value of arr){
     }else{
         obj[value] = 1
     }
-    
     if(obj[value] > mostCount){
         mostCount = obj[value];
         mostFrequent = value
@@ -28,7 +27,6 @@ let arr1 = [23, 45, 67, 8, 9, 8];
 let arr2 = [8, 9, 23, 4, 5, 6, 8];
 
 //expected output [ 23, 8, 9 ]
-
 console.log(result(arr1, arr2)); 
 function result(arr1, arr2) {
     let output = [];

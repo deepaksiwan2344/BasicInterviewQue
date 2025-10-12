@@ -326,3 +326,141 @@ for(var i = 0; i < arr?.length - 1; i++){
 //  index 4 and value is 2
 
 */
+
+
+/*
+let arr = [1, 6, 5, 3, 4, 2, 8, 10, 1];
+
+// expected output
+// [ [ 1, 6 ], [ 5 ], [ 3, 4 ], [ 2, 8, 10 ], [ 1 ] ]
+
+
+
+let result = [];
+let group = [arr[0]]
+for(let i = 1; i < arr?.length; i++){
+    if(arr[i] > arr[i - 1]){
+        group.push(arr[i])
+    }else{
+        result.push(group);
+        group = [arr[i]]
+        
+    }
+}
+if(group.length > 0) result.push(group)
+console.log(result)
+
+*/
+
+/*
+//  Group the elements into chunks of size 3, but each group must have unique elements only (i.e., no duplicate values inside a single group).
+// If a duplicate appears within a group, skip adding it.
+let arr = [1, 2, 2, 3, 4, 4, 5, 6, 2, 7, 8, 9];
+
+// [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [2, 7, 8],
+//   [9]
+// ]
+
+let result = [];
+let group = [];
+for(let i = 0; i < arr?.length; i++){
+    if(!group.includes(arr[i])){
+        group.push(arr[i])
+    }
+    if(group.length === 3){
+        result.push(group);
+        group = []
+    }
+    
+}
+if(group?.length > 0){
+    result.push(group)
+    }
+console.log(result)
+
+*/
+
+/*
+//   Note: Inversion of Object
+  
+ // let Input = { a: "x", b: "y" }
+  
+let  Input = ["apple", "banana", "cherry"]
+// expected output
+// Output: { apple: "0", banana: "1", cherry: "2" }
+  
+//   expected output 
+//   Output: { x: "a", y: "b" }
+  
+  console.log(result(Input))
+  
+ function result (Input){
+      if(Array.isArray(Input)){
+          let result = {}
+          for(let i = 0; i < Input?.length; i++){
+              let value = Input[i]
+                  result[value] = String(i)
+          }
+          return result
+      }
+      if(typeof Input === "object" && Input !== null){
+           let obj = {};
+       for(let key in Input){
+        let value = Input[key]
+          obj[value]=  key
+       }
+      return obj
+      }
+     
+ }
+
+*/
+
+/*
+function chunkArray(arr, size) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i += size) {
+        let temp = [];
+        // create subarray of up to `size` elements
+        for (let j = i; j < i + size && j < arr.length; j++) {
+            console.log(arr[j])
+            console.log("temp", temp)
+            temp[temp.length] = arr[j];
+        }
+
+        result[result.length] = temp;
+    }
+    return result;
+}
+
+// console.log(chunkArray([1, 2, 3, 4, 5], 1)); 
+console.log(chunkArray([1, 9, 6, 3, 2], 3)); 
+// console.log(chunkArray([8, 5, 3, 2, 6], 6)); 
+
+*/
+
+/*
+let nums = [1,2,3,4,4,3,2,1]
+let n = 4
+
+// expected output
+// [
+//   1, 4, 2, 3,
+//   3, 2, 4, 1
+// ]
+
+var shuffle = function(nums, n) {
+    let result = [];
+    for(let i = 0; i < n; i++){
+        result.push(nums[i], nums[i + n])
+    }
+    return result
+};
+
+console.log(shuffle(nums, n))
+
+*/
