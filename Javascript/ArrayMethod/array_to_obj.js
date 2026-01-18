@@ -61,3 +61,38 @@ return a
 //  console.log(objResult(str)
 
 
+let num = -123
+
+function reverse(num){
+    let rev = ""
+    let sign = num < 0 ? -1 : 1;
+    let str = Math.abs(num).toString();//Math.abs remove plus and minus sign
+    for(let i = str?.length - 1; i >= 0; i--){
+       rev += str[i]
+    }
+    return rev * sign
+
+}
+
+console.log(reverse(-123))
+
+
+
+//In a given sentence find length of lastword(leetCode Question 58 catagory string)
+let s =  "luffy is still joyboy"
+function lengthOfLastWord(s) {
+    let count = 0;
+    let i = s.length - 1;
+    while (i >= 0 && s[i] === " ") {
+        i--;
+    }
+    while (i >= 0 && s[i] !== " ") {
+        count++;
+        i--;
+    }
+    return count;
+};
+console.log(lengthOfLastWord(s))
+
+
+

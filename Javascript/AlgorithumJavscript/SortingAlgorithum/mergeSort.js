@@ -20,7 +20,6 @@ function mergeSort(arr) {
     // Recursively sort both halves
     const leftSorted = mergeSort(left);
     const rightSorted = mergeSort(right);
-  
     // Merge the sorted halves
     return merge(leftSorted, rightSorted);
   }

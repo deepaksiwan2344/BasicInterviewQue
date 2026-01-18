@@ -84,3 +84,17 @@ s.push(20);
 s.print(); // Output: [10, 20]
 
 */
+
+
+
+let stack = [];
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+console.log(stack); // [10, 20, 30]
+
+// pop = remove (from top)
+stack.pop();
+console.log(stack); // [10, 20]
+

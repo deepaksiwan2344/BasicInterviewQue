@@ -51,7 +51,6 @@ function flattenArray(arr) {
     
     return result;
 }
-
 console.log(flattenArray(array));
 
 

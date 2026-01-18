@@ -62,7 +62,7 @@ function findDuplicates(array) {
         i++;
     }
 
-    return duplicates;
+    return duplicates;     
 }
 
 console.log(findDuplicates(array));

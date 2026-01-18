@@ -20,10 +20,10 @@ function BubbleSort(array) {
   }
   return array;
 }
+
 let array = [4, 0, 0, 0, 1, 1, 2, 2, 3];
 let sort = BubbleSort(array);
 console.log(sort);
-
 
 function OptimizedBubbleSort(array) {
   const length = array.length;

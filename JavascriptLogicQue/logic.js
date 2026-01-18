@@ -1184,6 +1184,36 @@ console.log(newChar)
 */
 
 
+/*
+let obj1 = {
+    a: 2,
+    b:3,
+    c:4,
+    d:5
+}
+
+let obj2 = {
+    a: 2,
+    
+    c:9,
+    d:0,
+    b:3
+}
+//output {a:2,b:3}
+function result (obj1, obj2){
+    let newObj = {};
+    for(let key in obj1){
+        if(obj1[key] === obj2[key]){
+            newObj[key] = obj1[key]
+        }
+    }
+    return newObj
+}
+console.log(result(obj1, obj2))
+
+*/
+
+
 
 
 

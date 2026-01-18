@@ -47,7 +47,6 @@ console.log(decodeAtIndex("leet2code3", 10));
    
    
 // };
-
 // console.log(decodeAtIndex("deepak2praveen3", 9));
 
                       

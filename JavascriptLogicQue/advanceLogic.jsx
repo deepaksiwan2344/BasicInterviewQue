@@ -385,9 +385,7 @@ console.log(result)
 
 /*
 //   Note: Inversion of Object
-  
  // let Input = { a: "x", b: "y" }
-  
 let  Input = ["apple", "banana", "cherry"]
 // expected output
 // Output: { apple: "0", banana: "1", cherry: "2" }
@@ -396,7 +394,6 @@ let  Input = ["apple", "banana", "cherry"]
 //   Output: { x: "a", y: "b" }
   
   console.log(result(Input))
-  
  function result (Input){
       if(Array.isArray(Input)){
           let result = {}
@@ -407,14 +404,13 @@ let  Input = ["apple", "banana", "cherry"]
           return result
       }
       if(typeof Input === "object" && Input !== null){
-           let obj = {};
-       for(let key in Input){
+        let obj = {};
+       for(let key in Input){    
         let value = Input[key]
           obj[value]=  key
        }
       return obj
       }
-     
  }
 
 */
@@ -422,7 +418,6 @@ let  Input = ["apple", "banana", "cherry"]
 /*
 function chunkArray(arr, size) {
     let result = [];
-
     for (let i = 0; i < arr.length; i += size) {
         let temp = [];
         // create subarray of up to `size` elements
@@ -452,7 +447,6 @@ let n = 4
 //   1, 4, 2, 3,
 //   3, 2, 4, 1
 // ]
-
 var shuffle = function(nums, n) {
     let result = [];
     for(let i = 0; i < n; i++){
@@ -460,7 +454,10 @@ var shuffle = function(nums, n) {
     }
     return result
 };
-
 console.log(shuffle(nums, n))
-
 */
+//difference between method and function.
+//Function: A function is a standalone block of code that performs a specific task.
+//A function is independent, while a method is a function associated with an object.
+//A function is a reusable block of code that works independently, whereas a method is a 
+//function that is defined as a property of an object and is called using that object.

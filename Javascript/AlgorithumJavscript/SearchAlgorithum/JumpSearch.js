@@ -9,7 +9,7 @@ function jumpSearch(array, target) {
 
     console.log("step", step)
 
-    // Jumping to the block containing the target element
+    // Jumping to the block containing the target elementr
     while (array[Math.min(step, length) - 1] < target) {
       prev = step;
       step += blockSize;
@@ -22,7 +22,6 @@ function jumpSearch(array, target) {
     // Performing linear search within the block
     while (array[prev] < target) {
       prev++;
-  
       if (prev === Math.min(step, length)) {
         return -1; // Target element is not present in the array
       }
@@ -35,6 +34,7 @@ function jumpSearch(array, target) {
   
     return -1; // Target element is not present in the array
   }
+  
   
   // Example usage:
   let array = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91];
