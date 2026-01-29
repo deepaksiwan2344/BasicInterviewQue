@@ -5,7 +5,7 @@ for(let i = 0; i < array?.length - 1; i++){
     if(array[i] > array[i+ 1]){
         [array[i], array[i+ 1]] = [array[i+1], array[i]]
         i = -1
-    }
+    }                     
 }
 
 console.log(array);
@@ -20,7 +20,7 @@ function result(arr) {
         swapped = true; 
         i = -1; 
       }
-    }
+    }           
   
     return arr;
   }

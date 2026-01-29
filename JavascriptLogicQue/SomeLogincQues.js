@@ -888,7 +888,7 @@ function result(str) {
         if (str[i] === " ") {
             arr.push(word);
             word = "";
-        } else {
+        } else {    
             word = str[i] + word;
         }
     }

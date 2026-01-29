@@ -9,7 +9,7 @@ function decodeStr (str){
     for(let char of str){
         if(!isNaN(char)){
             currentNum = currentNum * 10 + Number(char);
-        }else if(char === "["){
+        }else if(char === "[")
             stack.push(currentStr);
             stack.push(currentNum);
             currentStr = "";

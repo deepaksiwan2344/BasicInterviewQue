@@ -1202,7 +1202,7 @@ let obj2 = {
 //output {a:2,b:3}
 function result (obj1, obj2){
     let newObj = {};
-    for(let key in obj1){
+    for(let key in obj1){             
         if(obj1[key] === obj2[key]){
             newObj[key] = obj1[key]
         }
@@ -1212,6 +1212,27 @@ function result (obj1, obj2){
 console.log(result(obj1, obj2))
 
 */
+
+/*
+object to array
+let obj = {
+  23: 1,
+  45: 2,
+  6: 1,
+  778: 1,
+  90: 1
+};
+
+let arr = [];
+for(let key in obj){
+    for(let i = 0; i < obj[key]; i++){
+        arr.push(Number(key))
+    }
+}
+console.log(arr)
+*/
+
+
 
 
 
