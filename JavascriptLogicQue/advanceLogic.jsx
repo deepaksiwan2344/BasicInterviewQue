@@ -438,6 +438,28 @@ console.log(chunkArray([1, 9, 6, 3, 2], 3));
 
 */
 
+
+/*
+function chunkArray(arr, size) {
+     let result = [];
+     let i = 0;
+     while(i < arr?.length){
+          let chunk = [];
+          for(let j = 0; j < size && i < arr?.length; j++){
+              chunk.push(arr[i])
+              i++
+          }
+          result.push(chunk)
+     }
+     return result
+}
+console.log(chunkArray([1, 9, 6, 3, 2], 2)); 
+
+*/
+
+
+
+
 /*
 let nums = [1,2,3,4,4,3,2,1]
 let n = 4
@@ -461,3 +483,25 @@ console.log(shuffle(nums, n))
 //A function is independent, while a method is a function associated with an object.
 //A function is a reusable block of code that works independently, whereas a method is a 
 //function that is defined as a property of an object and is called using that object.
+
+
+let arr = [["a", "12"], ["b", "38"], ["c"]];
+
+// output {
+//   "a": 12,
+//     "b": 38
+// }
+
+function output (arr){
+    let obj = {};
+    for(let i = 0; i < arr?.length; i++){
+        let key = arr[i][0];
+        let value = arr[i][1]
+        if(key && value){
+            obj[key] = value
+        }
+    }
+    return obj
+}
+
+console.log(output(arr))
