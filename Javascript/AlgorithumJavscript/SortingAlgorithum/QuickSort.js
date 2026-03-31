@@ -10,7 +10,6 @@
 // best case and average case: O(n log n)
 
 
-
 function quickSort(arr) {
   if (arr.length <= 1) {
     return arr;
@@ -20,7 +19,7 @@ function quickSort(arr) {
   let right = [];
   for (let i = 1; i < arr.length; i++) {
     if (arr[i] < pivot) {
-      console.log(arr[i]);
+      console.log(arr[i]);  
       left.push(arr[i]);
     } else {
       right.push(arr[i]);
@@ -28,5 +27,5 @@ function quickSort(arr) {
   }
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
-let arr = [23, 4, 5, 6, 67, 8];
+let arr = [23, 4, 5, 6, 67, 8];   
 console.log(quickSort(arr));

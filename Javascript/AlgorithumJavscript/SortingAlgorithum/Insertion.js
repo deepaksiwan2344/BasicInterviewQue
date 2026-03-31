@@ -46,7 +46,7 @@ function insertion(arr) {
       let current = arr[i];
       let j = i - 1;
       
-      for (j = i - 1; j >= 0 && arr[j] > current; j--) {
+      for (; j >= 0 && arr[j] > current; j--) {
           arr[j + 1] = arr[j];
       }
       

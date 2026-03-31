@@ -37,6 +37,15 @@ console.log("javascript")
 // The process of comparing old VDOM and new VDOM and syncing real DOM is called reconciliation.
 
 
+/*How react work?
+React works by maintaining a Virtual DOM, which is a lightweight copy of the real DOM. When state or 
+props change, React creates a new Virtual DOM and compares it with the previous one using a diffing 
+algorithm (reconciliation). It then updates only the changed parts in the real DOM. Additionally, 
+React Fiber enables efficient scheduling and prioritization of updates, making the UI fast and 
+responsive./*
+
+
+
 
 
 
