@@ -18,12 +18,13 @@ function  largestNumber(nums) {
                 strNums[j] = strNums[j+1];
                 strNums[j+1] = temp;
             } 
-        }   
+        } 
     }
     if (strNums[0] === "0") return "0";
     let result = "";
+    console.log(strNums)
     for(let i = 0; i < strNums?.length; i++){
-        result += strNums[i]
+        result += strNums[i];
     }
     return result;
 };

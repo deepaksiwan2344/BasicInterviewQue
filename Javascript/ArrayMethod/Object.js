@@ -29,10 +29,9 @@ function  totalSalary(arr, key){
 console.log(totalSalary(data, "salary"))
 
 //convert array into object
-
 // const arr = [['key1', 'value1'], ['key2', 'value2'], ['key3', 'value3']];
 // let obj = Object.fromEntries(arr1);
-// console.log("obj", obj)
+// console.log("obj", obj);
 
 
 // const obj ={

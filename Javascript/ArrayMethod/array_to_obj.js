@@ -82,8 +82,7 @@ console.log(reverse(-123))
 let s =  "luffy is still joyboy"
 function lengthOfLastWord(s) {
     let count = 0;
-    let i = s.length - 1;
-    while (i >= 0 && s[i] === " ") {
+     while (i >= 0 && s[i] === " ") {
         i--;
     }
     while (i >= 0 && s[i] !== " ") {

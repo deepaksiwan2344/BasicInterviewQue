@@ -15,7 +15,7 @@ var decodeAtIndex = function(s, k) {
         if (k === 0 && isNaN(char)) {
             return char;
         }
-        if (isNaN(char)) { 
+        if (isNaN(char)) {  
             size--;
         } else {
             size /= Number(char);
@@ -24,7 +24,6 @@ var decodeAtIndex = function(s, k) {
 };
 
 console.log(decodeAtIndex("leet2code3", 10));
-
 
 // var decodeAtIndex = function(s, k) {
 //     let size = 0;

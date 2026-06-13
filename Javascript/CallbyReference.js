@@ -1,3 +1,35 @@
+
+//Call by Reference: A method of passing arguments where a function receives a reference to the original 
+//variable, so changes made inside the function affect the original data.
+
+
+function change(obj) {
+  obj.name = "React";
+
+  obj = {
+    name: "Angular",
+  };
+}
+
+const tech = {
+  name: "JavaScript",
+};
+
+change(tech);
+
+console.log(tech.name);
+
+function increment(num) {
+  num++;
+}
+
+let count = 10;
+
+increment(count);
+
+console.log(count); // 10
+
+
 // var obj = {
 //   name: "deepak",
 //   lastname: "kumar",

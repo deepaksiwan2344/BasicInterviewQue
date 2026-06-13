@@ -107,7 +107,6 @@ Event loop (handles async code)
 Event Loop – Handles Async Code (Very Important)
 JavaScript is single-threaded, so it uses the event loop to handle async tasks like setTimeout,
 promises, API calls, etc.
-
  Summary Diagram (Text Version)
 
         Code

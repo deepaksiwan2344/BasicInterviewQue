@@ -121,6 +121,31 @@ function findDuplicates(arr) {
 
 
 
+let arr = [1,3,3,4,5,2,34,34,3];
+let obj = {};
+for(let value of arr){
+    if(obj[value]){
+        obj[value]++
+    }else{
+        obj[value] = 1
+    }
+}
+let result = [];
+for(let key in obj){
+    if(obj[key] > 1){
+        for(let i = 0; i < obj[key]; i++){
+            result.push(Number(key))
+        }
+    }
+}
+
+console.log(result) // output [3,3,34,34]
+
+
+
+
+
+
 
 
 

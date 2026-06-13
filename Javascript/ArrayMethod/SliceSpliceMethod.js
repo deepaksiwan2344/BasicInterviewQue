@@ -1,6 +1,7 @@
 // slice() is used to create a new array containing a portion of the original array.
 // The original array is not modified.
 // Syntax: array.slice(startIndex, endIndex)
+//array.slice(start, end)
 
 
 // splice() is used to modify the original array by removing or adding elements.

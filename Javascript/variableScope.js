@@ -8,8 +8,16 @@ function demo (){
     return a
 }
 console.log(demo()) //output 90
-
  Declaring var a inside any {} block is still the same variable within the whole function.
  It doesn’t create a new local a inside the block; it re-declares or re-assigns the same a
 
 */
+
+
+var a = 10;
+function test() {
+    console.log(a);
+    var a = 20;
+}
+
+test();  //output undefined

@@ -20,8 +20,6 @@ console.log (p)
 // Q: What are the primitive data types in JavaScript?
 // A: The primitive data types in JavaScript are number, string, boolean, undefined, and null.
 
-
-
 // Q: What is the difference between null and undefined in JavaScript?
 // A: Null represents the intentional absence of any object value, whereas undefined represents a variable that has not been assigned a value.
 

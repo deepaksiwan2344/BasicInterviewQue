@@ -10,7 +10,6 @@ let data = new Map ([
 // console.log(data.has('name'))
 // console.log(data.set(() =>  {}, "this is arrow function"))
 
-
 // data.forEach((item, index)=>{
 //     console.log(item)
 // })
@@ -42,8 +41,6 @@ for([index, values] of data){
 // console.log(map.get(key1)); // "Value 1" (Correct behavior)
 // For small data, {} is fine.
 // For large datasets, Map is better.
-
-
 
 /***************Create a function to add dynamic key and value in a object ***********/
 function customObjAdd (obj, newProperties){
